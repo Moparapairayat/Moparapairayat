@@ -1,39 +1,3 @@
-<!-- ✨ NEXT.GEN AURORA GRADIENT • PREMIUM GITHUB PROFILE ✨ -->
-
-<style>
-  @keyframes gradient-flow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  @keyframes smooth-pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-  @keyframes slide-in {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
-
-<!-- Islamic Greeting - Premium Design -->
-<div align="center" style="margin: 20px 0 25px 0;">
-
-<!-- Top Decorative Line -->
-<svg width="100%" height="30" viewBox="0 0 400 30" style="max-width: 600px; margin: 0 auto;">
-  <defs>
-    <linearGradient id="gradLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0" />
-      <stop offset="50%" style="stop-color:#22c55e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0" />
-    </linearGradient>
-  </defs>
-  <line x1="0" y1="15" x2="400" y2="15" stroke="url(#gradLine)" stroke-width="1.5"/>
-  <circle cx="200" cy="15" r="3" fill="#22c55e"/>
-</svg>
-
-<!-- Main Greeting Container -->
-<div style="padding: 20px 25px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(59, 130, 246, 0.08) 50%, rgba(34, 197, 94, 0.08) 100%); border: 1.5px solid rgba(34, 197, 94, 0.3); border-radius: 15px; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(34, 197, 94, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.1); margin: 0 auto; max-width: 680px;">
 
 <!-- Arabic Text with Styling -->
 <h2 style="font-size: 26px; font-weight: 900; color: #22c55e; margin: 0 0 8px 0; text-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); letter-spacing: 0.5px;">
