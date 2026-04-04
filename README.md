@@ -1,23 +1,28 @@
 
-<!-- Arabic Text with Styling -->
-<h2 style="font-size: 26px; font-weight: 900; color: #22c55e; margin: 0 0 8px 0; text-shadow: 0 2px 4px rgba(34, 197, 94, 0.2); letter-spacing: 0.5px;">
-  السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
+<!-- ================= ISLAMIC GREETING HEADER ================= -->
+
+<p align="center">
+
+## ﷽
+
+<h2 align="center">
+<span style="color:#14B8A6;">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</span>
 </h2>
 
-<!-- Divider -->
-<div style="height: 1px; background: linear-gradient(90deg, transparent, #22c55e, transparent); margin: 10px 0;"></div>
-
-<!-- Transliteration -->
-<p style="color: #3b82f6; margin: 8px 0 6px 0; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-  Assalamu'alaikum warahmatullahi wabarakatuh
+<p align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 </p>
 
-<!-- English Translation -->
-<p style="color: #cbd5e1; font-size: 13px; margin: 6px 0 8px 0; font-style: italic; line-height: 1.4; font-weight: 500;">
-  ✨ May the peace, mercy, and blessings of Allah be with you ✨
+<p align="center">
+<b>Assalamu'alaikum warahmatullahi wabarakatuh</b>
 </p>
 
-</div>
+<p align="center">
+<i>✨ May the peace, mercy, and blessings of Allah be with you ✨</i>
+</p>
+
+</p>
+
 
 <!-- Bottom Decorative Line -->
 <svg width="100%" height="30" viewBox="0 0 400 30" style="max-width: 600px; margin: 10px auto 0;">
