@@ -1,9 +1,7 @@
 
 <!-- ================= ISLAMIC GREETING HEADER ================= -->
 
-<p align="center">
-
-## ﷽
+﷽
 
 <h2 align="center">
 <span style="color:#14B8A6;">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</span>
