@@ -491,10 +491,11 @@
 
 ### 📈 **Performance Metrics**
 
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Moparapairayat&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC&line_height=30" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Moparapairayat&theme=tokyonight&hide_border=true&background=0D1117&stroke=38BDF8&ring=7DD3FC&fire=38BDF8" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(125, 211, 252, 0.2);" />
-</p>
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=maurodesouza&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
+  <img src="https://github-profile-trophy.vercel.app?username=maurodesouza&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
+</div>
+
 
 ### 💻 **Language Proficiency**
 
