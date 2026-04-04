@@ -68,37 +68,58 @@
 
 ---
 
-## <span style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ ABOUT ME</span>
+## ✨ About Me
 
-<div align="center" style="margin: 30px 0;">
+<div align="center">
 
-<!-- Premium Glassmorphism Container -->
-<div style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(168, 85, 247, 0.08) 50%, rgba(59, 130, 246, 0.08) 100%); border: 1.5px solid rgba(99, 102, 241, 0.2); border-radius: 20px; padding: 35px; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(99, 102, 241, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.1); max-width: 1000px; margin: 0 auto;">
+### 🎯 My Mission & Vision
 
-<div style="display: flex; flex-direction: row; gap: 50px; align-items: flex-start; width: 100%; justify-content: space-between;">
+<table>
+<tr>
+<td width="70%" valign="top" align="left">
 
-<!-- Left Side - Content -->
-<div style="text-align: left; padding: 0; flex: 0.85; min-width: 0;">
+> Building impactful technology through engineering, intelligence, and architecture.
 
-<h3 style="margin: 0 0 20px 0; font-size: 20px; color: #60a5fa;">🎯 <strong>My Mission & Vision</strong></h3>
+<br>
 
-<div style="background: linear-gradient(90deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%); border-left: 4px solid #22c55e; padding: 16px 18px; border-radius: 8px; margin: 0 0 20px 0;">
-  <p style="margin: 0; color: #22c55e; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Professional Identity</p>
-  <p style="margin: 10px 0 0 0; font-size: 14px; color: #cbd5e1; font-weight: 500;">Software Engineer | Full Stack Developer | Data Scientist</p>
+#### 🟩 Professional Identity  
+**Software Engineer • Full Stack Developer • Data Scientist**
+
+<br>
+
+#### 🚀 Expertise Across Three Domains
+
+- **💻 Full-Stack Engineering**  
+  Frontend, Backend, Databases & Cloud Architecture
+
+- **🤖 Data Science & ML**  
+  PyTorch, TensorFlow, Analytics, LLMs & AI Solutions
+
+- **🏗️ System Architecture**  
+  Microservices, scalability, performance optimization
+
+- **🔒 Security & Best Practices**  
+  Production-ready, secure, maintainable code
+
+- **🚀 Innovation & Problem-Solving**  
+  Turning complex challenges into elegant solutions
+
+</td>
+<td width="30%" valign="top" align="center">
+
+<img src="https://img.shields.io/badge/Mission-Build%20with%20Purpose-0B1220?style=for-the-badge&logoColor=white" />
+<br><br>
+<img src="https://img.shields.io/badge/Vision-Scale%20with%20Excellence-115E59?style=for-the-badge&logoColor=white" />
+<br><br>
+<img src="https://img.shields.io/badge/Focus-AI%20%7C%20Systems%20%7C%20Products-FACC15?style=for-the-badge&logoColor=0B1220" />
+
+</td>
+</tr>
+</table>
+
 </div>
 
-<p style="margin: 0 0 12px 0; color: #e2e8f0; font-weight: 600; font-size: 14px;"><strong>Expertise Across Three Domains:</strong></p>
-
-<ul style="margin: 0 0 0 0; padding-left: 20px; color: #cbd5e1; font-size: 13px; line-height: 1.8;">
-  <li style="margin: 6px 0;"><strong>💻 Full-Stack Engineering</strong> - Frontend, Backend, Databases & Cloud Architecture</li>
-  <li style="margin: 6px 0;"><strong>🤖 Data Science & ML</strong> - PyTorch, TensorFlow, Analytics, LLMs & AI Solutions</li>
-  <li style="margin: 6px 0;"><strong>🏗️ System Architecture</strong> - Microservices, scalability, performance optimization</li>
-  <li style="margin: 6px 0;"><strong>🔒 Security & Best Practices</strong> - Production-ready, secure, maintainable code</li>
-  <li style="margin: 6px 0;"><strong>🚀 Innovation & Problem-Solving</strong> - Turning complex challenges into elegant solutions</li>
-</ul>
-
-</div>
-
+---
 <!-- Right Side - Image & Stats -->
 <div style="text-align: center; display: flex; flex-direction: column; align-items: center; flex: 1.15; min-width: 0;">
   <!-- Profile Image -->
