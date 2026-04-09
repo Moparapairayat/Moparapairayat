@@ -34,8 +34,6 @@
 
 </div>
 
----
-
 <!-- Advanced Typing Animation with Enhanced Lines -->
 <p align="center" style="margin: 25px 0;">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=26&pause=1500&color=38BDF8&center=true&vCenter=true&width=1100&lines=✨+Crafting+Digital+Excellence+with+Innovation;🚀+Building+Scalable+Systems+%26+Real-time+Architectures;🤖+AI-Powered+Solutions+%26+Machine+Learning+Integration;🔒+Secure,+Reliable+%26+Production-Grade+Code;⚡+Real-time+Processing+%26+Event-Driven+Architecture;💎+Premium+Full-Stack+Products+for+Tomorrow;🌟+From+Concept+to+Scale+-+End-to-End+Excellence" style="border-radius: 10px; box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);" />
