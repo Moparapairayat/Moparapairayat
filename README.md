@@ -35,9 +35,6 @@
 </div>
 
 ---
-<p align="center" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: gradient-flow 15s ease infinite; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-  <img src="https://raw.githubusercontent.com/Moparapairayat/Moparapairayat/main/MPA%20Social%20Cover.jpg" width="95%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
-</p>
 
 <!-- Advanced Typing Animation with Enhanced Lines -->
 <p align="center" style="margin: 25px 0;">
