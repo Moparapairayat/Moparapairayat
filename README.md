@@ -43,51 +43,34 @@
 
 ## 🛰️ Mission Control
 
-<table width="100%">
-<tr>
-<th align="center" width="28%">Signal</th>
-<th align="center" width="72%">Status</th>
-</tr>
-<tr>
-<td><b>🧭 Direction</b></td>
-<td>Building useful, scalable, secure digital products</td>
-</tr>
-<tr>
-<td><b>🧠 Core Identity</b></td>
-<td>Full-Stack Developer • AI/ML Engineer • Systems Thinker</td>
-</tr>
-<tr>
-<td><b>⚙️ Main Operating Mode</b></td>
-<td>Product engineering from idea to production</td>
-</tr>
-<tr>
-<td><b>🔭 Current Focus</b></td>
-<td>AI agents, real-time systems, cloud-native platforms, automation</td>
-</tr>
-</table>
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:0EA5E9,70:7C3AED,100:10B981&text=Mission%20Control&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Product%20Engineering%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Real-time%20Systems%20%E2%80%A2%20Cloud-native%20Platforms&descAlign=50&descAlignY=72&descSize=15" alt="Mission Control banner" />
+</p>
 
-<table width="100%">
-<tr>
-<td width="45%" align="center" valign="top">
-  <img width="100%" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Developer coding animation" />
+<p align="center">
+  <img src="https://img.shields.io/badge/🧭_Direction-Building_useful_scalable_secure_digital_products-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Direction: Building useful, scalable, secure digital products" />
+  <br>
+  <img src="https://img.shields.io/badge/🧠_Core_Identity-Full--Stack_Developer_%E2%80%A2_AI%2FML_Engineer_%E2%80%A2_Systems_Thinker-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Core Identity: Full-Stack Developer, AI/ML Engineer, Systems Thinker" />
+  <br>
+  <img src="https://img.shields.io/badge/⚙️_Main_Operating_Mode-Product_engineering_from_idea_to_production-F97316?style=for-the-badge&labelColor=0D1117" alt="Main Operating Mode: Product engineering from idea to production" />
+  <br>
+  <img src="https://img.shields.io/badge/🔭_Current_Focus-AI_agents_real--time_systems_cloud--native_platforms_automation-10B981?style=for-the-badge&labelColor=0D1117" alt="Current Focus: AI agents, real-time systems, cloud-native platforms, automation" />
+</p>
+
+<p align="center">
+  <img width="100%" src="./assets/mission-control-nextzen.svg" alt="Next-Zen technology mission control banner" />
   <br>
   <b>Software Engineer | Full-Stack | Data Science</b>
-</td>
-<td width="55%" valign="top">
+</p>
 
-<h3>Command Metrics</h3>
-
-<table width="100%">
-<tr><th>Metric</th><th>Count</th></tr>
-<tr><td>Production mindset</td><td><b>Always</b></td></tr>
-<tr><td>Projects</td><td><b>50+</b></td></tr>
-<tr><td>Technology domains</td><td><b>30+</b></td></tr>
-<tr><td>Learning loop</td><td><b>∞</b></td></tr>
-</table>
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/Command_Metrics-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Command Metrics" />
+  <br>
+  <img src="https://img.shields.io/badge/Production_mindset-Always-10B981?style=flat-square&labelColor=0D1117" alt="Production mindset: Always" />
+  <img src="https://img.shields.io/badge/Projects-50%2B-0EA5E9?style=flat-square&labelColor=0D1117" alt="Projects: 50+" />
+  <img src="https://img.shields.io/badge/Technology_domains-30%2B-7C3AED?style=flat-square&labelColor=0D1117" alt="Technology domains: 30+" />
+  <img src="https://img.shields.io/badge/Learning_loop-%E2%88%9E-F97316?style=flat-square&labelColor=0D1117" alt="Learning loop: infinity" />
+</p>
 
 ### 🔥 Why Work With Me?
 

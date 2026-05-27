@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="260" viewBox="0 0 1400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Next-Zen Technology Mission Control</title>
+  <desc id="desc">A wide futuristic technology banner with neural circuits, cloud systems, data streams, and AI nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.45" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#101729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#334155" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="260" rx="24" fill="url(#bg)"/>
+  <rect width="1400" height="260" rx="24" fill="url(#grid)" opacity="0.42"/>
+  <rect x="1" y="1" width="1398" height="258" rx="24" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.7"/>
+
+  <circle cx="160" cy="72" r="115" fill="url(#glowBlue)"/>
+  <circle cx="1220" cy="188" r="135" fill="url(#glowViolet)"/>
+  <circle cx="725" cy="130" r="110" fill="#0ea5e9" opacity="0.05"/>
+
+  <g opacity="0.8" filter="url(#softGlow)">
+    <path d="M80 173 C190 112 240 160 330 92 S520 115 625 72" fill="none" stroke="#38bdf8" stroke-width="3"/>
+    <path d="M770 185 C865 97 944 178 1040 94 S1190 88 1320 144" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+    <path d="M130 210 C260 205 322 232 455 198 S665 222 802 174" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  </g>
+
+  <g fill="#0f172a" stroke="#38bdf8" stroke-width="2" opacity="0.95">
+    <rect x="86" y="72" width="205" height="92" rx="14"/>
+    <rect x="1090" y="54" width="224" height="96" rx="14" stroke="#8b5cf6"/>
+    <rect x="1002" y="166" width="214" height="58" rx="14" stroke="#10b981"/>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" fill="#e5e7eb">
+    <text x="116" y="107" font-size="15" font-weight="700" fill="#38bdf8">AI AGENT CORE</text>
+    <text x="116" y="133" font-size="12" fill="#94a3b8">reasoning / tools / memory</text>
+    <text x="1118" y="88" font-size="15" font-weight="700" fill="#a78bfa">CLOUD-NATIVE GRID</text>
+    <text x="1118" y="116" font-size="12" fill="#94a3b8">containers / events / telemetry</text>
+    <text x="1030" y="202" font-size="14" font-weight="700" fill="#34d399">REAL-TIME DATA FLOW</text>
+  </g>
+
+  <g transform="translate(460 46)">
+    <rect x="0" y="0" width="480" height="168" rx="22" fill="#020617" opacity="0.9" stroke="url(#accent)" stroke-width="2"/>
+    <rect x="22" y="24" width="436" height="6" rx="3" fill="url(#accent)" opacity="0.95"/>
+    <text x="240" y="79" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="38" font-weight="800" fill="#f8fafc">NEXT-ZEN TECH</text>
+    <text x="240" y="113" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#93c5fd">AI SYSTEMS • CLOUD PLATFORMS • REAL-TIME ARCHITECTURE</text>
+    <g transform="translate(70 135)" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700">
+      <rect x="0" y="0" width="88" height="24" rx="12" fill="#0f172a" stroke="#38bdf8"/>
+      <text x="44" y="16" text-anchor="middle" fill="#7dd3fc">SECURE</text>
+      <rect x="118" y="0" width="90" height="24" rx="12" fill="#0f172a" stroke="#8b5cf6"/>
+      <text x="163" y="16" text-anchor="middle" fill="#c4b5fd">SCALABLE</text>
+      <rect x="238" y="0" width="102" height="24" rx="12" fill="#0f172a" stroke="#10b981"/>
+      <text x="289" y="16" text-anchor="middle" fill="#86efac">PRODUCTION</text>
+    </g>
+  </g>
+
+  <g fill="#e2e8f0" stroke="url(#accent)" stroke-width="2" filter="url(#softGlow)">
+    <circle cx="80" cy="173" r="7"/>
+    <circle cx="330" cy="92" r="7"/>
+    <circle cx="625" cy="72" r="7"/>
+    <circle cx="770" cy="185" r="7"/>
+    <circle cx="1040" cy="94" r="7"/>
+    <circle cx="1320" cy="144" r="7"/>
+    <circle cx="455" cy="198" r="6"/>
+    <circle cx="802" cy="174" r="6"/>
+  </g>
+
+  <g opacity="0.78">
+    <path d="M365 42 h42 v28 h36" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M992 54 h-48 v42 h-38" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M950 204 h-58 v-36 h-44" fill="none" stroke="#10b981" stroke-width="2"/>
+    <path d="M318 218 h66 v-30 h36" fill="none" stroke="#f97316" stroke-width="2"/>
+  </g>
+</svg>
