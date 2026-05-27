@@ -74,9 +74,20 @@
 
 ### 🔥 Why Work With Me?
 
-| ✅ Production Excellence | ⚡ Performance Focused | 🔒 Security Minded | 🤝 Collaborative |
-|--------------------------|------------------------|--------------------|------------------|
-| Clean, maintainable, battle-tested code | Speed, scale, cost, and reliability | Secure-by-default thinking | Clear execution and communication |
+<table width="100%">
+<tr>
+<th align="center">✅ Production Excellence</th>
+<th align="center">⚡ Performance Focused</th>
+<th align="center">🔒 Security Minded</th>
+<th align="center">🤝 Collaborative</th>
+</tr>
+<tr>
+<td align="center">Clean, maintainable, battle-tested code</td>
+<td align="center">Speed, scale, cost, and reliability</td>
+<td align="center">Secure-by-default thinking</td>
+<td align="center">Clear execution and communication</td>
+</tr>
+</table>
 
 ---
 
@@ -86,21 +97,23 @@
   <img width="100%" src="./assets/section-operating-system.svg" alt="Operating System banner" />
 </p>
 
-| Layer | How I Work |
-|-------|------------|
-| Discover | Clarify the problem, users, constraints, risks, and success criteria |
-| Design | Model the system, data flow, user flow, and deployment surface |
-| Build | Implement with clean boundaries, pragmatic abstractions, and testable logic |
-| Harden | Improve reliability, security, observability, and performance |
-| Ship | Deliver docs, deployment readiness, and iteration paths |
+<table width="100%">
+<tr><th align="center" width="22%">Layer</th><th align="center" width="78%">How I Work</th></tr>
+<tr><td><b>Discover</b></td><td>Clarify the problem, users, constraints, risks, and success criteria</td></tr>
+<tr><td><b>Design</b></td><td>Model the system, data flow, user flow, and deployment surface</td></tr>
+<tr><td><b>Build</b></td><td>Implement with clean boundaries, pragmatic abstractions, and testable logic</td></tr>
+<tr><td><b>Harden</b></td><td>Improve reliability, security, observability, and performance</td></tr>
+<tr><td><b>Ship</b></td><td>Deliver docs, deployment readiness, and iteration paths</td></tr>
+</table>
 
-| Engineering Principle | Practical Meaning |
-|----------------------|-------------------|
-| Product-first | Code exists to solve a real problem |
-| Architecture-aware | Systems should scale without becoming fragile |
-| Security-aware | Sensitive flows deserve careful defaults |
-| Performance-aware | Speed, cost, and reliability are part of UX |
-| Documentation-aware | Good systems should be understandable later |
+<table width="100%">
+<tr><th align="center" width="28%">Engineering Principle</th><th align="center" width="72%">Practical Meaning</th></tr>
+<tr><td><b>Product-first</b></td><td>Code exists to solve a real problem</td></tr>
+<tr><td><b>Architecture-aware</b></td><td>Systems should scale without becoming fragile</td></tr>
+<tr><td><b>Security-aware</b></td><td>Sensitive flows deserve careful defaults</td></tr>
+<tr><td><b>Performance-aware</b></td><td>Speed, cost, and reliability are part of UX</td></tr>
+<tr><td><b>Documentation-aware</b></td><td>Good systems should be understandable later</td></tr>
+</table>
 
 ---
 
@@ -112,33 +125,36 @@
 
 ### 🎯 Software Engineer | Full Stack Developer | Data Scientist
 
-| Domain | Focus | Output |
-|--------|-------|--------|
-| 💻 Full-Stack Engineering | Frontend • Backend • APIs • Databases | Complete product workflows |
-| 🤖 AI/ML Engineering | LLMs • RAG • Agents • Analytics • ML pipelines | Intelligent automation and data products |
-| 🏗️ System Architecture | Microservices • Events • Real-time • Cloud | Scalable, production-ready systems |
-| 🔒 Security & Reliability | Auth • Monitoring • Validation • Hardening | Safer software with fewer surprises |
+<table width="100%">
+<tr><th align="center" width="26%">Domain</th><th align="center" width="39%">Focus</th><th align="center" width="35%">Output</th></tr>
+<tr><td><b>💻 Full-Stack Engineering</b></td><td>Frontend • Backend • APIs • Databases</td><td>Complete product workflows</td></tr>
+<tr><td><b>🤖 AI/ML Engineering</b></td><td>LLMs • RAG • Agents • Analytics • ML pipelines</td><td>Intelligent automation and data products</td></tr>
+<tr><td><b>🏗️ System Architecture</b></td><td>Microservices • Events • Real-time • Cloud</td><td>Scalable, production-ready systems</td></tr>
+<tr><td><b>🔒 Security & Reliability</b></td><td>Auth • Monitoring • Validation • Hardening</td><td>Safer software with fewer surprises</td></tr>
+</table>
 
 ### 💎 Core Competencies Matrix
 
-| 📂 Category | 🎯 Core Skills | Depth |
-|------------|----------------|-------|
-| 🏗️ Architecture | Microservices • Distributed Systems • Event-Driven • CQRS • Real-time | ⭐⭐⭐⭐⭐ |
-| ⚛️ Frontend | React • Next.js • TypeScript • Tailwind CSS • D3.js • Web3 • Performance | ⭐⭐⭐⭐⭐ |
-| 🔧 Backend | Node.js • Python • Go • FastAPI • GraphQL • REST • tRPC • WebSockets | ⭐⭐⭐⭐⭐ |
-| 🗄️ Data | PostgreSQL • MongoDB • Redis • Kafka • DynamoDB • Elasticsearch • Vector DB | ⭐⭐⭐⭐⭐ |
-| 🤖 AI/ML | PyTorch • TensorFlow • LLMs • RAG Systems • Pandas • NumPy • scikit-learn | ⭐⭐⭐⭐⭐ |
-| ☁️ Platform | Docker • Kubernetes • AWS • GCP • GitHub Actions • Prometheus • ELK Stack | ⭐⭐⭐⭐ |
+<table width="100%">
+<tr><th align="center" width="22%">📂 Category</th><th align="center" width="64%">🎯 Core Skills</th><th align="center" width="14%">Depth</th></tr>
+<tr><td><b>🏗️ Architecture</b></td><td>Microservices • Distributed Systems • Event-Driven • CQRS • Real-time</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>⚛️ Frontend</b></td><td>React • Next.js • TypeScript • Tailwind CSS • D3.js • Web3 • Performance</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>🔧 Backend</b></td><td>Node.js • Python • Go • FastAPI • GraphQL • REST • tRPC • WebSockets</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>🗄️ Data</b></td><td>PostgreSQL • MongoDB • Redis • Kafka • DynamoDB • Elasticsearch • Vector DB</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>🤖 AI/ML</b></td><td>PyTorch • TensorFlow • LLMs • RAG Systems • Pandas • NumPy • scikit-learn</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>☁️ Platform</b></td><td>Docker • Kubernetes • AWS • GCP • GitHub Actions • Prometheus • ELK Stack</td><td align="center">⭐⭐⭐⭐</td></tr>
+</table>
 
 ### 🧠 Intelligence Stack
 
-| AI Layer | Capabilities |
-|----------|--------------|
-| LLM Apps | Chat, copilots, assistants, structured outputs, tool calling |
-| Agentic Workflows | Multi-step automation, retrieval, planning, task orchestration |
-| RAG Systems | Embeddings, vector search, reranking, knowledge-grounded answers |
-| Data Science | EDA, feature engineering, modeling, evaluation, reporting |
-| MLOps / LLMOps | Experiment tracking, deployment, monitoring, safety checks |
+<table width="100%">
+<tr><th align="center" width="28%">AI Layer</th><th align="center" width="72%">Capabilities</th></tr>
+<tr><td><b>LLM Apps</b></td><td>Chat, copilots, assistants, structured outputs, tool calling</td></tr>
+<tr><td><b>Agentic Workflows</b></td><td>Multi-step automation, retrieval, planning, task orchestration</td></tr>
+<tr><td><b>RAG Systems</b></td><td>Embeddings, vector search, reranking, knowledge-grounded answers</td></tr>
+<tr><td><b>Data Science</b></td><td>EDA, feature engineering, modeling, evaluation, reporting</td></tr>
+<tr><td><b>MLOps / LLMOps</b></td><td>Experiment tracking, deployment, monitoring, safety checks</td></tr>
+</table>
 
 ---
 
@@ -148,13 +164,14 @@
   <img width="100%" src="./assets/section-build-lanes.svg" alt="Build Lanes banner" />
 </p>
 
-| Lane | What I Build | Typical Stack |
-|------|--------------|---------------|
-| SaaS Platforms | Dashboards, auth, billing-ready flows, admin systems | Next.js • Node.js • PostgreSQL • Redis |
-| AI Products | Agents, RAG apps, LLM pipelines, automation tools | Python • OpenAI/Claude/Gemini • Vector DB |
-| Real-time Systems | Live dashboards, sockets, event streams, notifications | WebSockets • Kafka • Redis • Node.js |
-| Data Platforms | Analytics, ETL, reporting, ML experiments | Python • Pandas • Polars • PostgreSQL |
-| Cloud Infrastructure | Deployments, CI/CD, observability, containerization | Docker • Kubernetes • GitHub Actions • AWS/GCP |
+<table width="100%">
+<tr><th align="center" width="22%">Lane</th><th align="center" width="43%">What I Build</th><th align="center" width="35%">Typical Stack</th></tr>
+<tr><td><b>SaaS Platforms</b></td><td>Dashboards, auth, billing-ready flows, admin systems</td><td>Next.js • Node.js • PostgreSQL • Redis</td></tr>
+<tr><td><b>AI Products</b></td><td>Agents, RAG apps, LLM pipelines, automation tools</td><td>Python • OpenAI/Claude/Gemini • Vector DB</td></tr>
+<tr><td><b>Real-time Systems</b></td><td>Live dashboards, sockets, event streams, notifications</td><td>WebSockets • Kafka • Redis • Node.js</td></tr>
+<tr><td><b>Data Platforms</b></td><td>Analytics, ETL, reporting, ML experiments</td><td>Python • Pandas • Polars • PostgreSQL</td></tr>
+<tr><td><b>Cloud Infrastructure</b></td><td>Deployments, CI/CD, observability, containerization</td><td>Docker • Kubernetes • GitHub Actions • AWS/GCP</td></tr>
+</table>
 
 ---
 
@@ -253,10 +270,26 @@
 
 ### 🌐 Web3 • Robotics • XR • Creative Engineering
 
-| Web3 | Robotics / IoT | Graphics / XR | Creative |
-|------|----------------|---------------|----------|
-| <img src="https://skillicons.dev/icons?i=solidity" alt="Web3 icons" /> | <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,linux" alt="Robotics icons" /> | <img src="https://skillicons.dev/icons?i=unity,unreal,godot,blender,threejs" alt="Graphics icons" /> | <img src="https://skillicons.dev/icons?i=figma,photoshop,illustrator,blender,ae,pr" alt="Creative icons" /> |
-| Smart Contracts • Layer2 • DAO | Embedded • Edge AI • Automation | WebXR • Simulation • Spatial Computing | Design Systems • UI Motion • Generative Design |
+<table width="100%">
+<tr>
+<th align="center">Web3</th>
+<th align="center">Robotics / IoT</th>
+<th align="center">Graphics / XR</th>
+<th align="center">Creative</th>
+</tr>
+<tr>
+<td align="center"><img src="https://skillicons.dev/icons?i=solidity" alt="Web3 icons" /></td>
+<td align="center"><img src="https://skillicons.dev/icons?i=arduino,raspberrypi,linux" alt="Robotics icons" /></td>
+<td align="center"><img src="https://skillicons.dev/icons?i=unity,unreal,godot,blender,threejs" alt="Graphics icons" /></td>
+<td align="center"><img src="https://skillicons.dev/icons?i=figma,photoshop,illustrator,blender,ae,pr" alt="Creative icons" /></td>
+</tr>
+<tr>
+<td align="center">Smart Contracts • Layer2 • DAO</td>
+<td align="center">Embedded • Edge AI • Automation</td>
+<td align="center">WebXR • Simulation • Spatial Computing</td>
+<td align="center">Design Systems • UI Motion • Generative Design</td>
+</tr>
+</table>
 
 ### 🧰 Elite Developer Arsenal
 
@@ -295,14 +328,15 @@
   <img width="100%" src="./assets/section-system-design-playbook.svg" alt="System Design Playbook banner" />
 </p>
 
-| Design Area | Preferred Direction |
-|-------------|---------------------|
-| API Design | Clear contracts, typed payloads, versioning when needed |
-| Data Modeling | Start simple, index intentionally, design for query patterns |
-| Reliability | Idempotent jobs, retries, timeouts, observability hooks |
-| Security | Least privilege, validation, secret isolation, audit-friendly flows |
-| Performance | Cache only where it helps, measure before over-optimizing |
-| DX | Scripts, documentation, local setup, and maintainable conventions |
+<table width="100%">
+<tr><th align="center" width="25%">Design Area</th><th align="center" width="75%">Preferred Direction</th></tr>
+<tr><td><b>API Design</b></td><td>Clear contracts, typed payloads, versioning when needed</td></tr>
+<tr><td><b>Data Modeling</b></td><td>Start simple, index intentionally, design for query patterns</td></tr>
+<tr><td><b>Reliability</b></td><td>Idempotent jobs, retries, timeouts, observability hooks</td></tr>
+<tr><td><b>Security</b></td><td>Least privilege, validation, secret isolation, audit-friendly flows</td></tr>
+<tr><td><b>Performance</b></td><td>Cache only where it helps, measure before over-optimizing</td></tr>
+<tr><td><b>DX</b></td><td>Scripts, documentation, local setup, and maintainable conventions</td></tr>
+</table>
 
 ---
 
@@ -317,12 +351,13 @@ Idea → Requirements → Architecture → Prototype → Production Build
      → Testing → Hardening → Documentation → Launch → Iteration
 ```
 
-| Phase | Output |
-|-------|--------|
-| Discovery | Feature map, risk map, user flows |
-| Implementation | Clean code, reusable modules, API boundaries |
-| Verification | Tests, manual QA notes, edge-case checks |
-| Release | Deployment readiness, rollback thinking, docs |
+<table width="100%">
+<tr><th align="center" width="25%">Phase</th><th align="center" width="75%">Output</th></tr>
+<tr><td><b>Discovery</b></td><td>Feature map, risk map, user flows</td></tr>
+<tr><td><b>Implementation</b></td><td>Clean code, reusable modules, API boundaries</td></tr>
+<tr><td><b>Verification</b></td><td>Tests, manual QA notes, edge-case checks</td></tr>
+<tr><td><b>Release</b></td><td>Deployment readiness, rollback thinking, docs</td></tr>
+</table>
 
 ---
 
@@ -337,13 +372,14 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Interview-Platform&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Interview-Platform repository card" />
 </p>
 
-| Project Quality Signal | Meaning |
-|------------------------|---------|
-| ✅ Production-quality code | Designed to survive real usage |
-| 🔒 Security practices | Auth, validation, privacy, and safe defaults |
-| 📈 Scalable architecture | Clear boundaries and growth paths |
-| 📚 Documentation | Systems that can be understood and improved |
-| 🚀 Performance optimization | Fast enough, measurable, and cost-aware |
+<table width="100%">
+<tr><th align="center" width="32%">Project Quality Signal</th><th align="center" width="68%">Meaning</th></tr>
+<tr><td><b>✅ Production-quality code</b></td><td>Designed to survive real usage</td></tr>
+<tr><td><b>🔒 Security practices</b></td><td>Auth, validation, privacy, and safe defaults</td></tr>
+<tr><td><b>📈 Scalable architecture</b></td><td>Clear boundaries and growth paths</td></tr>
+<tr><td><b>📚 Documentation</b></td><td>Systems that can be understood and improved</td></tr>
+<tr><td><b>🚀 Performance optimization</b></td><td>Fast enough, measurable, and cost-aware</td></tr>
+</table>
 
 ---
 
@@ -834,13 +870,14 @@ EXCELLENCE    → Never settle for less
   <img width="100%" src="./assets/section-quick-stats.svg" alt="Quick Stats banner" />
 </p>
 
-| Metric | Count |
-|--------|-------|
-| 💻 Projects | 50+ |
-| ⭐ GitHub Stars | 500+ |
-| 🤝 Collaborations | 30+ |
-| 🏆 Achievements | 20+ |
-| 📚 Contributions | 2000+ |
+<table width="100%">
+<tr><th align="center" width="50%">Metric</th><th align="center" width="50%">Count</th></tr>
+<tr><td><b>💻 Projects</b></td><td align="center"><b>50+</b></td></tr>
+<tr><td><b>⭐ GitHub Stars</b></td><td align="center"><b>500+</b></td></tr>
+<tr><td><b>🤝 Collaborations</b></td><td align="center"><b>30+</b></td></tr>
+<tr><td><b>🏆 Achievements</b></td><td align="center"><b>20+</b></td></tr>
+<tr><td><b>📚 Contributions</b></td><td align="center"><b>2000+</b></td></tr>
+</table>
 
 ---
 
@@ -850,11 +887,12 @@ EXCELLENCE    → Never settle for less
   <img width="100%" src="./assets/section-ready-collaborate.svg" alt="Ready to Collaborate banner" />
 </p>
 
-| Level | Perfect For | Get Started |
-|-------|-------------|-------------|
-| 🎓 Entry | Learning and growth | [Email](mailto:Support@moparapairayat.com) |
-| 💼 Professional | Business needs | [GitHub](https://github.com/Moparapairayat) |
-| 🚀 Enterprise | Large-scale projects | [Portfolio](https://moparapairayat.com) |
+<table width="100%">
+<tr><th align="center" width="25%">Level</th><th align="center" width="45%">Perfect For</th><th align="center" width="30%">Get Started</th></tr>
+<tr><td><b>🎓 Entry</b></td><td>Learning and growth</td><td align="center"><a href="mailto:Support@moparapairayat.com">Email</a></td></tr>
+<tr><td><b>💼 Professional</b></td><td>Business needs</td><td align="center"><a href="https://github.com/Moparapairayat">GitHub</a></td></tr>
+<tr><td><b>🚀 Enterprise</b></td><td>Large-scale projects</td><td align="center"><a href="https://moparapairayat.com">Portfolio</a></td></tr>
+</table>
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Daily inspiration quote" />
