@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="./assets/profile-hero-nextzen.svg" alt="Mopara Pair Ayat profile hero" />
+  <img width="100%" src="./assets/profile-hero-nextzen.gif" alt="Mopara Pair Ayat animated profile hero" />
 </p>
 
 <p align="center">
