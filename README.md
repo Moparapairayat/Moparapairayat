@@ -1,3 +1,5 @@
+<a id="mopara-pair-ayat"></a>
+
 <p align="center">
   <img width="100%" src="./assets/profile-hero-nextzen.gif" alt="Mopara Pair Ayat animated profile hero" />
 </p>
@@ -41,8 +43,6 @@
 
 <a id="mission-control"></a>
 
-## 🛰️ Mission Control
-
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:0EA5E9,70:7C3AED,100:10B981&text=Mission%20Control&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Product%20Engineering%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Real-time%20Systems%20%E2%80%A2%20Cloud-native%20Platforms&descAlign=50&descAlignY=72&descSize=15" alt="Mission Control banner" />
 </p>
@@ -80,7 +80,11 @@
 
 ---
 
-## 🧩 Operating System
+<a id="operating-system"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:14B8A6,70:22C55E,100:84CC16&text=Operating%20System&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Discovery%20%E2%80%A2%20Design%20%E2%80%A2%20Build%20%E2%80%A2%20Harden%20%E2%80%A2%20Ship&descAlign=50&descAlignY=72&descSize=15" alt="Operating System banner" />
+</p>
 
 | Layer | How I Work |
 |-------|------------|
@@ -102,7 +106,9 @@
 
 <a id="professional-expertise"></a>
 
-## 💎 Professional Expertise
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:7C3AED,70:EC4899,100:F97316&text=Professional%20Expertise&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Full--Stack%20Engineering%20%E2%80%A2%20AI%2FML%20%E2%80%A2%20Systems%20%E2%80%A2%20Security&descAlign=50&descAlignY=72&descSize=15" alt="Professional Expertise banner" />
+</p>
 
 ### 🎯 Software Engineer | Full Stack Developer | Data Scientist
 
@@ -136,7 +142,11 @@
 
 ---
 
-## 🚀 Build Lanes
+<a id="build-lanes"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:F97316,70:FACC15,100:10B981&text=Build%20Lanes&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=SaaS%20%E2%80%A2%20AI%20Products%20%E2%80%A2%20Real--time%20%E2%80%A2%20Data%20%E2%80%A2%20Cloud%20Infrastructure&descAlign=50&descAlignY=72&descSize=15" alt="Build Lanes banner" />
+</p>
 
 | Lane | What I Build | Typical Stack |
 |------|--------------|---------------|
@@ -150,7 +160,9 @@
 
 <a id="next-zen-technology-universe"></a>
 
-## 🧬 Next-Zen Technology Universe
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:38BDF8,70:6366F1,100:EC4899&text=Next--Zen%20Technology%20Universe&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Core%20Engineering%20%E2%80%A2%20AI%20%E2%80%A2%20Cloud%20%E2%80%A2%20Data%20%E2%80%A2%20Security%20%E2%80%A2%20Creative%20Systems&descAlign=50&descAlignY=72&descSize=15" alt="Next-Zen Technology Universe banner" />
+</p>
 
 ### ⚡ Core Engineering
 
@@ -277,7 +289,11 @@
 
 ---
 
-## 🧪 System Design Playbook
+<a id="system-design-playbook"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:06B6D4,70:2563EB,100:7C3AED&text=System%20Design%20Playbook&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=APIs%20%E2%80%A2%20Data%20Modeling%20%E2%80%A2%20Reliability%20%E2%80%A2%20Security%20%E2%80%A2%20Performance%20%E2%80%A2%20DX&descAlign=50&descAlignY=72&descSize=15" alt="System Design Playbook banner" />
+</p>
 
 | Design Area | Preferred Direction |
 |-------------|---------------------|
@@ -290,7 +306,11 @@
 
 ---
 
-## 🛠️ Delivery Blueprint
+<a id="delivery-blueprint"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:F59E0B,70:EF4444,100:8B5CF6&text=Delivery%20Blueprint&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Idea%20%E2%80%A2%20Architecture%20%E2%80%A2%20Build%20%E2%80%A2%20Test%20%E2%80%A2%20Harden%20%E2%80%A2%20Launch&descAlign=50&descAlignY=72&descSize=15" alt="Delivery Blueprint banner" />
+</p>
 
 ```text
 Idea → Requirements → Architecture → Prototype → Production Build
@@ -308,7 +328,9 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 <a id="project-launchpad"></a>
 
-## 🚀 Project Launchpad
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:10B981,70:0EA5E9,100:6366F1&text=Project%20Launchpad&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Featured%20Repositories%20%E2%80%A2%20Production%20Quality%20%E2%80%A2%20Scalable%20Architecture&descAlign=50&descAlignY=72&descSize=15" alt="Project Launchpad banner" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Net-Watcher&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Net-Watcher repository card" />
@@ -325,7 +347,11 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ---
 
-## 📊 GitHub Analytics & Insights
+<a id="github-analytics--insights"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:8B5CF6,70:38BDF8,100:22C55E&text=GitHub%20Analytics%20%26%20Insights&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Stats%20%E2%80%A2%20Streaks%20%E2%80%A2%20Languages%20%E2%80%A2%20Trophies%20%E2%80%A2%20Activity%20Graph&descAlign=50&descAlignY=72&descSize=15" alt="GitHub Analytics and Insights banner" />
+</p>
 
 <p align="center">
   <img height="180" src="https://github-readme-stats.vercel.app/api?username=Moparapairayat&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="GitHub stats" />
@@ -348,7 +374,11 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ---
 
-## 📡 Global Signal
+<a id="global-signal"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:3B82F6,70:10B981,100:F59E0B&text=Global%20Signal&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Multi--Region%20Presence%20%E2%80%A2%20Domains%20%E2%80%A2%20Regional%20Support&descAlign=50&descAlignY=72&descSize=15" alt="Global Signal banner" />
+</p>
 
 <p align="center">
   <a href="mailto:Support@moparapairayat.com"><img src="https://img.shields.io/badge/📧_EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117&color=D14836" alt="Email" /></a>
@@ -491,7 +521,9 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 <a id="contact--connect"></a>
 
-## 📧 Contact & Connect
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:EF4444,70:F97316,100:38BDF8&text=Contact%20%26%20Connect&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Email%20%E2%80%A2%20Portfolio%20%E2%80%A2%20GitHub%20%E2%80%A2%20WhatsApp%20%E2%80%A2%20Collaboration&descAlign=50&descAlignY=72&descSize=15" alt="Contact and Connect banner" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Collaboration_Channel-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Collaboration Channel" />
@@ -677,7 +709,11 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ---
 
-## ☕ Support the Work
+<a id="support-the-work"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:10B981,70:7C3AED,100:F59E0B&text=Support%20the%20Work&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Open%20Source%20Fuel%20%E2%80%A2%20Project%20Growth%20%E2%80%A2%20Community%20Impact&descAlign=50&descAlignY=72&descSize=15" alt="Support the Work banner" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Support_Console-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Support Console" />
@@ -772,7 +808,11 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ---
 
-## 🌟 Philosophy & Core Values
+<a id="philosophy--core-values"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:F97316,70:7C3AED,100:38BDF8&text=Philosophy%20%26%20Core%20Values&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Innovation%20%E2%80%A2%20Security%20%E2%80%A2%20Scalability%20%E2%80%A2%20Collaboration%20%E2%80%A2%20Excellence&descAlign=50&descAlignY=72&descSize=15" alt="Philosophy and Core Values banner" />
+</p>
 
 ```text
 INNOVATION    → Building next-gen solutions
@@ -788,7 +828,11 @@ EXCELLENCE    → Never settle for less
 
 ---
 
-## 🎯 Quick Stats
+<a id="quick-stats"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:22C55E,70:84CC16,100:38BDF8&text=Quick%20Stats&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Projects%20%E2%80%A2%20Stars%20%E2%80%A2%20Collaborations%20%E2%80%A2%20Achievements%20%E2%80%A2%20Contributions&descAlign=50&descAlignY=72&descSize=15" alt="Quick Stats banner" />
+</p>
 
 | Metric | Count |
 |--------|-------|
@@ -800,7 +844,11 @@ EXCELLENCE    → Never settle for less
 
 ---
 
-## 🚀 Ready to Collaborate?
+<a id="ready-to-collaborate"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:38BDF8,70:F97316,100:10B981&text=Ready%20to%20Collaborate%3F&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Learning%20%E2%80%A2%20Business%20%E2%80%A2%20Enterprise&descAlign=50&descAlignY=72&descSize=15" alt="Ready to Collaborate banner" />
+</p>
 
 | Level | Perfect For | Get Started |
 |-------|-------------|-------------|
@@ -816,7 +864,11 @@ EXCELLENCE    → Never settle for less
   <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f172a,35:0ea5e9,70:7c3aed,100:f97316&text=Thanks%20for%20Visiting&fontAlign=50&fontAlignY=48&desc=Let%27s%20build%20something%20amazing%20together&descAlign=50&descAlignY=68&fontColor=ffffff&animation=fadeIn&section=footer" width="100%" alt="Thanks for visiting footer" />
 </p>
 
-## 📬 Final Call to Action
+<a id="final-call-to-action"></a>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:EF4444,70:7C3AED,100:0EA5E9&text=Final%20Call%20to%20Action&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Star%20%E2%80%A2%20Message%20%E2%80%A2%20Connect%20%E2%80%A2%20Build&descAlign=50&descAlignY=72&descSize=15" alt="Final Call to Action banner" />
+</p>
 
 ```text
 ┌─────────────────────────────────────────┐
