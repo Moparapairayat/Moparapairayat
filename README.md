@@ -3,16 +3,26 @@
 </p>
 
 <p align="center">
-  <img width="100%" src="./assets/access-gateway-nextzen.svg" alt="Next-Zen access gateway greeting and identity panel" />
+  <img src="https://img.shields.io/badge/ACCESS_ONLINE-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Access online" />
+  <img src="https://img.shields.io/badge/AI_NATIVE_FLOW-0D1117?style=for-the-badge&labelColor=0D1117&color=7C3AED" alt="AI native flow" />
+  <img src="https://img.shields.io/badge/PRODUCTION_MODE-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="Production mode" />
+</p>
+
+<div align="center">
+
+### السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
+
+**Assalamu'alaikum warahmatullahi wabarakatuh**
+
+**Full-Stack Developer • AI/ML Engineer • Systems Thinker**
+
+</div>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=900&lines=Building+Scalable+Systems+and+Real-time+Architectures;AI-Powered+Products,+Agents,+and+ML+Pipelines;Secure,+Reliable,+Production-Grade+Engineering" alt="Typing animation" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=22&pause=1400&color=38BDF8&center=true&vCenter=true&width=1000&lines=Crafting+Digital+Excellence+with+Innovation;Building+Scalable+Systems+and+Real-time+Architectures;AI-Powered+Products,+Agents,+and+ML+Pipelines;Secure,+Reliable,+Production-Grade+Engineering;From+Concept+to+Scale+-+End-to-End+Execution" alt="Typing animation" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Command_Links-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Command Links" />
-  <br>
   <a href="mailto:moparapairayat@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" /></a>
   <a href="https://github.com/Moparapairayat"><img src="https://img.shields.io/badge/GitHub-38BDF8?style=for-the-badge&logo=github&logoColor=0D1117&labelColor=0D1117" alt="GitHub" /></a>
   <a href="https://moparapairayat.com"><img src="https://img.shields.io/badge/Portfolio-FF6B35?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0D1117" alt="Portfolio" /></a>
