@@ -74,12 +74,12 @@
 
 ### 🔥 Why Work With Me?
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<th align="center">✅ Production Excellence</th>
-<th align="center">⚡ Performance Focused</th>
-<th align="center">🔒 Security Minded</th>
-<th align="center">🤝 Collaborative</th>
+<th align="center" width="220">✅ Production Excellence</th>
+<th align="center" width="220">⚡ Performance Focused</th>
+<th align="center" width="220">🔒 Security Minded</th>
+<th align="center" width="220">🤝 Collaborative</th>
 </tr>
 <tr>
 <td align="center">Clean, maintainable, battle-tested code</td>
@@ -97,8 +97,8 @@
   <img width="100%" src="./assets/section-operating-system.svg" alt="Operating System banner" />
 </p>
 
-<table width="100%">
-<tr><th align="center" width="22%">Layer</th><th align="center" width="78%">How I Work</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="180">Layer</th><th align="center" width="700">How I Work</th></tr>
 <tr><td><b>Discover</b></td><td>Clarify the problem, users, constraints, risks, and success criteria</td></tr>
 <tr><td><b>Design</b></td><td>Model the system, data flow, user flow, and deployment surface</td></tr>
 <tr><td><b>Build</b></td><td>Implement with clean boundaries, pragmatic abstractions, and testable logic</td></tr>
@@ -106,8 +106,8 @@
 <tr><td><b>Ship</b></td><td>Deliver docs, deployment readiness, and iteration paths</td></tr>
 </table>
 
-<table width="100%">
-<tr><th align="center" width="28%">Engineering Principle</th><th align="center" width="72%">Practical Meaning</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="230">Engineering Principle</th><th align="center" width="650">Practical Meaning</th></tr>
 <tr><td><b>Product-first</b></td><td>Code exists to solve a real problem</td></tr>
 <tr><td><b>Architecture-aware</b></td><td>Systems should scale without becoming fragile</td></tr>
 <tr><td><b>Security-aware</b></td><td>Sensitive flows deserve careful defaults</td></tr>
@@ -125,8 +125,8 @@
 
 ### 🎯 Software Engineer | Full Stack Developer | Data Scientist
 
-<table width="100%">
-<tr><th align="center" width="26%">Domain</th><th align="center" width="39%">Focus</th><th align="center" width="35%">Output</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="240">Domain</th><th align="center" width="340">Focus</th><th align="center" width="300">Output</th></tr>
 <tr><td><b>💻 Full-Stack Engineering</b></td><td>Frontend • Backend • APIs • Databases</td><td>Complete product workflows</td></tr>
 <tr><td><b>🤖 AI/ML Engineering</b></td><td>LLMs • RAG • Agents • Analytics • ML pipelines</td><td>Intelligent automation and data products</td></tr>
 <tr><td><b>🏗️ System Architecture</b></td><td>Microservices • Events • Real-time • Cloud</td><td>Scalable, production-ready systems</td></tr>
@@ -135,8 +135,8 @@
 
 ### 💎 Core Competencies Matrix
 
-<table width="100%">
-<tr><th align="center" width="22%">📂 Category</th><th align="center" width="64%">🎯 Core Skills</th><th align="center" width="14%">Depth</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="210">📂 Category</th><th align="center" width="560">🎯 Core Skills</th><th align="center" width="110">Depth</th></tr>
 <tr><td><b>🏗️ Architecture</b></td><td>Microservices • Distributed Systems • Event-Driven • CQRS • Real-time</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
 <tr><td><b>⚛️ Frontend</b></td><td>React • Next.js • TypeScript • Tailwind CSS • D3.js • Web3 • Performance</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
 <tr><td><b>🔧 Backend</b></td><td>Node.js • Python • Go • FastAPI • GraphQL • REST • tRPC • WebSockets</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
@@ -147,8 +147,8 @@
 
 ### 🧠 Intelligence Stack
 
-<table width="100%">
-<tr><th align="center" width="28%">AI Layer</th><th align="center" width="72%">Capabilities</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="240">AI Layer</th><th align="center" width="640">Capabilities</th></tr>
 <tr><td><b>LLM Apps</b></td><td>Chat, copilots, assistants, structured outputs, tool calling</td></tr>
 <tr><td><b>Agentic Workflows</b></td><td>Multi-step automation, retrieval, planning, task orchestration</td></tr>
 <tr><td><b>RAG Systems</b></td><td>Embeddings, vector search, reranking, knowledge-grounded answers</td></tr>
@@ -164,8 +164,8 @@
   <img width="100%" src="./assets/section-build-lanes.svg" alt="Build Lanes banner" />
 </p>
 
-<table width="100%">
-<tr><th align="center" width="22%">Lane</th><th align="center" width="43%">What I Build</th><th align="center" width="35%">Typical Stack</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="220">Lane</th><th align="center" width="380">What I Build</th><th align="center" width="280">Typical Stack</th></tr>
 <tr><td><b>SaaS Platforms</b></td><td>Dashboards, auth, billing-ready flows, admin systems</td><td>Next.js • Node.js • PostgreSQL • Redis</td></tr>
 <tr><td><b>AI Products</b></td><td>Agents, RAG apps, LLM pipelines, automation tools</td><td>Python • OpenAI/Claude/Gemini • Vector DB</td></tr>
 <tr><td><b>Real-time Systems</b></td><td>Live dashboards, sockets, event streams, notifications</td><td>WebSockets • Kafka • Redis • Node.js</td></tr>
@@ -270,12 +270,12 @@
 
 ### 🌐 Web3 • Robotics • XR • Creative Engineering
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<th align="center">Web3</th>
-<th align="center">Robotics / IoT</th>
-<th align="center">Graphics / XR</th>
-<th align="center">Creative</th>
+<th align="center" width="220">Web3</th>
+<th align="center" width="220">Robotics / IoT</th>
+<th align="center" width="220">Graphics / XR</th>
+<th align="center" width="220">Creative</th>
 </tr>
 <tr>
 <td align="center"><img src="https://skillicons.dev/icons?i=solidity" alt="Web3 icons" /></td>
@@ -328,8 +328,8 @@
   <img width="100%" src="./assets/section-system-design-playbook.svg" alt="System Design Playbook banner" />
 </p>
 
-<table width="100%">
-<tr><th align="center" width="25%">Design Area</th><th align="center" width="75%">Preferred Direction</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="240">Design Area</th><th align="center" width="640">Preferred Direction</th></tr>
 <tr><td><b>API Design</b></td><td>Clear contracts, typed payloads, versioning when needed</td></tr>
 <tr><td><b>Data Modeling</b></td><td>Start simple, index intentionally, design for query patterns</td></tr>
 <tr><td><b>Reliability</b></td><td>Idempotent jobs, retries, timeouts, observability hooks</td></tr>
@@ -351,8 +351,8 @@ Idea → Requirements → Architecture → Prototype → Production Build
      → Testing → Hardening → Documentation → Launch → Iteration
 ```
 
-<table width="100%">
-<tr><th align="center" width="25%">Phase</th><th align="center" width="75%">Output</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="240">Phase</th><th align="center" width="640">Output</th></tr>
 <tr><td><b>Discovery</b></td><td>Feature map, risk map, user flows</td></tr>
 <tr><td><b>Implementation</b></td><td>Clean code, reusable modules, API boundaries</td></tr>
 <tr><td><b>Verification</b></td><td>Tests, manual QA notes, edge-case checks</td></tr>
@@ -372,8 +372,8 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Interview-Platform&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Interview-Platform repository card" />
 </p>
 
-<table width="100%">
-<tr><th align="center" width="32%">Project Quality Signal</th><th align="center" width="68%">Meaning</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="300">Project Quality Signal</th><th align="center" width="580">Meaning</th></tr>
 <tr><td><b>✅ Production-quality code</b></td><td>Designed to survive real usage</td></tr>
 <tr><td><b>🔒 Security practices</b></td><td>Auth, validation, privacy, and safe defaults</td></tr>
 <tr><td><b>📈 Scalable architecture</b></td><td>Clear boundaries and growth paths</td></tr>
@@ -437,9 +437,9 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://img.shields.io/badge/24%2F7_Available-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="24/7 Available" />
 </p>
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🌍_Global_HQ-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Global HQ" />
   <br><br>
   <b>🌍 Global HQ</b>
@@ -450,7 +450,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <br><br>
   <sub>International clients and global services</sub>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇹🇷_Turkey-EC4899?style=for-the-badge&labelColor=0D1117" alt="Turkey" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/tr.png" alt="Turkey flag" />
@@ -462,7 +462,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <br><br>
   <sub>Turkish and EU services</sub>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇧🇩_Bangladesh-10B981?style=for-the-badge&labelColor=0D1117" alt="Bangladesh" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/bd.png" alt="Bangladesh flag" />
@@ -476,7 +476,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </td>
 </tr>
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇸🇦_Saudi_Arabia-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Saudi Arabia" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia flag" />
@@ -488,7 +488,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <br><br>
   <sub>Middle East operations</sub>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇬🇧_United_Kingdom-EF4444?style=for-the-badge&labelColor=0D1117" alt="United Kingdom" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/gb.png" alt="United Kingdom flag" />
@@ -500,7 +500,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <br><br>
   <sub>UK-based services and support</sub>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇮🇷_Iran-22C55E?style=for-the-badge&labelColor=0D1117" alt="Iran" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/ir.png" alt="Iran flag" />
@@ -514,7 +514,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </td>
 </tr>
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇺🇸_USA-2563EB?style=for-the-badge&labelColor=0D1117" alt="USA" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/us.png" alt="USA flag" />
@@ -526,7 +526,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <br><br>
   <sub>USA-based services and support</sub>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇨🇦_Canada-DC2626?style=for-the-badge&labelColor=0D1117" alt="Canada" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/ca.png" alt="Canada flag" />
@@ -538,7 +538,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <br><br>
   <sub>Canada-based services and support</sub>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🇩🇪_Germany-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Germany" />
   <br><br>
   <img width="24" src="https://flagcdn.com/w40/de.png" alt="Germany flag" />
@@ -573,23 +573,23 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ### 💼 Communication Channels
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/📧_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" />
   <br><br>
   <b>General inquiries and contracts</b>
   <br><br>
   <a href="mailto:Support@moparapairayat.com">Send Email</a>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/🌐_Portfolio-3B82F6?style=for-the-badge&labelColor=0D1117" alt="Portfolio" />
   <br><br>
   <b>View full work and services</b>
   <br><br>
   <a href="https://moparapairayat.com">Visit Site</a>
 </td>
-<td width="33%" align="center" valign="top">
+<td width="285" align="center" valign="top">
   <img src="https://img.shields.io/badge/💻_GitHub-38BDF8?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="GitHub" />
   <br><br>
   <b>Projects and open source</b>
@@ -601,14 +601,14 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ### 💌 Business Email Contacts
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="440" align="center" valign="top">
   <img src="https://img.shields.io/badge/General_Contracts-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="General Contracts" />
   <br><br>
   <a href="mailto:Moparapairayat@gmail.com"><b>📧 Moparapairayat@gmail.com</b></a>
 </td>
-<td width="50%" align="center" valign="top">
+<td width="440" align="center" valign="top">
   <img src="https://img.shields.io/badge/Bangladesh_Inquiries-10B981?style=for-the-badge&labelColor=0D1117" alt="Bangladesh Inquiries" />
   <br><br>
   <a href="mailto:Moparapairayatbd@gmail.com"><b>📧 Moparapairayatbd@gmail.com</b></a>
@@ -623,7 +623,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://img.shields.io/badge/Fast_Contact_Lanes-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Fast Contact Lanes" />
 </p>
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
 <td colspan="4" align="center" valign="top">
   <b>Direct Lines by Workstream</b>
@@ -632,10 +632,10 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </td>
 </tr>
 <tr>
-<th align="center">Lane</th>
-<th align="center">Number</th>
-<th align="center">Best For</th>
-<th align="center">Action</th>
+<th align="center" width="230">Lane</th>
+<th align="center" width="190">Number</th>
+<th align="center" width="290">Best For</th>
+<th align="center" width="170">Action</th>
 </tr>
 <tr>
 <td align="center" valign="middle">
@@ -713,29 +713,29 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ### ✨ Let's Collaborate!
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<td align="center" valign="top">
+<td width="176" align="center" valign="top">
   <b>💡 Project Ideas</b>
   <br>
   <sub>Product concepts</sub>
 </td>
-<td align="center" valign="top">
+<td width="176" align="center" valign="top">
   <b>🏢 Enterprise Needs</b>
   <br>
   <sub>Large-scale systems</sub>
 </td>
-<td align="center" valign="top">
+<td width="176" align="center" valign="top">
   <b>🚀 Startup Challenges</b>
   <br>
   <sub>Fast MVP execution</sub>
 </td>
-<td align="center" valign="top">
+<td width="176" align="center" valign="top">
   <b>📚 Learning</b>
   <br>
   <sub>Mentorship and growth</sub>
 </td>
-<td align="center" valign="top">
+<td width="176" align="center" valign="top">
   <b>🤝 Partnership</b>
   <br>
   <sub>Long-term collaboration</sub>
@@ -761,7 +761,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   If my work has been helpful to you, consider supporting my projects and future development.
 </p>
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
 <td colspan="3" align="center" valign="top">
   <b>Support Channels</b>
@@ -770,9 +770,9 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </td>
 </tr>
 <tr>
-<th align="center">Channel</th>
-<th align="center">Purpose</th>
-<th align="center">Status / Action</th>
+<th align="center" width="300">Channel</th>
+<th align="center" width="300">Purpose</th>
+<th align="center" width="280">Status / Action</th>
 </tr>
 <tr>
 <td align="center" valign="middle">
@@ -817,24 +817,24 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <b>Your support helps me:</b>
 </p>
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<td align="center" valign="top">
+<td width="220" align="center" valign="top">
   <img src="https://img.shields.io/badge/✨_Open_Source-38BDF8?style=flat-square&labelColor=0D1117" alt="Open Source" />
   <br><br>
   <b>Continue building open-source projects</b>
 </td>
-<td align="center" valign="top">
+<td width="220" align="center" valign="top">
   <img src="https://img.shields.io/badge/🚀_Better_Tools-7C3AED?style=flat-square&labelColor=0D1117" alt="Better Tools" />
   <br><br>
   <b>Create better tools and solutions</b>
 </td>
-<td align="center" valign="top">
+<td width="220" align="center" valign="top">
   <img src="https://img.shields.io/badge/📚_Knowledge-10B981?style=flat-square&labelColor=0D1117" alt="Knowledge" />
   <br><br>
   <b>Share knowledge through tutorials</b>
 </td>
-<td align="center" valign="top">
+<td width="220" align="center" valign="top">
   <img src="https://img.shields.io/badge/🌍_Global_Impact-F59E0B?style=flat-square&labelColor=0D1117" alt="Global Impact" />
   <br><br>
   <b>Make positive global impact</b>
@@ -870,8 +870,8 @@ EXCELLENCE    → Never settle for less
   <img width="100%" src="./assets/section-quick-stats.svg" alt="Quick Stats banner" />
 </p>
 
-<table width="100%">
-<tr><th align="center" width="50%">Metric</th><th align="center" width="50%">Count</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="440">Metric</th><th align="center" width="440">Count</th></tr>
 <tr><td><b>💻 Projects</b></td><td align="center"><b>50+</b></td></tr>
 <tr><td><b>⭐ GitHub Stars</b></td><td align="center"><b>500+</b></td></tr>
 <tr><td><b>🤝 Collaborations</b></td><td align="center"><b>30+</b></td></tr>
@@ -887,8 +887,8 @@ EXCELLENCE    → Never settle for less
   <img width="100%" src="./assets/section-ready-collaborate.svg" alt="Ready to Collaborate banner" />
 </p>
 
-<table width="100%">
-<tr><th align="center" width="25%">Level</th><th align="center" width="45%">Perfect For</th><th align="center" width="30%">Get Started</th></tr>
+<table align="center" width="100%">
+<tr><th align="center" width="220">Level</th><th align="center" width="420">Perfect For</th><th align="center" width="240">Get Started</th></tr>
 <tr><td><b>🎓 Entry</b></td><td>Learning and growth</td><td align="center"><a href="mailto:Support@moparapairayat.com">Email</a></td></tr>
 <tr><td><b>💼 Professional</b></td><td>Business needs</td><td align="center"><a href="https://github.com/Moparapairayat">GitHub</a></td></tr>
 <tr><td><b>🚀 Enterprise</b></td><td>Large-scale projects</td><td align="center"><a href="https://moparapairayat.com">Portfolio</a></td></tr>
