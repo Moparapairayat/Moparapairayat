@@ -12,6 +12,20 @@
       <stop offset="0.48" stop-color="#7c3aed"/>
       <stop offset="1" stop-color="#f97316"/>
     </linearGradient>
+    <linearGradient id="edgeAnimated" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#7c3aed;#f97316;#10b981;#38bdf8" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.34" stop-color="#7c3aed">
+        <animate attributeName="stop-color" values="#7c3aed;#f97316;#10b981;#38bdf8;#7c3aed" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.68" stop-color="#10b981">
+        <animate attributeName="stop-color" values="#10b981;#38bdf8;#7c3aed;#f97316;#10b981" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#f97316">
+        <animate attributeName="stop-color" values="#f97316;#10b981;#38bdf8;#7c3aed;#f97316" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
     <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#10b981"/>
       <stop offset="1" stop-color="#38bdf8"/>
@@ -38,7 +52,10 @@
 
   <rect width="1400" height="320" rx="30" fill="url(#bg)"/>
   <rect width="1400" height="320" rx="30" fill="url(#grid)" opacity="0.5"/>
-  <rect x="2" y="2" width="1396" height="316" rx="30" fill="none" stroke="url(#edge)" stroke-width="3" opacity="0.8"/>
+  <rect x="2" y="2" width="1396" height="316" rx="30" fill="none" stroke="url(#edge)" stroke-width="3" opacity="0.7"/>
+  <rect x="5" y="5" width="1390" height="310" rx="28" fill="none" stroke="url(#edgeAnimated)" stroke-width="3.5" stroke-dasharray="420 120" stroke-linecap="round" opacity="0.95">
+    <animate attributeName="stroke-dashoffset" values="0;-1080" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
   <circle cx="118" cy="88" r="138" fill="url(#blueGlow)"/>
   <circle cx="1260" cy="236" r="160" fill="url(#violetGlow)"/>
@@ -63,7 +80,10 @@
 
   <g transform="translate(176 54)">
     <rect x="0" y="0" width="1048" height="212" rx="28" fill="#020617" opacity="0.9" stroke="url(#edge)" stroke-width="2"/>
-    <rect x="30" y="30" width="988" height="7" rx="3.5" fill="url(#edge)" opacity="0.95"/>
+    <rect x="2" y="2" width="1044" height="208" rx="26" fill="none" stroke="url(#edgeAnimated)" stroke-width="2.5" stroke-dasharray="260 86" stroke-linecap="round" opacity="0.95">
+      <animate attributeName="stroke-dashoffset" values="0;780" dur="6.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="30" width="988" height="7" rx="3.5" fill="url(#edgeAnimated)" opacity="0.95"/>
     <text x="524" y="98" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="56" font-weight="900" fill="#f8fafc">Mopara Pair Ayat</text>
     <text x="524" y="139" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#93c5fd">Full-Stack Systems • AI/ML Engineering • Cloud-Native Architecture</text>
     <text x="524" y="171" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#cbd5e1">Building scalable systems, AI-powered products, and production-grade digital platforms</text>
