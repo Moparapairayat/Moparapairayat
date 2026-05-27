@@ -1,22 +1,27 @@
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0f172a,35:0ea5e9,70:7c3aed,100:f97316&text=Mopara%20Pair%20Ayat&fontAlign=50&fontAlignY=38&desc=Full-Stack%20Systems%20%E2%80%A2%20AI%2FML%20Engineering%20%E2%80%A2%20Cloud-Native%20Architecture&descAlign=50&descAlignY=60&fontColor=ffffff&animation=fadeIn&section=header" alt="Mopara Pair Ayat profile header" />
+  <img width="100%" src="./assets/profile-hero-nextzen.svg" alt="Mopara Pair Ayat profile hero" />
 </p>
 
-<h1 align="center">Mopara Pair Ayat</h1>
-
-<h2 align="center">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h2>
-
-<p align="center">
+<table width="100%">
+<tr>
+<td align="center" valign="middle">
+  <img src="https://img.shields.io/badge/Peace_Protocol-Online-10B981?style=for-the-badge&labelColor=0D1117" alt="Peace Protocol Online" />
+  <br><br>
+  <h2>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h2>
   <b>Assalamu'alaikum warahmatullahi wabarakatuh</b>
   <br>
   <i>May the peace, mercy, and blessings of Allah be with you.</i>
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <img width="100%" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=24&pause=1400&color=38BDF8&center=true&vCenter=true&width=1100&lines=Crafting+Digital+Excellence+with+Innovation;Building+Scalable+Systems+and+Real-time+Architectures;AI-Powered+Products,+Agents,+and+ML+Pipelines;Secure,+Reliable,+Production-Grade+Engineering;From+Concept+to+Scale+-+End-to-End+Execution" alt="Typing animation" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=24&pause=1400&color=38BDF8&center=true&vCenter=true&width=1100&lines=Crafting+Digital+Excellence+with+Innovation;Building+Scalable+Systems+and+Real-time+Architectures;AI-Powered+Products,+Agents,+and+ML+Pipelines;Secure,+Reliable,+Production-Grade+Engineering;From+Concept+to+Scale+-+End-to-End+Execution" alt="Typing animation" />
-</p>
-
-<p align="center">
+  <img src="https://img.shields.io/badge/Command_Links-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Command Links" />
+  <br>
   <a href="mailto:moparapairayat@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" /></a>
   <a href="https://github.com/Moparapairayat"><img src="https://img.shields.io/badge/GitHub-38BDF8?style=for-the-badge&logo=github&logoColor=0D1117&labelColor=0D1117" alt="GitHub" /></a>
   <a href="https://moparapairayat.com"><img src="https://img.shields.io/badge/Portfolio-FF6B35?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0D1117" alt="Portfolio" /></a>
@@ -24,18 +29,24 @@
 </p>
 
 <p align="center">
-  <a href="#mission-control"><img src="https://img.shields.io/badge/Mission_Control-0F172A?style=flat-square&color=0ea5e9" alt="Mission Control" /></a>
-  <a href="#professional-expertise"><img src="https://img.shields.io/badge/Expertise-0F172A?style=flat-square&color=7c3aed" alt="Expertise" /></a>
-  <a href="#next-zen-technology-universe"><img src="https://img.shields.io/badge/Tech_Universe-0F172A?style=flat-square&color=10b981" alt="Tech Universe" /></a>
-  <a href="#project-launchpad"><img src="https://img.shields.io/badge/Projects-0F172A?style=flat-square&color=f97316" alt="Projects" /></a>
-  <a href="#contact--connect"><img src="https://img.shields.io/badge/Contact-0F172A?style=flat-square&color=ef4444" alt="Contact" /></a>
+  <a href="#mission-control"><img src="https://img.shields.io/badge/Mission_Control-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Mission Control" /></a>
+  <a href="#professional-expertise"><img src="https://img.shields.io/badge/Expertise-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Expertise" /></a>
+  <a href="#next-zen-technology-universe"><img src="https://img.shields.io/badge/Tech_Universe-10B981?style=for-the-badge&labelColor=0D1117" alt="Tech Universe" /></a>
+  <a href="#project-launchpad"><img src="https://img.shields.io/badge/Projects-F97316?style=for-the-badge&labelColor=0D1117" alt="Projects" /></a>
+  <a href="#contact--connect"><img src="https://img.shields.io/badge/Contact-EF4444?style=for-the-badge&labelColor=0D1117" alt="Contact" /></a>
 </p>
 
-<p align="center">
+<table width="100%">
+<tr>
+<td align="center" valign="middle">
+  <img src="https://img.shields.io/badge/Identity-Full--Stack_Developer_%E2%80%A2_AI%2FML_Engineer_%E2%80%A2_Systems_Thinker-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Full-Stack Developer, AI/ML Engineer, Systems Thinker" />
+  <br><br>
   <b>Full-Stack Developer • AI/ML Engineer • Systems Thinker</b>
   <br>
   Building useful, scalable, secure digital products from concept to production.
-</p>
+</td>
+</tr>
+</table>
 
 ---
 
