@@ -161,7 +161,7 @@
 <a id="next-zen-technology-universe"></a>
 
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=105&color=0:0D1117,35:38BDF8,70:6366F1,100:EC4899&text=Next--Zen%20Technology%20Universe&fontAlign=50&fontAlignY=38&fontSize=34&fontColor=FFFFFF&desc=Core%20Engineering%20%E2%80%A2%20AI%20%E2%80%A2%20Cloud%20%E2%80%A2%20Data%20%E2%80%A2%20Security%20%E2%80%A2%20Creative%20Systems&descAlign=50&descAlignY=72&descSize=15" alt="Next-Zen Technology Universe banner" />
+  <img width="100%" src="./assets/section-next-zen-tech-universe.svg" alt="Next-Zen Technology Universe banner" />
 </p>
 
 ### ⚡ Core Engineering
