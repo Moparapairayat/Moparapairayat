@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="250" viewBox="0 0 1400 250" role="img" aria-labelledby="title desc">
+  <title id="title">Operating System</title>
+  <desc id="desc">Discovery • Design • Build • Harden • Ship</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.52" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14B8A6" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#14B8A6"/>
+      <stop offset="0.52" stop-color="#22C55E"/>
+      <stop offset="0.82" stop-color="#84CC16"/>
+      <stop offset="1" stop-color="#84CC16" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#14B8A6" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#22C55E" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#334155" stroke-width="1" opacity="0.24"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="250" rx="24" fill="url(#bg)"/>
+  <rect width="1400" height="250" rx="24" fill="url(#grid)" opacity="0.65"/>
+  <rect x="3" y="3" width="1394" height="244" rx="22" fill="none" stroke="url(#beam)" stroke-width="2" opacity="0.9"/>
+  <circle cx="170" cy="64" r="150" fill="url(#glowA)"/>
+  <circle cx="1215" cy="190" r="155" fill="url(#glowB)"/>
+
+  <polygon points="88,60 362,24 628,48 340,86" fill="#14B8A6" opacity="0.08"/>
+  <polygon points="805,28 1320,72 1182,105 696,64" fill="#22C55E" opacity="0.10"/>
+  <polygon points="118,198 540,156 912,180 500,226" fill="#84CC16" opacity="0.08"/>
+
+  <g filter="url(#softGlow)">
+    <rect x="190" y="61" width="1020" height="5" rx="2.5" fill="url(#beam)"/>
+    <rect x="240" y="188" width="920" height="3" rx="1.5" fill="url(#beam)" opacity="0.78"/>
+    <path d="M96 145 C244 68 412 152 558 92 S838 62 1000 140 S1218 172 1310 96" fill="none" stroke="#14B8A6" stroke-width="2" opacity="0.55"/>
+    <path d="M122 96 C282 142 432 72 604 112 S862 190 1030 92 S1235 64 1320 134" fill="none" stroke="#22C55E" stroke-width="2" opacity="0.48"/>
+    <path d="M100 202 C285 166 468 210 650 174 S948 194 1295 206" fill="none" stroke="#84CC16" stroke-width="2" opacity="0.45"/>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="700" y="113" font-size="42" font-weight="900" fill="#F8FAFC">Operating System</text>
+    <text x="700" y="152" font-size="17" font-weight="700" fill="#CBD5E1">Discovery • Design • Build • Harden • Ship</text>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" font-weight="800">
+    <rect x="95" y="36" width="145" height="28" rx="14" fill="#020617" stroke="#14B8A6"/>
+    <text x="167" y="54" text-anchor="middle" fill="#14B8A6">DISCOVERY</text>
+    <rect x="628" y="200" width="144" height="28" rx="14" fill="#020617" stroke="#22C55E"/>
+    <text x="700" y="218" text-anchor="middle" fill="#22C55E">HARDENING</text>
+    <rect x="1160" y="36" width="145" height="28" rx="14" fill="#020617" stroke="#84CC16"/>
+    <text x="1232" y="54" text-anchor="middle" fill="#84CC16">SHIP LOOP</text>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle cx="190" cy="145" r="5" fill="#14B8A6"/>
+    <circle cx="1210" cy="145" r="5" fill="#84CC16"/>
+    <circle cx="490" cy="66" r="4" fill="#22C55E"/>
+    <circle cx="920" cy="188" r="4" fill="#84CC16"/>
+  </g>
+</svg>
