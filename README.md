@@ -43,17 +43,33 @@
 
 ## 🛰️ Mission Control
 
-| Signal | Status |
-|--------|--------|
-| 🧭 Direction | Building useful, scalable, secure digital products |
-| 🧠 Core Identity | Full-Stack Developer • AI/ML Engineer • Systems Thinker |
-| ⚙️ Main Operating Mode | Product engineering from idea to production |
-| 🔭 Current Focus | AI agents, real-time systems, cloud-native platforms, automation |
+<table width="100%">
+<tr>
+<th align="center" width="28%">Signal</th>
+<th align="center" width="72%">Status</th>
+</tr>
+<tr>
+<td><b>🧭 Direction</b></td>
+<td>Building useful, scalable, secure digital products</td>
+</tr>
+<tr>
+<td><b>🧠 Core Identity</b></td>
+<td>Full-Stack Developer • AI/ML Engineer • Systems Thinker</td>
+</tr>
+<tr>
+<td><b>⚙️ Main Operating Mode</b></td>
+<td>Product engineering from idea to production</td>
+</tr>
+<tr>
+<td><b>🔭 Current Focus</b></td>
+<td>AI agents, real-time systems, cloud-native platforms, automation</td>
+</tr>
+</table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="45%" align="center" valign="top">
-  <img width="330" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Developer coding animation" />
+  <img width="100%" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Developer coding animation" />
   <br>
   <b>Software Engineer | Full-Stack | Data Science</b>
 </td>
@@ -61,7 +77,7 @@
 
 <h3>Command Metrics</h3>
 
-<table>
+<table width="100%">
 <tr><th>Metric</th><th>Count</th></tr>
 <tr><td>Production mindset</td><td><b>Always</b></td></tr>
 <tr><td>Projects</td><td><b>50+</b></td></tr>
