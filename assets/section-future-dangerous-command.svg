@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="250" viewBox="0 0 1400 250" role="img" aria-labelledby="title desc">
+  <title id="title">Future and Dangerous Command Center</title>
+  <desc id="desc">AI agents, production systems, security, performance, cloud-native architecture, and next-generation engineering skills.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.45" stop-color="#10102A"/>
+      <stop offset="1" stop-color="#071B16"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#38BDF8"/>
+      <stop offset="0.48" stop-color="#A855F7"/>
+      <stop offset="0.74" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#334155" stroke-width="1" opacity="0.24"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="250" rx="24" fill="url(#bg)"/>
+  <rect width="1400" height="250" rx="24" fill="url(#grid)" opacity="0.65"/>
+  <rect x="3" y="3" width="1394" height="244" rx="22" fill="none" stroke="url(#beam)" stroke-width="2" opacity="0.95"/>
+  <circle cx="142" cy="72" r="145" fill="url(#glowA)"/>
+  <circle cx="1234" cy="182" r="165" fill="url(#glowB)"/>
+
+  <polygon points="80,62 354,26 630,48 338,90" fill="#38BDF8" opacity="0.08"/>
+  <polygon points="796,26 1320,72 1182,108 694,64" fill="#A855F7" opacity="0.11"/>
+  <polygon points="116,202 536,156 916,180 498,226" fill="#10B981" opacity="0.08"/>
+
+  <g filter="url(#softGlow)">
+    <rect x="170" y="59" width="1060" height="5" rx="2.5" fill="url(#beam)"/>
+    <rect x="238" y="190" width="924" height="3" rx="1.5" fill="url(#beam)" opacity="0.8"/>
+    <path d="M92 142 C244 64 410 154 558 92 S840 62 1000 140 S1218 172 1310 96" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.55"/>
+    <path d="M126 96 C282 142 432 72 604 112 S862 190 1030 92 S1236 64 1322 134" fill="none" stroke="#A855F7" stroke-width="2" opacity="0.5"/>
+    <path d="M100 204 C285 166 468 210 650 174 S948 194 1295 206" fill="none" stroke="#10B981" stroke-width="2" opacity="0.48"/>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="700" y="110" font-size="40" font-weight="900" fill="#F8FAFC">Future &amp; Dangerous Command</text>
+    <text x="700" y="150" font-size="17" font-weight="700" fill="#CBD5E1">AI Agents • System Design • Cloud Native • DevSecOps • Performance • LLMOps</text>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" font-weight="800">
+    <rect x="92" y="36" width="154" height="28" rx="14" fill="#020617" stroke="#38BDF8"/>
+    <text x="169" y="54" text-anchor="middle" fill="#38BDF8">FUTURE STACK</text>
+    <rect x="608" y="202" width="184" height="28" rx="14" fill="#020617" stroke="#F97316"/>
+    <text x="700" y="220" text-anchor="middle" fill="#F97316">DANGEROUS LEVEL</text>
+    <rect x="1154" y="36" width="154" height="28" rx="14" fill="#020617" stroke="#10B981"/>
+    <text x="1231" y="54" text-anchor="middle" fill="#10B981">SHIP READY</text>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle cx="190" cy="142" r="5" fill="#38BDF8"/>
+    <circle cx="1210" cy="142" r="5" fill="#10B981"/>
+    <circle cx="488" cy="64" r="4" fill="#A855F7"/>
+    <circle cx="918" cy="190" r="4" fill="#F97316"/>
+  </g>
+</svg>

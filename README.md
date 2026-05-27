@@ -35,6 +35,7 @@
   <a href="#mission-control"><img src="https://img.shields.io/badge/Mission_Control-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Mission Control" /></a>
   <a href="#professional-expertise"><img src="https://img.shields.io/badge/Expertise-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Expertise" /></a>
   <a href="#next-zen-technology-universe"><img src="https://img.shields.io/badge/Tech_Universe-10B981?style=for-the-badge&labelColor=0D1117" alt="Tech Universe" /></a>
+  <a href="#future--dangerous-command-center"><img src="https://img.shields.io/badge/Future_Skills-F97316?style=for-the-badge&labelColor=0D1117" alt="Future Skills" /></a>
   <a href="#project-launchpad"><img src="https://img.shields.io/badge/Projects-F97316?style=for-the-badge&labelColor=0D1117" alt="Projects" /></a>
   <a href="#contact--connect"><img src="https://img.shields.io/badge/Contact-EF4444?style=for-the-badge&labelColor=0D1117" alt="Contact" /></a>
 </p>
@@ -54,7 +55,7 @@
   <br>
   <img src="https://img.shields.io/badge/⚙️_Main_Operating_Mode-Product_engineering_from_idea_to_production-F97316?style=for-the-badge&labelColor=0D1117" alt="Main Operating Mode: Product engineering from idea to production" />
   <br>
-  <img src="https://img.shields.io/badge/🔭_Current_Focus-AI_agents_real--time_systems_cloud--native_platforms_automation-10B981?style=for-the-badge&labelColor=0D1117" alt="Current Focus: AI agents, real-time systems, cloud-native platforms, automation" />
+  <img src="https://img.shields.io/badge/🔭_Current_Focus-AI_agents_real--time_systems_LLMOps_DevSecOps_edge_systems_automation-10B981?style=for-the-badge&labelColor=0D1117" alt="Current Focus: AI agents, real-time systems, LLMOps, DevSecOps, edge systems, automation" />
 </p>
 
 <p align="center">
@@ -79,13 +80,13 @@
 <th align="center" width="220">✅ Production Excellence</th>
 <th align="center" width="220">⚡ Performance Focused</th>
 <th align="center" width="220">🔒 Security Minded</th>
-<th align="center" width="220">🤝 Collaborative</th>
+<th align="center" width="220">🤝 Future-ready Collaboration</th>
 </tr>
 <tr>
 <td align="center">Clean, maintainable, battle-tested code</td>
 <td align="center">Speed, scale, cost, and reliability</td>
 <td align="center">Secure-by-default thinking</td>
-<td align="center">Clear execution and communication</td>
+<td align="center">Clear communication with AI-native, cloud-native delivery</td>
 </tr>
 </table>
 
@@ -113,33 +114,37 @@
 
 <table align="center" width="100%">
 <tr><th align="center" width="240">Domain</th><th align="center" width="340">Focus</th><th align="center" width="300">Output</th></tr>
-<tr><td><b>💻 Full-Stack Engineering</b></td><td>Frontend • Backend • APIs • Databases</td><td>Complete product workflows</td></tr>
-<tr><td><b>🤖 AI/ML Engineering</b></td><td>LLMs • RAG • Agents • Analytics • ML pipelines</td><td>Intelligent automation and data products</td></tr>
-<tr><td><b>🏗️ System Architecture</b></td><td>Microservices • Events • Real-time • Cloud</td><td>Scalable, production-ready systems</td></tr>
-<tr><td><b>🔒 Security & Reliability</b></td><td>Auth • Monitoring • Validation • Hardening</td><td>Safer software with fewer surprises</td></tr>
+<tr><td><b>💻 Full-Stack Engineering</b></td><td>Frontend • Backend • APIs • Databases • SaaS</td><td>Complete product workflows</td></tr>
+<tr><td><b>🤖 AI/ML Engineering</b></td><td>LLMs • RAG • Agents • Multimodal AI • ML pipelines</td><td>Intelligent automation and data products</td></tr>
+<tr><td><b>🏗️ System Architecture</b></td><td>Microservices • Events • Real-time • Cloud • Edge</td><td>Scalable, production-ready systems</td></tr>
+<tr><td><b>🔒 Security & Reliability</b></td><td>Auth • DevSecOps • Observability • Validation • Hardening</td><td>Safer software with fewer surprises</td></tr>
+<tr><td><b>⚡ Future Systems</b></td><td>LLMOps • Edge AI • WASM • Service Mesh • Cost-aware scale</td><td>Future-ready engineering foundations</td></tr>
 </table>
 
 ### 💎 Core Competencies Matrix
 
 <table align="center" width="100%">
 <tr><th align="center" width="210">📂 Category</th><th align="center" width="560">🎯 Core Skills</th><th align="center" width="110">Depth</th></tr>
-<tr><td><b>🏗️ Architecture</b></td><td>Microservices • Distributed Systems • Event-Driven • CQRS • Real-time</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
-<tr><td><b>⚛️ Frontend</b></td><td>React • Next.js • TypeScript • Tailwind CSS • D3.js • Web3 • Performance</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
-<tr><td><b>🔧 Backend</b></td><td>Node.js • Python • Go • FastAPI • GraphQL • REST • tRPC • WebSockets</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
-<tr><td><b>🗄️ Data</b></td><td>PostgreSQL • MongoDB • Redis • Kafka • DynamoDB • Elasticsearch • Vector DB</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
-<tr><td><b>🤖 AI/ML</b></td><td>PyTorch • TensorFlow • LLMs • RAG Systems • Pandas • NumPy • scikit-learn</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
-<tr><td><b>☁️ Platform</b></td><td>Docker • Kubernetes • AWS • GCP • GitHub Actions • Prometheus • ELK Stack</td><td align="center">⭐⭐⭐⭐</td></tr>
+<tr><td><b>🏗️ Architecture</b></td><td>Microservices • Distributed Systems • Event-Driven • CQRS • Real-time • Multi-tenant SaaS • Edge</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>⚛️ Frontend</b></td><td>React • Next.js • TypeScript • Tailwind CSS • D3.js • Web3 • WebGPU • Streaming UI</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>🔧 Backend</b></td><td>Node.js • Python • Go • FastAPI • GraphQL • REST • tRPC • WebSockets • Queues</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>🗄️ Data</b></td><td>PostgreSQL • MongoDB • Redis • Kafka • DynamoDB • Elasticsearch • Vector DB • Spark</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>🤖 AI/ML</b></td><td>PyTorch • TensorFlow • LLMs • RAG • Agents • Multimodal AI • Evals • LLMOps</td><td align="center">⭐⭐⭐⭐⭐</td></tr>
+<tr><td><b>☁️ Platform</b></td><td>Docker • Kubernetes • Terraform • AWS • GCP • GitHub Actions • OpenTelemetry • Service Mesh</td><td align="center">⭐⭐⭐⭐</td></tr>
+<tr><td><b>🔐 Security</b></td><td>Zero Trust • OWASP • WAF • IAM • Supply-chain checks • Secrets hygiene • DevSecOps</td><td align="center">⭐⭐⭐⭐</td></tr>
 </table>
 
 ### 🧠 Intelligence Stack
 
 <table align="center" width="100%">
 <tr><th align="center" width="240">AI Layer</th><th align="center" width="640">Capabilities</th></tr>
-<tr><td><b>LLM Apps</b></td><td>Chat, copilots, assistants, structured outputs, tool calling</td></tr>
-<tr><td><b>Agentic Workflows</b></td><td>Multi-step automation, retrieval, planning, task orchestration</td></tr>
-<tr><td><b>RAG Systems</b></td><td>Embeddings, vector search, reranking, knowledge-grounded answers</td></tr>
+<tr><td><b>LLM Apps</b></td><td>Chat, copilots, assistants, structured outputs, tool calling, prompt systems</td></tr>
+<tr><td><b>Agentic Workflows</b></td><td>Multi-step automation, retrieval, planning, memory, handoffs, task orchestration</td></tr>
+<tr><td><b>RAG Systems</b></td><td>Embeddings, vector search, reranking, knowledge-grounded answers, citations, evals</td></tr>
+<tr><td><b>Multimodal AI</b></td><td>Text, image, audio, video, document understanding, workflow automation</td></tr>
+<tr><td><b>Edge AI</b></td><td>On-device inference, low-latency automation, lightweight model deployment</td></tr>
 <tr><td><b>Data Science</b></td><td>EDA, feature engineering, modeling, evaluation, reporting</td></tr>
-<tr><td><b>MLOps / LLMOps</b></td><td>Experiment tracking, deployment, monitoring, safety checks</td></tr>
+<tr><td><b>MLOps / LLMOps</b></td><td>Experiment tracking, deployment, monitoring, safety checks, feedback loops</td></tr>
 </table>
 
 ---
@@ -157,6 +162,9 @@
 <tr><td><b>Real-time Systems</b></td><td>Live dashboards, sockets, event streams, notifications</td><td>WebSockets • Kafka • Redis • Node.js</td></tr>
 <tr><td><b>Data Platforms</b></td><td>Analytics, ETL, reporting, ML experiments</td><td>Python • Pandas • Polars • PostgreSQL</td></tr>
 <tr><td><b>Cloud Infrastructure</b></td><td>Deployments, CI/CD, observability, containerization</td><td>Docker • Kubernetes • GitHub Actions • AWS/GCP</td></tr>
+<tr><td><b>Agent Platforms</b></td><td>Tool-calling agents, RAG engines, eval loops, workflow automation</td><td>Python • LLM APIs • Vector DB • Queues</td></tr>
+<tr><td><b>Security Platforms</b></td><td>Auth, policy, audit trails, WAF-aware flows, safe defaults</td><td>OAuth2 • JWT • OWASP • DevSecOps</td></tr>
+<tr><td><b>Edge Systems</b></td><td>Low-latency compute, serverless functions, WASM-ready surfaces</td><td>Cloudflare • Vercel • WASM • Edge Functions</td></tr>
 </table>
 
 ---
@@ -205,6 +213,10 @@
   <img src="https://img.shields.io/badge/Agentic_Workflows-0284C7?style=flat-square" alt="Agentic Workflows" />
   <img src="https://img.shields.io/badge/LLMOps-7C3AED?style=flat-square" alt="LLMOps" />
   <img src="https://img.shields.io/badge/Neural_Search-059669?style=flat-square" alt="Neural Search" />
+  <img src="https://img.shields.io/badge/Multimodal_AI-DC2626?style=flat-square" alt="Multimodal AI" />
+  <img src="https://img.shields.io/badge/Evals-10B981?style=flat-square" alt="Evals" />
+  <img src="https://img.shields.io/badge/Model_Monitoring-F97316?style=flat-square" alt="Model Monitoring" />
+  <img src="https://img.shields.io/badge/Edge_AI-0284C7?style=flat-square" alt="Edge AI" />
 </p>
 
 ### ☁️ Cloud Native • Platform Engineering
@@ -222,6 +234,9 @@
   <img src="https://img.shields.io/badge/OpenTelemetry-black?style=flat-square" alt="OpenTelemetry" />
   <img src="https://img.shields.io/badge/Edge_Computing-0EA5E9?style=flat-square" alt="Edge Computing" />
   <img src="https://img.shields.io/badge/Serverless-0F172A?style=flat-square" alt="Serverless" />
+  <img src="https://img.shields.io/badge/Cost_Optimization-65A30D?style=flat-square" alt="Cost Optimization" />
+  <img src="https://img.shields.io/badge/Incident_Response-EF4444?style=flat-square" alt="Incident Response" />
+  <img src="https://img.shields.io/badge/Release_Automation-38BDF8?style=flat-square" alt="Release Automation" />
 </p>
 
 ### 🗄️ Distributed Data Systems
@@ -235,6 +250,8 @@
   <img src="https://img.shields.io/badge/Qdrant-DC2626?style=flat-square" alt="Qdrant" />
   <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square" alt="Neo4j" />
   <img src="https://img.shields.io/badge/Kafka-black?style=flat-square" alt="Kafka" />
+  <img src="https://img.shields.io/badge/NATS-2563EB?style=flat-square" alt="NATS" />
+  <img src="https://img.shields.io/badge/RabbitMQ-F97316?style=flat-square" alt="RabbitMQ" />
   <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square" alt="Spark" />
   <img src="https://img.shields.io/badge/Data_Lake-0F172A?style=flat-square" alt="Data Lake" />
 </p>
@@ -252,6 +269,9 @@
   <img src="https://img.shields.io/badge/OAuth2-2563EB?style=flat-square" alt="OAuth2" />
   <img src="https://img.shields.io/badge/JWT-000000?style=flat-square" alt="JWT" />
   <img src="https://img.shields.io/badge/WAF-0284C7?style=flat-square" alt="WAF" />
+  <img src="https://img.shields.io/badge/Supply_Chain_Security-F97316?style=flat-square" alt="Supply Chain Security" />
+  <img src="https://img.shields.io/badge/Secrets_Hygiene-10B981?style=flat-square" alt="Secrets Hygiene" />
+  <img src="https://img.shields.io/badge/IAM_Boundaries-7C3AED?style=flat-square" alt="IAM Boundaries" />
 </p>
 
 ### 🌐 Web3 • Robotics • XR • Creative Engineering
@@ -308,6 +328,163 @@
 
 ---
 
+<a id="future--dangerous-command-center"></a>
+
+<p align="center">
+  <img width="100%" src="./assets/section-future-dangerous-command.svg" alt="Future and Dangerous Command Center banner" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Future_Engineering_Stack-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Future Engineering Stack" />
+  <img src="https://img.shields.io/badge/Dangerous_Level_Skills-0D1117?style=for-the-badge&labelColor=0D1117&color=F97316" alt="Dangerous Level Skills" />
+  <img src="https://img.shields.io/badge/Production_War_Room-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="Production War Room" />
+</p>
+
+### 🚀 Future Engineering Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI_Agents-111827?style=flat-square&labelColor=0D1117&color=38BDF8" alt="AI Agents" />
+  <img src="https://img.shields.io/badge/Agentic_Workflows-111827?style=flat-square&labelColor=0D1117&color=7C3AED" alt="Agentic Workflows" />
+  <img src="https://img.shields.io/badge/RAG_Systems-111827?style=flat-square&labelColor=0D1117&color=10B981" alt="RAG Systems" />
+  <img src="https://img.shields.io/badge/Vector_DB-111827?style=flat-square&labelColor=0D1117&color=0EA5E9" alt="Vector DB" />
+  <img src="https://img.shields.io/badge/Embeddings-111827?style=flat-square&labelColor=0D1117&color=F97316" alt="Embeddings" />
+  <img src="https://img.shields.io/badge/Reranking-111827?style=flat-square&labelColor=0D1117&color=EC4899" alt="Reranking" />
+  <img src="https://img.shields.io/badge/LLMOps-111827?style=flat-square&labelColor=0D1117&color=9333EA" alt="LLMOps" />
+  <img src="https://img.shields.io/badge/MLOps-111827?style=flat-square&labelColor=0D1117&color=2563EB" alt="MLOps" />
+  <img src="https://img.shields.io/badge/Model_Monitoring-111827?style=flat-square&labelColor=0D1117&color=059669" alt="Model Monitoring" />
+  <img src="https://img.shields.io/badge/Multi--Modal_AI-111827?style=flat-square&labelColor=0D1117&color=DC2626" alt="Multi-modal AI" />
+  <img src="https://img.shields.io/badge/Edge_AI-111827?style=flat-square&labelColor=0D1117&color=0284C7" alt="Edge AI" />
+  <img src="https://img.shields.io/badge/On--Device_Inference-111827?style=flat-square&labelColor=0D1117&color=65A30D" alt="On-device inference" />
+  <img src="https://img.shields.io/badge/Real--time_AI-111827?style=flat-square&labelColor=0D1117&color=F59E0B" alt="Real-time AI" />
+  <img src="https://img.shields.io/badge/Autonomous_Pipelines-111827?style=flat-square&labelColor=0D1117&color=14B8A6" alt="Autonomous pipelines" />
+  <img src="https://img.shields.io/badge/WebAssembly-111827?style=flat-square&labelColor=0D1117&color=654FF0" alt="WebAssembly" />
+  <img src="https://img.shields.io/badge/Serverless_Edge-111827?style=flat-square&labelColor=0D1117&color=0F766E" alt="Serverless and edge" />
+  <img src="https://img.shields.io/badge/Blockchain_Infrastructure-111827?style=flat-square&labelColor=0D1117&color=F97316" alt="Blockchain infrastructure" />
+</p>
+
+### ⚠️ Dangerous Skill Matrix
+
+```text
+SKILL AREA                  | WHAT I CAN BUILD / HANDLE                         | LEVEL
+System Design at Scale      | Distributed systems, real-time flows, growth paths | Dangerous
+Production Debugging        | Root cause analysis, hotfixes, rollout recovery    | Dangerous
+Performance Engineering     | Latency, throughput, cache, query, and cost tuning | Dangerous
+Security Hardening          | Auth, validation, secrets, Zero Trust defaults     | Advanced+
+API Architecture            | REST, GraphQL, tRPC, versioning, typed contracts   | Advanced+
+Database Optimization       | Indexing, query plans, schema, replication paths   | Advanced+
+Distributed Observability   | Logs, metrics, traces, alerts, incident context    | Advanced+
+Cloud Cost Optimization     | Resource sizing, caching, scaling, architecture    | Advanced+
+CI/CD Automation            | Test gates, releases, previews, rollback paths     | Advanced+
+Incident Response           | Triage, mitigation, postmortem, prevention loops   | Advanced+
+AI Product Engineering      | Agents, RAG, copilots, ML workflows, evaluations   | Dangerous
+Production Prompt Systems   | Tool calling, structured outputs, guardrails       | Advanced+
+Data Pipeline Design        | ETL, analytics, streaming, ML-ready data layers    | Advanced+
+Multi-tenant SaaS           | Tenant isolation, roles, billing-ready foundations | Advanced+
+```
+
+### 🤖 AI Agent Arsenal
+
+```text
+AGENT CORE       | Planning, memory, tool calling, structured outputs, task orchestration
+RAG ENGINE       | Embeddings, vector search, reranking, source-grounded responses
+MULTI-AGENT OPS  | Role-based agents, handoffs, workflows, review loops
+EVAL LAYER       | Test prompts, regression checks, hallucination checks, quality scoring
+AUTOMATION FLOW  | Browser/API/file/database actions connected into reliable pipelines
+```
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LangChain-black?style=flat-square" alt="LangChain" />
+  <img src="https://img.shields.io/badge/LlamaIndex-7C3AED?style=flat-square" alt="LlamaIndex" />
+  <img src="https://img.shields.io/badge/CrewAI-111827?style=flat-square" alt="CrewAI" />
+  <img src="https://img.shields.io/badge/AutoGen-2563EB?style=flat-square" alt="AutoGen" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Claude-D97706?style=flat-square" alt="Claude" />
+  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square" alt="Gemini" />
+</p>
+
+### 🛰️ Production War Room
+
+```text
+SIGNAL     -> logs, traces, metrics, errors, user impact
+TRIAGE     -> isolate blast radius, identify owner, reproduce issue
+MITIGATE   -> rollback, feature flag, patch, scale, queue drain
+RECOVER    -> verify, monitor, document, communicate
+HARDEN     -> tests, alerts, guardrails, runbooks, architecture fix
+```
+
+### 🧨 System Design Weapons
+
+```text
+API CONTRACTS      | Typed payloads, explicit errors, version-aware boundaries
+EVENT STREAMS      | Kafka, NATS, RabbitMQ, queues, retries, idempotent consumers
+DISTRIBUTED DATA   | Postgres, Redis, MongoDB, DynamoDB, search, vector databases
+REAL-TIME SYSTEMS  | WebSockets, pub/sub, live dashboards, notifications
+MULTI-TENANCY      | Tenant isolation, RBAC, audit trails, billing-ready structure
+WASM / EDGE        | Low-latency compute, edge functions, portable runtime surfaces
+```
+
+### ☁️ Cloud Native Command Center
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
+  <img src="https://img.shields.io/badge/GitOps-F97316?style=flat-square" alt="GitOps" />
+  <img src="https://img.shields.io/badge/Service_Mesh-9333EA?style=flat-square" alt="Service Mesh" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-black?style=flat-square" alt="OpenTelemetry" />
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" />
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
+  <img src="https://img.shields.io/badge/Serverless-111827?style=flat-square" alt="Serverless" />
+  <img src="https://img.shields.io/badge/Edge_Functions-0EA5E9?style=flat-square" alt="Edge Functions" />
+</p>
+
+### 🔐 Security & DevSecOps Layer
+
+```text
+ZERO TRUST          | least privilege, identity-first access, safe defaults
+APPSEC              | OWASP checks, validation, rate limits, secure sessions
+SUPPLY CHAIN        | dependency checks, CI gates, signed releases, secret hygiene
+CLOUD SECURITY      | IAM boundaries, WAF rules, audit logs, network controls
+DATA PROTECTION     | encryption, privacy-aware flows, secure storage, backups
+```
+
+### ⚡ Performance Engineering Lab
+
+```text
+FRONTEND SPEED      | bundle size, hydration, rendering, image strategy, caching
+BACKEND LATENCY     | profiling, async work, queueing, connection pooling
+DATABASE TUNING     | indexes, query plans, denormalization, read/write patterns
+REAL-TIME SCALE     | fanout control, backpressure, socket lifecycle, pub/sub design
+CLOUD COST          | right-sized infrastructure, cache strategy, usage-aware scaling
+```
+
+### 🧪 LLMOps / MLOps Pipeline
+
+```text
+DATA -> EMBEDDINGS -> RETRIEVAL -> RERANKING -> PROMPT -> TOOL CALLS
+     -> EVALUATION -> MONITORING -> FEEDBACK -> IMPROVEMENT -> RELEASE
+```
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Experiment_Tracking-7C3AED?style=flat-square" alt="Experiment Tracking" />
+  <img src="https://img.shields.io/badge/Model_Registry-2563EB?style=flat-square" alt="Model Registry" />
+  <img src="https://img.shields.io/badge/Evals-10B981?style=flat-square" alt="Evals" />
+  <img src="https://img.shields.io/badge/Safety_Checks-EF4444?style=flat-square" alt="Safety Checks" />
+  <img src="https://img.shields.io/badge/Monitoring-F97316?style=flat-square" alt="Monitoring" />
+  <img src="https://img.shields.io/badge/Feedback_Loops-38BDF8?style=flat-square" alt="Feedback Loops" />
+</p>
+
+### 🧭 Next-Zen Roadmap
+
+```text
+NOW       | AI agents, real-time systems, cloud-native platforms, automation
+NEXT      | multimodal products, edge AI, LLMOps, service mesh, stronger DevSecOps
+FUTURE    | autonomous systems, digital twins, WebAssembly edges, AGI-era workflows
+MISSION   | useful, scalable, secure products that survive real production pressure
+```
+
+---
+
 <a id="system-design-playbook"></a>
 
 <p align="center">
@@ -316,11 +493,13 @@
 
 <table align="center" width="100%">
 <tr><th align="center" width="240">Design Area</th><th align="center" width="640">Preferred Direction</th></tr>
-<tr><td><b>API Design</b></td><td>Clear contracts, typed payloads, versioning when needed</td></tr>
-<tr><td><b>Data Modeling</b></td><td>Start simple, index intentionally, design for query patterns</td></tr>
-<tr><td><b>Reliability</b></td><td>Idempotent jobs, retries, timeouts, observability hooks</td></tr>
+<tr><td><b>API Design</b></td><td>Clear contracts, typed payloads, explicit errors, versioning when needed</td></tr>
+<tr><td><b>Data Modeling</b></td><td>Start simple, index intentionally, design for query patterns and growth</td></tr>
+<tr><td><b>Event Systems</b></td><td>Queues, streams, retries, idempotency, backpressure, fanout control</td></tr>
+<tr><td><b>Reliability</b></td><td>Timeouts, retries, rollback paths, runbooks, observability hooks</td></tr>
 <tr><td><b>Security</b></td><td>Least privilege, validation, secret isolation, audit-friendly flows</td></tr>
-<tr><td><b>Performance</b></td><td>Cache only where it helps, measure before over-optimizing</td></tr>
+<tr><td><b>Performance</b></td><td>Cache only where it helps, profile first, optimize for latency and cost</td></tr>
+<tr><td><b>Edge / WASM</b></td><td>Low-latency compute, portable runtime surfaces, serverless boundaries</td></tr>
 <tr><td><b>DX</b></td><td>Scripts, documentation, local setup, and maintainable conventions</td></tr>
 </table>
 
@@ -334,15 +513,16 @@
 
 ```text
 Idea → Requirements → Architecture → Prototype → Production Build
-     → Testing → Hardening → Documentation → Launch → Iteration
+     → Testing → Observability → Hardening → Launch → Feedback → Iteration
 ```
 
 <table align="center" width="100%">
 <tr><th align="center" width="240">Phase</th><th align="center" width="640">Output</th></tr>
-<tr><td><b>Discovery</b></td><td>Feature map, risk map, user flows</td></tr>
-<tr><td><b>Implementation</b></td><td>Clean code, reusable modules, API boundaries</td></tr>
-<tr><td><b>Verification</b></td><td>Tests, manual QA notes, edge-case checks</td></tr>
-<tr><td><b>Release</b></td><td>Deployment readiness, rollback thinking, docs</td></tr>
+<tr><td><b>Discovery</b></td><td>Feature map, risk map, user flows, success metrics</td></tr>
+<tr><td><b>Implementation</b></td><td>Clean code, reusable modules, API boundaries, security defaults</td></tr>
+<tr><td><b>Verification</b></td><td>Tests, evals, manual QA notes, edge-case checks</td></tr>
+<tr><td><b>Observability</b></td><td>Logs, metrics, traces, alerts, debugging context</td></tr>
+<tr><td><b>Release</b></td><td>Deployment readiness, rollback thinking, docs, feedback loops</td></tr>
 </table>
 
 ---
@@ -365,6 +545,8 @@ Idea → Requirements → Architecture → Prototype → Production Build
 <tr><td><b>📈 Scalable architecture</b></td><td>Clear boundaries and growth paths</td></tr>
 <tr><td><b>📚 Documentation</b></td><td>Systems that can be understood and improved</td></tr>
 <tr><td><b>🚀 Performance optimization</b></td><td>Fast enough, measurable, and cost-aware</td></tr>
+<tr><td><b>🤖 AI readiness</b></td><td>Agent workflows, RAG grounding, evals, monitoring, feedback loops</td></tr>
+<tr><td><b>🛰️ Observability</b></td><td>Logs, metrics, traces, incidents, and production signals</td></tr>
 </table>
 
 ---
@@ -725,6 +907,33 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <b>🤝 Partnership</b>
   <br>
   <sub>Long-term collaboration</sub>
+</td>
+</tr>
+<tr>
+<td width="176" align="center" valign="top">
+  <b>🤖 AI Agents</b>
+  <br>
+  <sub>Automation systems</sub>
+</td>
+<td width="176" align="center" valign="top">
+  <b>🛡️ DevSecOps</b>
+  <br>
+  <sub>Secure platforms</sub>
+</td>
+<td width="176" align="center" valign="top">
+  <b>⚡ Scale Lab</b>
+  <br>
+  <sub>Performance work</sub>
+</td>
+<td width="176" align="center" valign="top">
+  <b>🧪 LLMOps</b>
+  <br>
+  <sub>Evaluation loops</sub>
+</td>
+<td width="176" align="center" valign="top">
+  <b>☁️ Cloud Native</b>
+  <br>
+  <sub>Platform systems</sub>
 </td>
 </tr>
 </table>
