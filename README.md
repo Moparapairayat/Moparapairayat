@@ -1067,11 +1067,11 @@ EXCELLENCE    → Never settle for less
 
 <table align="center" width="100%">
 <tr><th align="center" width="440">Metric</th><th align="center" width="440">Count</th></tr>
-<tr><td><b>💻 Projects</b></td><td align="center"><b>50+</b></td></tr>
-<tr><td><b>⭐ GitHub Stars</b></td><td align="center"><b>500+</b></td></tr>
-<tr><td><b>🤝 Collaborations</b></td><td align="center"><b>30+</b></td></tr>
-<tr><td><b>🏆 Achievements</b></td><td align="center"><b>20+</b></td></tr>
-<tr><td><b>📚 Contributions</b></td><td align="center"><b>2000+</b></td></tr>
+<tr><td><b>💻 Projects</b></td><td align="center"><b>2050+</b></td></tr>
+<tr><td><b>⭐ GitHub Stars</b></td><td align="center"><b>5000+</b></td></tr>
+<tr><td><b>🤝 Collaborations</b></td><td align="center"><b>300+</b></td></tr>
+<tr><td><b>🏆 Achievements</b></td><td align="center"><b>200+</b></td></tr>
+<tr><td><b>📚 Contributions</b></td><td align="center"><b>7000+</b></td></tr>
 </table>
 
 ---
