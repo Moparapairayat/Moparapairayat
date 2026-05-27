@@ -97,23 +97,25 @@
   <img width="100%" src="./assets/section-operating-system.svg" alt="Operating System banner" />
 </p>
 
-<table align="center" width="100%">
-<tr><th align="center" width="180">Layer</th><th align="center" width="700">How I Work</th></tr>
-<tr><td><b>Discover</b></td><td>Clarify the problem, users, constraints, risks, and success criteria</td></tr>
-<tr><td><b>Design</b></td><td>Model the system, data flow, user flow, and deployment surface</td></tr>
-<tr><td><b>Build</b></td><td>Implement with clean boundaries, pragmatic abstractions, and testable logic</td></tr>
-<tr><td><b>Harden</b></td><td>Improve reliability, security, observability, and performance</td></tr>
-<tr><td><b>Ship</b></td><td>Deliver docs, deployment readiness, and iteration paths</td></tr>
-</table>
+```text
+OPERATING LOOP
 
-<table align="center" width="100%">
-<tr><th align="center" width="230">Engineering Principle</th><th align="center" width="650">Practical Meaning</th></tr>
-<tr><td><b>Product-first</b></td><td>Code exists to solve a real problem</td></tr>
-<tr><td><b>Architecture-aware</b></td><td>Systems should scale without becoming fragile</td></tr>
-<tr><td><b>Security-aware</b></td><td>Sensitive flows deserve careful defaults</td></tr>
-<tr><td><b>Performance-aware</b></td><td>Speed, cost, and reliability are part of UX</td></tr>
-<tr><td><b>Documentation-aware</b></td><td>Good systems should be understandable later</td></tr>
-</table>
+DISCOVER  | Clarify the problem, users, constraints, risks, and success criteria
+DESIGN    | Model the system, data flow, user flow, and deployment surface
+BUILD     | Implement with clean boundaries, pragmatic abstractions, and testable logic
+HARDEN    | Improve reliability, security, observability, and performance
+SHIP      | Deliver docs, deployment readiness, and iteration paths
+```
+
+```text
+ENGINEERING PRINCIPLES
+
+PRODUCT-FIRST        | Code exists to solve a real problem
+ARCHITECTURE-AWARE   | Systems should scale without becoming fragile
+SECURITY-AWARE       | Sensitive flows deserve careful defaults
+PERFORMANCE-AWARE    | Speed, cost, and reliability are part of UX
+DOCUMENTATION-AWARE  | Good systems should be understandable later
+```
 
 ---
 
