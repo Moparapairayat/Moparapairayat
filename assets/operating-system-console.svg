@@ -1,0 +1,133 @@
+<svg width="1400" height="720" viewBox="0 0 1400 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Build behavior console</title>
+  <desc id="desc">Operating loop and engineering principles for building reliable software systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.42" stop-color="#080b18"/>
+      <stop offset="0.72" stop-color="#101233"/>
+      <stop offset="1" stop-color="#052817"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="44" y1="26" x2="1356" y2="694" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="0.34" stop-color="#7c3aed"/>
+      <stop offset="0.68" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#a3e635"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="84" y1="0" x2="646" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#38bdf8"/>
+      <stop offset="0.8" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="violetLine" x1="754" y1="0" x2="1316" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#a78bfa"/>
+      <stop offset="0.78" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.22 0 0 0 0 0.74 0 0 0 0 0.97 0 0 0 0.7 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#334155" stroke-opacity="0.22" stroke-width="1"/>
+    </pattern>
+    <style>
+      .kicker { font: 700 13px Inter, Segoe UI, Arial, sans-serif; fill: #93c5fd; letter-spacing: 4px; }
+      .label { font: 800 18px Inter, Segoe UI, Arial, sans-serif; fill: #f8fafc; letter-spacing: 0.8px; }
+      .num { font: 800 13px Inter, Segoe UI, Arial, sans-serif; fill: #67e8f9; letter-spacing: 1px; }
+      .body { font: 600 16px Inter, Segoe UI, Arial, sans-serif; fill: #dbeafe; }
+      .body2 { font: 600 15px Inter, Segoe UI, Arial, sans-serif; fill: #d1fae5; }
+      .chip { font: 800 12px Inter, Segoe UI, Arial, sans-serif; fill: #020617; letter-spacing: 1.2px; }
+      .chipLight { font: 800 12px Inter, Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 1.2px; }
+    </style>
+  </defs>
+
+  <rect x="20" y="16" width="1360" height="688" rx="32" fill="url(#bg)"/>
+  <rect x="20" y="16" width="1360" height="688" rx="32" fill="url(#grid)" opacity="0.42"/>
+  <rect x="23" y="19" width="1354" height="682" rx="30" stroke="url(#stroke)" stroke-width="3" opacity="0.95"/>
+  <circle cx="151" cy="119" r="116" fill="#0ea5e9" opacity="0.13"/>
+  <circle cx="1206" cy="566" r="158" fill="#22c55e" opacity="0.1"/>
+  <circle cx="753" cy="74" r="140" fill="#7c3aed" opacity="0.12"/>
+
+  <path d="M90 136C242 82 416 164 562 110C711 56 853 107 1001 84C1135 64 1235 103 1310 65" stroke="#38bdf8" stroke-opacity="0.24" stroke-width="3"/>
+  <path d="M88 594C258 541 374 608 551 568C760 521 858 631 1048 572C1163 536 1250 529 1315 568" stroke="#a3e635" stroke-opacity="0.22" stroke-width="3"/>
+
+  <text x="700" y="72" text-anchor="middle" class="kicker">SYSTEM BEHAVIOR MAP</text>
+  <rect x="493" y="95" width="414" height="30" rx="15" fill="#020617" stroke="#38bdf8" stroke-opacity="0.85"/>
+  <text x="700" y="115" text-anchor="middle" class="chipLight">DISCOVER - DESIGN - BUILD - HARDEN - SHIP</text>
+
+  <rect x="70" y="160" width="605" height="490" rx="24" fill="#020617" fill-opacity="0.66" stroke="#38bdf8" stroke-opacity="0.72"/>
+  <rect x="86" y="180" width="190" height="34" rx="17" fill="#38bdf8"/>
+  <text x="181" y="202" text-anchor="middle" class="chip">OPERATING LOOP</text>
+  <path d="M96 238H648" stroke="url(#cyanLine)" stroke-width="3" filter="url(#glow)"/>
+
+  <g transform="translate(100 286)">
+    <text x="0" y="0" class="num">01</text>
+    <text x="44" y="0" class="label">DISCOVER</text>
+    <text x="184" y="0" class="body">Clarify the problem, users, constraints,</text>
+    <text x="184" y="24" class="body">risks, and success criteria</text>
+  </g>
+  <g transform="translate(100 366)">
+    <text x="0" y="0" class="num">02</text>
+    <text x="44" y="0" class="label">DESIGN</text>
+    <text x="184" y="0" class="body">Model the system, data flow, user flow,</text>
+    <text x="184" y="24" class="body">and deployment surface</text>
+  </g>
+  <g transform="translate(100 446)">
+    <text x="0" y="0" class="num">03</text>
+    <text x="44" y="0" class="label">BUILD</text>
+    <text x="184" y="0" class="body">Implement with clean boundaries, pragmatic</text>
+    <text x="184" y="24" class="body">abstractions, and testable logic</text>
+  </g>
+  <g transform="translate(100 526)">
+    <text x="0" y="0" class="num">04</text>
+    <text x="44" y="0" class="label">HARDEN</text>
+    <text x="184" y="0" class="body">Improve reliability, security, observability,</text>
+    <text x="184" y="24" class="body">and performance</text>
+  </g>
+  <g transform="translate(100 606)">
+    <text x="0" y="0" class="num">05</text>
+    <text x="44" y="0" class="label">SHIP</text>
+    <text x="184" y="0" class="body">Deliver docs, deployment readiness,</text>
+    <text x="184" y="24" class="body">and iteration paths</text>
+  </g>
+
+  <rect x="725" y="160" width="605" height="490" rx="24" fill="#020617" fill-opacity="0.66" stroke="#a3e635" stroke-opacity="0.72"/>
+  <rect x="741" y="180" width="236" height="34" rx="17" fill="#a3e635"/>
+  <text x="859" y="202" text-anchor="middle" class="chip">PRINCIPLE MATRIX</text>
+  <path d="M751 238H1303" stroke="url(#violetLine)" stroke-width="3" filter="url(#glow)"/>
+
+  <g transform="translate(755 286)">
+    <text x="0" y="0" class="num">A1</text>
+    <text x="44" y="0" class="label">PRODUCT-FIRST</text>
+    <text x="44" y="26" class="body2">Code exists to solve a real problem</text>
+  </g>
+  <g transform="translate(755 366)">
+    <text x="0" y="0" class="num">A2</text>
+    <text x="44" y="0" class="label">ARCHITECTURE-AWARE</text>
+    <text x="44" y="26" class="body2">Systems should scale without becoming fragile</text>
+  </g>
+  <g transform="translate(755 446)">
+    <text x="0" y="0" class="num">A3</text>
+    <text x="44" y="0" class="label">SECURITY-AWARE</text>
+    <text x="44" y="26" class="body2">Sensitive flows deserve careful defaults</text>
+  </g>
+  <g transform="translate(755 526)">
+    <text x="0" y="0" class="num">A4</text>
+    <text x="44" y="0" class="label">PERFORMANCE-AWARE</text>
+    <text x="44" y="26" class="body2">Speed, cost, and reliability are part of UX</text>
+  </g>
+  <g transform="translate(755 606)">
+    <text x="0" y="0" class="num">A5</text>
+    <text x="44" y="0" class="label">DOCUMENTATION-AWARE</text>
+    <text x="44" y="26" class="body2">Good systems should be understandable later</text>
+  </g>
+
+  <circle cx="96" cy="238" r="5" fill="#67e8f9" filter="url(#glow)"/>
+  <circle cx="648" cy="238" r="5" fill="#22c55e" filter="url(#glow)"/>
+  <circle cx="751" cy="238" r="5" fill="#a78bfa" filter="url(#glow)"/>
+  <circle cx="1303" cy="238" r="5" fill="#f59e0b" filter="url(#glow)"/>
+</svg>

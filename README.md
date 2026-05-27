@@ -97,25 +97,9 @@
   <img width="100%" src="./assets/section-operating-system.svg" alt="Operating System banner" />
 </p>
 
-```text
-OPERATING LOOP
-
-DISCOVER  | Clarify the problem, users, constraints, risks, and success criteria
-DESIGN    | Model the system, data flow, user flow, and deployment surface
-BUILD     | Implement with clean boundaries, pragmatic abstractions, and testable logic
-HARDEN    | Improve reliability, security, observability, and performance
-SHIP      | Deliver docs, deployment readiness, and iteration paths
-```
-
-```text
-ENGINEERING PRINCIPLES
-
-PRODUCT-FIRST        | Code exists to solve a real problem
-ARCHITECTURE-AWARE   | Systems should scale without becoming fragile
-SECURITY-AWARE       | Sensitive flows deserve careful defaults
-PERFORMANCE-AWARE    | Speed, cost, and reliability are part of UX
-DOCUMENTATION-AWARE  | Good systems should be understandable later
-```
+<p align="center">
+  <img width="100%" src="./assets/operating-system-console.svg" alt="Operating loop and engineering principles console" />
+</p>
 
 ---
 
