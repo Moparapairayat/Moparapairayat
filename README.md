@@ -437,7 +437,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://img.shields.io/badge/24%2F7_Available-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="24/7 Available" />
 </p>
 
-<table>
+<table width="100%">
 <tr>
 <td width="33%" align="center" valign="top">
   <img src="https://img.shields.io/badge/🌍_Global_HQ-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Global HQ" />
@@ -573,7 +573,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ### 💼 Communication Channels
 
-<table>
+<table width="100%">
 <tr>
 <td width="33%" align="center" valign="top">
   <img src="https://img.shields.io/badge/📧_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" />
@@ -601,7 +601,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ### 💌 Business Email Contacts
 
-<table>
+<table width="100%">
 <tr>
 <td width="50%" align="center" valign="top">
   <img src="https://img.shields.io/badge/General_Contracts-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="General Contracts" />
@@ -623,7 +623,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://img.shields.io/badge/Fast_Contact_Lanes-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Fast Contact Lanes" />
 </p>
 
-<table>
+<table width="100%">
 <tr>
 <td colspan="4" align="center" valign="top">
   <b>Direct Lines by Workstream</b>
@@ -713,7 +713,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
 
 ### ✨ Let's Collaborate!
 
-<table>
+<table width="100%">
 <tr>
 <td align="center" valign="top">
   <b>💡 Project Ideas</b>
@@ -761,7 +761,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   If my work has been helpful to you, consider supporting my projects and future development.
 </p>
 
-<table>
+<table width="100%">
 <tr>
 <td colspan="3" align="center" valign="top">
   <b>Support Channels</b>
@@ -817,7 +817,7 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <b>Your support helps me:</b>
 </p>
 
-<table>
+<table width="100%">
 <tr>
 <td align="center" valign="top">
   <img src="https://img.shields.io/badge/✨_Open_Source-38BDF8?style=flat-square&labelColor=0D1117" alt="Open Source" />
