@@ -68,8 +68,8 @@
   <img src="https://img.shields.io/badge/Command_Metrics-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Command Metrics" />
   <br>
   <img src="https://img.shields.io/badge/Production_mindset-Always-10B981?style=flat-square&labelColor=0D1117" alt="Production mindset: Always" />
-  <img src="https://img.shields.io/badge/Projects-50%2B-0EA5E9?style=flat-square&labelColor=0D1117" alt="Projects: 50+" />
-  <img src="https://img.shields.io/badge/Technology_domains-30%2B-7C3AED?style=flat-square&labelColor=0D1117" alt="Technology domains: 30+" />
+  <img src="https://img.shields.io/badge/Projects-2050%2B-0EA5E9?style=flat-square&labelColor=0D1117" alt="Projects: 2050+" />
+  <img src="https://img.shields.io/badge/Technology_domains-50%2B-7C3AED?style=flat-square&labelColor=0D1117" alt="Technology domains: 50+" />
   <img src="https://img.shields.io/badge/Learning_loop-%E2%88%9E-F97316?style=flat-square&labelColor=0D1117" alt="Learning loop: infinity" />
 </p>
 
