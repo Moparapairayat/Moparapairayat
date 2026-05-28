@@ -50,11 +50,11 @@
   </g>
 
   <g font-family="Segoe UI, Inter, Arial, sans-serif" text-anchor="middle">
-    <text x="700" y="113" font-size="42" font-weight="900" fill="#F8FAFC">Delivery Blueprint</text>
-    <text x="700" y="152" font-size="17" font-weight="700" fill="#CBD5E1">Idea • Architecture • Build • Test • Harden • Launch</text>
+    <text x="700" y="120" font-size="56" font-weight="900" fill="#F8FAFC">Delivery Blueprint</text>
+    <text x="700" y="166" font-size="22" font-weight="800" fill="#CBD5E1">Idea • Architecture • Build • Test • Harden • Launch</text>
   </g>
 
-  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" font-weight="800">
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" font-weight="800">
     <rect x="95" y="36" width="145" height="28" rx="14" fill="#020617" stroke="#F59E0B"/>
     <text x="167" y="54" text-anchor="middle" fill="#F59E0B">IDEA</text>
     <rect x="628" y="200" width="144" height="28" rx="14" fill="#020617" stroke="#EF4444"/>
