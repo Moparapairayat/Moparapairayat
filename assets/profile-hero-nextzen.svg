@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="320" viewBox="0 0 1400 320" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="380" viewBox="0 0 1400 380" role="img" aria-labelledby="title desc">
   <title id="title">Mopara Pair Ayat Next-Zen Profile Hero</title>
   <desc id="desc">A futuristic GitHub profile hero for Mopara Pair Ayat with full-stack systems, AI/ML engineering, and cloud-native architecture themes.</desc>
   <defs>
@@ -50,15 +50,15 @@
     </pattern>
   </defs>
 
-  <rect width="1400" height="320" rx="30" fill="url(#bg)"/>
-  <rect width="1400" height="320" rx="30" fill="url(#grid)" opacity="0.5"/>
-  <rect x="2" y="2" width="1396" height="316" rx="30" fill="none" stroke="url(#edge)" stroke-width="3" opacity="0.7"/>
-  <rect x="5" y="5" width="1390" height="310" rx="28" fill="none" stroke="url(#edgeAnimated)" stroke-width="3.5" stroke-dasharray="420 120" stroke-linecap="round" opacity="0.95">
+  <rect width="1400" height="380" rx="32" fill="url(#bg)"/>
+  <rect width="1400" height="380" rx="32" fill="url(#grid)" opacity="0.5"/>
+  <rect x="2" y="2" width="1396" height="376" rx="32" fill="none" stroke="url(#edge)" stroke-width="3" opacity="0.7"/>
+  <rect x="5" y="5" width="1390" height="370" rx="30" fill="none" stroke="url(#edgeAnimated)" stroke-width="3.5" stroke-dasharray="420 120" stroke-linecap="round" opacity="0.95">
     <animate attributeName="stroke-dashoffset" values="0;-1080" dur="8s" repeatCount="indefinite"/>
   </rect>
 
   <circle cx="118" cy="88" r="138" fill="url(#blueGlow)"/>
-  <circle cx="1260" cy="236" r="160" fill="url(#violetGlow)"/>
+  <circle cx="1260" cy="286" r="170" fill="url(#violetGlow)"/>
 
   <g opacity="0.82" filter="url(#glow)">
     <path d="M72 224 C210 132 310 206 444 110 S646 74 760 124 S945 223 1088 130 S1234 78 1338 118" fill="none" stroke="#38bdf8" stroke-width="3"/>
@@ -78,25 +78,25 @@
     <circle cx="642" cy="222" r="6"/>
   </g>
 
-  <g transform="translate(176 54)">
-    <rect x="0" y="0" width="1048" height="212" rx="28" fill="#020617" opacity="0.9" stroke="url(#edge)" stroke-width="2"/>
-    <rect x="2" y="2" width="1044" height="208" rx="26" fill="none" stroke="url(#edgeAnimated)" stroke-width="2.5" stroke-dasharray="260 86" stroke-linecap="round" opacity="0.95">
+  <g transform="translate(146 56)">
+    <rect x="0" y="0" width="1108" height="260" rx="30" fill="#020617" opacity="0.9" stroke="url(#edge)" stroke-width="2"/>
+    <rect x="2" y="2" width="1104" height="256" rx="28" fill="none" stroke="url(#edgeAnimated)" stroke-width="2.5" stroke-dasharray="260 86" stroke-linecap="round" opacity="0.95">
       <animate attributeName="stroke-dashoffset" values="0;780" dur="6.5s" repeatCount="indefinite"/>
     </rect>
-    <rect x="30" y="30" width="988" height="7" rx="3.5" fill="url(#edgeAnimated)" opacity="0.95"/>
-    <text x="524" y="98" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="56" font-weight="900" fill="#f8fafc">Mopara Pair Ayat</text>
-    <text x="524" y="139" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#93c5fd">Full-Stack Systems • AI/ML Engineering • Cloud-Native Architecture</text>
-    <text x="524" y="171" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#cbd5e1">Building scalable systems, AI-powered products, and production-grade digital platforms</text>
+    <rect x="36" y="32" width="1036" height="8" rx="4" fill="url(#edgeAnimated)" opacity="0.95"/>
+    <text x="554" y="120" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="78" font-weight="900" fill="#f8fafc">Mopara Pair Ayat</text>
+    <text x="554" y="178" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#93c5fd">Full-Stack Systems • AI/ML Engineering • Cloud-Native Architecture</text>
+    <text x="554" y="216" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#cbd5e1">Building scalable systems, AI-powered products, and production-grade digital platforms</text>
 
-    <g transform="translate(251 187)" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="800">
+    <g transform="translate(272 238)" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" font-weight="800">
       <rect x="0" y="0" width="110" height="26" rx="13" fill="#0f172a" stroke="#38bdf8"/>
-      <text x="55" y="17" text-anchor="middle" fill="#7dd3fc">SECURE</text>
+      <text x="55" y="18" text-anchor="middle" fill="#7dd3fc">SECURE</text>
       <rect x="132" y="0" width="118" height="26" rx="13" fill="#0f172a" stroke="#7c3aed"/>
-      <text x="191" y="17" text-anchor="middle" fill="#c4b5fd">SCALABLE</text>
+      <text x="191" y="18" text-anchor="middle" fill="#c4b5fd">SCALABLE</text>
       <rect x="272" y="0" width="138" height="26" rx="13" fill="#0f172a" stroke="#10b981"/>
-      <text x="341" y="17" text-anchor="middle" fill="#86efac">AI-NATIVE</text>
+      <text x="341" y="18" text-anchor="middle" fill="#86efac">AI-NATIVE</text>
       <rect x="432" y="0" width="132" height="26" rx="13" fill="#0f172a" stroke="#f97316"/>
-      <text x="498" y="17" text-anchor="middle" fill="#fdba74">CLOUD-READY</text>
+      <text x="498" y="18" text-anchor="middle" fill="#fdba74">CLOUD-READY</text>
     </g>
   </g>
 
@@ -105,9 +105,9 @@
     <path d="M98 86 h17 m-8 -8 v16" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
     <rect x="1270" y="64" width="48" height="48" rx="14" fill="#0f172a" stroke="#7c3aed"/>
     <path d="M1285 90 c12 -20 26 -20 38 0" fill="none" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>
-    <rect x="88" y="236" width="52" height="52" rx="16" fill="#0f172a" stroke="#10b981"/>
-    <path d="M104 262 h22 m-11 -11 v22" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
-    <rect x="1264" y="226" width="56" height="56" rx="16" fill="#0f172a" stroke="#f97316"/>
-    <path d="M1280 254 h24 l10 14" fill="none" stroke="#fdba74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="88" y="286" width="52" height="52" rx="16" fill="#0f172a" stroke="#10b981"/>
+    <path d="M104 312 h22 m-11 -11 v22" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
+    <rect x="1264" y="276" width="56" height="56" rx="16" fill="#0f172a" stroke="#f97316"/>
+    <path d="M1280 304 h24 l10 14" fill="none" stroke="#fdba74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>
