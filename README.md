@@ -986,13 +986,17 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </tr>
 <tr>
 <td align="center" valign="middle">
-  <img src="https://img.shields.io/badge/🍵_Buy_Me_Tea-10B981?style=for-the-badge&labelColor=0D1117" alt="Buy Me Tea" />
+  <a href="https://ko-fi.com/moparapairayat">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi" />
+  </a>
 </td>
 <td align="center" valign="middle">
   <b>Support innovation</b>
 </td>
 <td align="center" valign="middle">
-  <img src="https://img.shields.io/badge/Link_updating_soon-111827?style=flat-square&color=10B981" alt="Link updating soon" />
+  <a href="https://ko-fi.com/moparapairayat">
+    <img src="https://img.shields.io/badge/Ko--fi-Active-10B981?style=flat-square" alt="Ko-fi active" />
+  </a>
 </td>
 </tr>
 <tr>
