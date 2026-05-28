@@ -971,13 +971,17 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </tr>
 <tr>
 <td align="center" valign="middle">
-  <img src="https://img.shields.io/badge/☕_Buy_Me_Coffee-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Buy Me Coffee" />
+  <a href="https://buymeacoffee.com/moparapairayat">
+    <img src="https://img.shields.io/badge/☕_Buy_Me_Coffee-F59E0B?style=for-the-badge&labelColor=0D1117" alt="Buy Me Coffee" />
+  </a>
 </td>
 <td align="center" valign="middle">
   <b>Support my work</b>
 </td>
 <td align="center" valign="middle">
-  <img src="https://img.shields.io/badge/Link_updating_soon-111827?style=flat-square&color=F59E0B" alt="Link updating soon" />
+  <a href="https://buymeacoffee.com/moparapairayat">
+    <img src="https://img.shields.io/badge/Support-Active-F59E0B?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Support on Buy Me Coffee" />
+  </a>
 </td>
 </tr>
 <tr>
