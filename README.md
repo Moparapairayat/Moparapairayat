@@ -558,22 +558,69 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </p>
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Moparapairayat&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="GitHub stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Moparapairayat&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB" alt="Top languages" />
+  <img src="https://img.shields.io/badge/Analytics_Command_Center-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Analytics Command Center" />
+  <img src="https://img.shields.io/badge/Production_Signal-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="Production Signal" />
+  <img src="https://img.shields.io/badge/Contribution_Radar-0D1117?style=for-the-badge&labelColor=0D1117&color=7C3AED" alt="Contribution Radar" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Projects-2050%2B-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Projects 2050+" />
+  <img src="https://img.shields.io/badge/Technology_Domains-50%2B-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Technology Domains 50+" />
+  <img src="https://img.shields.io/badge/AI_Agents-Active-10B981?style=for-the-badge&labelColor=0D1117" alt="AI Agents Active" />
+  <img src="https://img.shields.io/badge/LLMOps-Production_Ready-F97316?style=for-the-badge&labelColor=0D1117" alt="LLMOps Production Ready" />
+  <img src="https://img.shields.io/badge/DevSecOps-Hardened-EF4444?style=for-the-badge&labelColor=0D1117" alt="DevSecOps Hardened" />
+</p>
+
+### 📊 GitHub Command Dashboard
+
+<p align="center">
+  <img height="190" src="https://github-readme-stats.vercel.app/api?username=Moparapairayat&show_icons=true&include_all_commits=true&rank_icon=github&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="GitHub stats" />
+  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Moparapairayat&layout=compact&langs_count=10&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB" alt="Top languages" />
   <br><br>
-  <img src="https://streak-stats.demolab.com?user=Moparapairayat&locale=en&mode=daily&theme=tokyonight&hide_border=true" alt="GitHub streak stats" />
+  <img src="https://streak-stats.demolab.com?user=Moparapairayat&locale=en&mode=daily&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F97316&currStreakLabel=10B981" alt="GitHub streak stats" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Moparapairayat&theme=algolia&no-frame=true&no-bg=true&margin-w=12&row=1&column=6&v=2" alt="GitHub trophies" />
-</p>
+### 🧠 Engineering Signal Cards
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Moparapairayat&bg_color=0D1117&color=38BDF8&line=7DD3FC&point=FFFFFF&area=true&hide_border=true" width="95%" alt="GitHub contribution activity graph" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Moparapairayat&theme=github_dark" alt="GitHub profile details summary" />
+  <br><br>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Moparapairayat&theme=github_dark" alt="Repositories per language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Moparapairayat&theme=github_dark" alt="Most commit language" />
+  <br><br>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Moparapairayat&theme=github_dark" alt="GitHub summary stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Moparapairayat&theme=github_dark&utcOffset=6" alt="Productive time" />
 </p>
 
+### 🏆 Achievement Layer
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Moparapairayat/Moparapairayat/output/github-contribution-grid-snake-dark.svg" width="95%" alt="GitHub contribution snake animation" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Moparapairayat&theme=algolia&no-frame=true&no-bg=true&margin-w=12&margin-h=12&row=2&column=4&v=3" alt="GitHub trophies" />
+</p>
+
+### 📈 Contribution Pulse
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Moparapairayat&bg_color=0D1117&color=38BDF8&line=10B981&point=F97316&area=true&area_color=38BDF8&hide_border=true&custom_title=Contribution%20Signal%20Graph" width="100%" alt="GitHub contribution activity graph" />
+</p>
+
+### 🐍 Contribution Flow
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Moparapairayat/Moparapairayat/output/github-contribution-grid-snake-dark.svg" width="100%" alt="GitHub contribution snake animation" />
+</p>
+
+```text
+ANALYTICS FOCUS  -> commits, languages, streaks, contribution flow, project momentum
+ENGINEERING MAP  -> full-stack systems, AI agents, LLMOps, DevSecOps, cloud-native delivery
+SIGNAL QUALITY   -> consistency, depth, production mindset, and long-term iteration
+LEARNING LOOP    -> build, measure, harden, document, improve, repeat
+```
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Commit_Signal-Active-38BDF8?style=for-the-badge&labelColor=0D1117" alt="Commit Signal Active" />
+  <img src="https://img.shields.io/badge/Language_Map-Multi--Stack-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Language Map Multi-Stack" />
+  <img src="https://img.shields.io/badge/Build_Loop-Infinite-F97316?style=for-the-badge&labelColor=0D1117" alt="Build Loop Infinite" />
 </p>
 
 ---
