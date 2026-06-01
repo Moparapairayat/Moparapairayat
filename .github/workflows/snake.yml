@@ -1,25 +1,42 @@
-name: Generate Snake
+name: Generate GitHub Signal Graphs
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-signal-graphs
+  cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout profile source
+        uses: actions/checkout@v4
 
-      - uses: Platane/snk@v3
+      - name: Generate next-zen GitHub analytics graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: Moparapairayat
+          UTC_OFFSET_HOURS: 6
+        run: python .github/scripts/generate_github_signal.py
+
+      - name: Generate contribution snake
+        uses: Platane/snk@v3
         with:
           github_user_name: Moparapairayat
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - uses: crazy-max/ghaction-github-pages@v3
+      - name: Publish generated profile assets
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
