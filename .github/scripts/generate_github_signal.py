@@ -382,7 +382,7 @@ def render_svg(user):
     cell = 12
     gap = 4
     left = 58
-    top = 282
+    top = 402
     for index, day in enumerate(days[-364:]):
         week = index // 7
         weekday = index % 7
@@ -401,49 +401,54 @@ def render_svg(user):
         ("REVIEWS", reviews, "#7C3AED"),
     ]
     bar_total = max(sum(item[1] for item in bar_items), 1)
-    bar_x = 960
+    bar_x = 954
     stacked = []
     cursor = bar_x
-    for label, value, color in bar_items:
-        width = max(8, (value / bar_total) * 330)
-        stacked.append(f'<rect x="{cursor:.1f}" y="284" width="{width:.1f}" height="16" rx="8" fill="{color}"/>')
+    stacked.append('<rect x="954" y="558" width="332" height="16" rx="8" fill="#111827"/>')
+    for index, (label, value, color) in enumerate(bar_items):
+        width = (value / bar_total) * 332
+        if value > 0:
+            stacked.append(f'<rect x="{cursor:.1f}" y="558" width="{max(width, 5):.1f}" height="16" rx="8" fill="{color}"/>')
         stacked.append(
-            f'<text x="{cursor:.1f}" y="326" fill="{color}" font-size="13" font-weight="900">{escape(label)} {value}</text>'
+            f'<text x="{954 + index * 96}" y="588" fill="{color}" font-size="13" font-weight="900">{escape(label.replace("PULL REQUESTS", "PRS"))} {value}</text>'
         )
         cursor += width
 
-    line_points = points_for_line(last_90, 930, 112, 380, 100)
-    area_points = f"930,212 {line_points} 1310,212"
+    line_points = points_for_line(last_90, 954, 386, 350, 78)
+    area_points = f"954,464 {line_points} 1304,464"
     bars = []
     max_30 = max(last_30) if last_30 else 1
     for index, value in enumerate(last_30):
-        height = 56 * value / max(max_30, 1)
-        x = 933 + index * 12
-        y = 390 - height
-        bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="7" height="{height:.1f}" rx="3" fill="#38BDF8" opacity="0.75"/>')
+        height = 36 * value / max(max_30, 1)
+        x = 956 + index * 11
+        y = 704 - height
+        bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="6" height="{height:.1f}" rx="3" fill="#38BDF8" opacity="0.78"/>')
 
     language_chips = []
     language_colors = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444"]
     for index, (name, count) in enumerate(top_languages):
-        language_chips.append(chip(58 + index * 170, 214, f"{name} {count}", language_colors[index % len(language_colors)]))
+        language_chips.append(chip(58 + index * 170, 288, f"{name} {count}", language_colors[index % len(language_colors)]))
 
-    svg = f"""<svg width="1400" height="455" viewBox="0 0 1400 455" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    svg = f"""<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Next Zen GitHub Activity Graph</title>
   <desc id="desc">Generated GitHub analytics graph for {escape(user.get("login", PROFILE_USER))}, updated by GitHub Actions.</desc>
   <defs>
-    <linearGradient id="border" x1="0" y1="0" x2="1400" y2="455">
+    <style>
+      text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
+    </style>
+    <linearGradient id="border" x1="0" y1="0" x2="1400" y2="760">
       <stop offset="0" stop-color="#38BDF8"/>
       <stop offset="0.32" stop-color="#7C3AED"/>
       <stop offset="0.64" stop-color="#10B981"/>
       <stop offset="1" stop-color="#F97316"/>
       <animate attributeName="x1" values="0;300;0" dur="7s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="surface" x1="0" y1="0" x2="1400" y2="455">
+    <linearGradient id="surface" x1="0" y1="0" x2="1400" y2="760">
       <stop offset="0" stop-color="#061625"/>
       <stop offset="0.5" stop-color="#080B1F"/>
       <stop offset="1" stop-color="#071A14"/>
     </linearGradient>
-    <linearGradient id="area" x1="930" y1="110" x2="1310" y2="212">
+    <linearGradient id="area" x1="954" y1="386" x2="1304" y2="464">
       <stop offset="0" stop-color="#38BDF8" stop-opacity="0.35"/>
       <stop offset="1" stop-color="#10B981" stop-opacity="0.08"/>
     </linearGradient>
@@ -456,51 +461,56 @@ def render_svg(user):
     </filter>
   </defs>
 
-  <rect x="10" y="10" width="1380" height="435" rx="28" fill="url(#surface)" stroke="url(#border)" stroke-width="3"/>
+  <rect x="10" y="10" width="1380" height="740" rx="28" fill="url(#surface)" stroke="url(#border)" stroke-width="3"/>
   <path d="M55 120 C210 50 330 165 490 82 S735 75 860 132 S1110 235 1338 88" stroke="#38BDF8" stroke-width="3" opacity="0.32"/>
-  <path d="M70 382 C280 315 450 425 645 330 S940 238 1320 347" stroke="#10B981" stroke-width="3" opacity="0.28"/>
+  <path d="M70 640 C280 548 450 675 645 575 S940 500 1320 610" stroke="#10B981" stroke-width="3" opacity="0.28"/>
   <circle cx="125" cy="104" r="94" fill="#38BDF8" opacity="0.08"/>
   <circle cx="694" cy="82" r="108" fill="#7C3AED" opacity="0.10"/>
-  <circle cx="1188" cy="338" r="118" fill="#10B981" opacity="0.08"/>
+  <circle cx="1188" cy="590" r="118" fill="#10B981" opacity="0.08"/>
 
-  <text x="58" y="62" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">GITHUB ACTIONS LIVE OPS</text>
-  <text x="58" y="106" fill="#F8FAFC" font-size="42" font-weight="900">Next-Zen GitHub Signal Graph</text>
-  <text x="60" y="137" fill="#CBD5E1" font-size="18" font-weight="700">Near real-time contribution telemetry | Updated {escape(updated)}</text>
-  <text x="1048" y="62" fill="#94A3B8" font-size="14" font-weight="800" letter-spacing="2">PROFILE</text>
-  <text x="1048" y="96" fill="#F8FAFC" font-size="30" font-weight="900">{escape(user.get("name") or user.get("login") or PROFILE_USER)}</text>
-  <text x="1049" y="126" fill="#7DD3FC" font-size="16" font-weight="800">@{escape(user.get("login", PROFILE_USER))}</text>
+  <text x="58" y="68" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">GITHUB ACTIONS LIVE OPS</text>
+  <text x="58" y="120" fill="#F8FAFC" font-size="46" font-weight="900">Next-Zen GitHub Signal Graph</text>
+  <text x="60" y="158" fill="#CBD5E1" font-size="19" font-weight="700">Near real-time contribution telemetry | Updated {escape(updated)}</text>
+  <text x="1338" y="68" fill="#94A3B8" font-size="14" font-weight="800" letter-spacing="2" text-anchor="end">PROFILE</text>
+  <text x="1338" y="106" fill="#F8FAFC" font-size="28" font-weight="900" text-anchor="end">{escape(user.get("name") or user.get("login") or PROFILE_USER)}</text>
+  <text x="1338" y="136" fill="#7DD3FC" font-size="16" font-weight="800" text-anchor="end">@{escape(user.get("login", PROFILE_USER))}</text>
 
-  {metric_card(58, 148, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
-  {metric_card(315, 148, "public repos", f"{repo_count:,}", "#7C3AED")}
-  {metric_card(572, 148, "stars / forks", f"{stars:,} / {forks:,}", "#10B981")}
-  {metric_card(829, 148, "private signal", f"{restricted:,}", "#F97316")}
+  {metric_card(58, 190, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
+  {metric_card(384, 190, "public repos", f"{repo_count:,}", "#7C3AED")}
+  {metric_card(710, 190, "stars / forks", f"{stars:,} / {forks:,}", "#10B981")}
+  {metric_card(1036, 190, "private signal", f"{restricted:,}", "#F97316")}
 
   {''.join(language_chips)}
 
-  <rect x="42" y="258" width="878" height="154" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="58" y="250" fill="#F8FAFC" font-size="19" font-weight="900">Contribution Heatmap</text>
+  <rect x="42" y="350" width="878" height="250" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="58" y="386" fill="#F8FAFC" font-size="24" font-weight="900">Contribution Heatmap</text>
   {''.join(heatmap)}
 
-  <rect x="930" y="84" width="400" height="150" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="952" y="118" fill="#F8FAFC" font-size="19" font-weight="900">90-Day Velocity Curve</text>
+  <rect x="930" y="350" width="400" height="136" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="952" y="383" fill="#F8FAFC" font-size="20" font-weight="900">90-Day Velocity Curve</text>
   <polygon points="{area_points}" fill="url(#area)"/>
   <polyline points="{line_points}" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-  <line x1="930" y1="212" x2="1310" y2="212" stroke="#334155" stroke-width="1"/>
+  <line x1="954" y1="464" x2="1304" y2="464" stroke="#334155" stroke-width="1"/>
 
-  <rect x="930" y="252" width="400" height="94" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="952" y="276" fill="#F8FAFC" font-size="19" font-weight="900">Contribution Mix</text>
+  <rect x="930" y="510" width="400" height="96" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="952" y="542" fill="#F8FAFC" font-size="20" font-weight="900">Contribution Mix</text>
   {''.join(stacked)}
 
-  <rect x="930" y="362" width="400" height="60" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="952" y="390" fill="#F8FAFC" font-size="18" font-weight="900">30-Day Spark Bars</text>
+  <rect x="930" y="628" width="400" height="82" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="952" y="660" fill="#F8FAFC" font-size="20" font-weight="900">30-Day Spark Bars</text>
   {''.join(bars)}
 
-  <g transform="translate(58,424)">
-    <text fill="#38BDF8" font-size="14" font-weight="900">PROJECTS 2050+</text>
-    <text x="160" fill="#7C3AED" font-size="14" font-weight="900">TECH DOMAINS 50+</text>
-    <text x="350" fill="#10B981" font-size="14" font-weight="900">AI AGENTS ACTIVE</text>
-    <text x="535" fill="#F97316" font-size="14" font-weight="900">LLMOPS READY</text>
-    <text x="700" fill="#EF4444" font-size="14" font-weight="900">DEVSECOPS HARDENED</text>
+  <g transform="translate(58,640)">
+    <rect width="130" height="30" rx="15" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
+    <text x="65" y="20" fill="#E0F2FE" text-anchor="middle" font-size="12" font-weight="900">PROJECTS 2050+</text>
+    <rect x="145" width="168" height="30" rx="15" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
+    <text x="229" y="20" fill="#EDE9FE" text-anchor="middle" font-size="12" font-weight="900">TECH DOMAINS 50+</text>
+    <rect x="328" width="150" height="30" rx="15" fill="#10B981" fill-opacity="0.18" stroke="#10B981"/>
+    <text x="403" y="20" fill="#D1FAE5" text-anchor="middle" font-size="12" font-weight="900">AI AGENTS ACTIVE</text>
+    <rect x="493" width="128" height="30" rx="15" fill="#F97316" fill-opacity="0.18" stroke="#F97316"/>
+    <text x="557" y="20" fill="#FFEDD5" text-anchor="middle" font-size="12" font-weight="900">LLMOPS READY</text>
+    <rect x="636" width="170" height="30" rx="15" fill="#EF4444" fill-opacity="0.18" stroke="#EF4444"/>
+    <text x="721" y="20" fill="#FEE2E2" text-anchor="middle" font-size="12" font-weight="900">DEVSECOPS HARDENED</text>
   </g>
 </svg>
 """
