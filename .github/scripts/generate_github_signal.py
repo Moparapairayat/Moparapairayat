@@ -17,6 +17,7 @@ OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "dist"))
 OUTPUT_FILE = OUTPUT_DIR / "github-nextzen-activity.svg"
 OUTPUT_DASHBOARD_FILE = OUTPUT_DIR / "github-command-dashboard.svg"
 OUTPUT_ENGINEERING_FILE = OUTPUT_DIR / "github-engineering-signal-cards.svg"
+OUTPUT_ACHIEVEMENT_FILE = OUTPUT_DIR / "github-achievement-layer.svg"
 
 
 QUERY = """
@@ -480,6 +481,98 @@ def render_engineering_cards_svg(user):
 """
 
 
+def achievement_badge(x, y, title, value, caption, color):
+    return f"""
+    <g transform="translate({x},{y})">
+      <rect width="300" height="132" rx="22" fill="#070B16" stroke="{color}" stroke-opacity="0.7"/>
+      <circle cx="42" cy="42" r="18" fill="{color}" fill-opacity="0.24" stroke="{color}" stroke-opacity="0.9"/>
+      <text x="78" y="40" fill="#F8FAFC" font-size="22" font-weight="900">{escape(title)}</text>
+      <text x="78" y="72" fill="{color}" font-size="28" font-weight="900">{escape(str(value))}</text>
+      <text x="24" y="106" fill="#CBD5E1" font-size="15" font-weight="800">{escape(caption)}</text>
+    </g>"""
+
+
+def render_achievement_layer_svg(user):
+    days = flatten_days(user)
+    collection = user["contributionsCollection"]
+    repos = user["repositories"]
+    repo_nodes = repos.get("nodes", [])
+    total_contributions = collection["contributionCalendar"]["totalContributions"]
+    commits = collection["totalCommitContributions"]
+    prs = collection["totalPullRequestContributions"]
+    issues = collection["totalIssueContributions"]
+    reviews = collection["totalPullRequestReviewContributions"]
+    current_streak, longest_streak = streaks(days)
+    active_days = sum(1 for day in days if day["contributionCount"] > 0)
+    repo_count = repos["totalCount"]
+    stars = sum(repo.get("stargazerCount", 0) for repo in repo_nodes)
+    forks = sum(repo.get("forkCount", 0) for repo in repo_nodes)
+    languages = Counter(
+        repo["primaryLanguage"]["name"]
+        for repo in repo_nodes
+        if repo.get("primaryLanguage") and repo["primaryLanguage"].get("name")
+    )
+    language_count = len(languages)
+
+    badges = [
+        achievement_badge(58, 148, "Builder", f"{repo_count:,}", "public repository systems", "#38BDF8"),
+        achievement_badge(382, 148, "Signal", f"{total_contributions:,}", "contribution telemetry", "#10B981"),
+        achievement_badge(706, 148, "Streak", f"{longest_streak}d", "longest delivery loop", "#F97316"),
+        achievement_badge(1030, 148, "Languages", f"{language_count}", "active stack radar", "#7C3AED"),
+        achievement_badge(58, 304, "Commits", f"{commits:,}", "implementation momentum", "#38BDF8"),
+        achievement_badge(382, 304, "Reviews", f"{reviews:,}", "quality feedback loop", "#A3E635"),
+        achievement_badge(706, 304, "PRs", f"{prs:,}", "shipping collaboration", "#10B981"),
+        achievement_badge(1030, 304, "Issues", f"{issues:,}", "problem tracking", "#EF4444"),
+    ]
+
+    return f"""<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Achievement Layer</title>
+  <desc id="desc">GitHub achievement layer for {escape(user.get("login", PROFILE_USER))}.</desc>
+  <defs>
+    <style>
+      text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
+    </style>
+    <linearGradient id="ach-border" x1="0" y1="0" x2="1400" y2="520">
+      <stop offset="0" stop-color="#F97316"/>
+      <stop offset="0.34" stop-color="#38BDF8"/>
+      <stop offset="0.68" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="ach-surface" x1="0" y1="0" x2="1400" y2="520">
+      <stop offset="0" stop-color="#0B101D"/>
+      <stop offset="0.52" stop-color="#060B18"/>
+      <stop offset="1" stop-color="#071A14"/>
+    </linearGradient>
+    <filter id="ach-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="1380" height="500" rx="28" fill="url(#ach-surface)" stroke="url(#ach-border)" stroke-width="3"/>
+  <path d="M60 120 C300 38 450 150 645 92 S950 42 1325 130" stroke="#38BDF8" stroke-width="3" opacity="0.24"/>
+  <path d="M78 430 C260 355 470 475 690 396 S1000 342 1320 420" stroke="#10B981" stroke-width="3" opacity="0.22"/>
+  <circle cx="155" cy="92" r="92" fill="#F97316" opacity="0.07"/>
+  <circle cx="720" cy="74" r="114" fill="#7C3AED" opacity="0.09"/>
+  <circle cx="1170" cy="412" r="115" fill="#10B981" opacity="0.07"/>
+
+  <text x="58" y="86" fill="#F8FAFC" font-size="52" font-weight="900">Achievement Layer</text>
+  <text x="58" y="120" fill="#CBD5E1" font-size="20" font-weight="800">Active days {active_days}/365 | Stars {stars:,} | Forks {forks:,} | Current streak {current_streak}d</text>
+
+  {''.join(badges)}
+
+  <g filter="url(#ach-glow)">
+    <circle cx="1095" cy="88" r="7" fill="#38BDF8"/>
+    <circle cx="1195" cy="104" r="6" fill="#10B981"/>
+    <circle cx="1290" cy="92" r="6" fill="#F97316"/>
+  </g>
+</svg>
+"""
+
+
 def render_svg(user):
     days = flatten_days(user)
     collection = user["contributionsCollection"]
@@ -529,13 +622,15 @@ def render_svg(user):
     bar_x = 954
     stacked = []
     cursor = bar_x
+    mix_labels = ["COMMIT", "PR", "ISSUE", "REVIEW"]
+    mix_x = [954, 1065, 1160, 1250]
     stacked.append('<rect x="954" y="532" width="332" height="18" rx="9" fill="#111827"/>')
     for index, (label, value, color) in enumerate(bar_items):
         width = (value / bar_total) * 332
         if value > 0:
             stacked.append(f'<rect x="{cursor:.1f}" y="532" width="{max(width, 5):.1f}" height="18" rx="9" fill="{color}"/>')
         stacked.append(
-            f'<text x="{954 + index * 96}" y="566" fill="{color}" font-size="14" font-weight="900">{escape(label.replace("PULL REQUESTS", "PRS"))} {value}</text>'
+            f'<text x="{mix_x[index]}" y="566" fill="{color}" font-size="13" font-weight="900">{mix_labels[index]} {value}</text>'
         )
         cursor += width
 
@@ -642,9 +737,11 @@ def main():
     user = load_user()
     OUTPUT_DASHBOARD_FILE.write_text(render_dashboard_svg(user), encoding="utf-8")
     OUTPUT_ENGINEERING_FILE.write_text(render_engineering_cards_svg(user), encoding="utf-8")
+    OUTPUT_ACHIEVEMENT_FILE.write_text(render_achievement_layer_svg(user), encoding="utf-8")
     OUTPUT_FILE.write_text(render_svg(user), encoding="utf-8")
     print(f"Wrote {OUTPUT_DASHBOARD_FILE}")
     print(f"Wrote {OUTPUT_ENGINEERING_FILE}")
+    print(f"Wrote {OUTPUT_ACHIEVEMENT_FILE}")
     print(f"Wrote {OUTPUT_FILE}")
 
 
