@@ -15,6 +15,7 @@ PROFILE_USER = os.getenv("PROFILE_USER", "Moparapairayat")
 UTC_OFFSET_HOURS = int(os.getenv("UTC_OFFSET_HOURS", "6"))
 OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "dist"))
 OUTPUT_FILE = OUTPUT_DIR / "github-nextzen-activity.svg"
+OUTPUT_DASHBOARD_FILE = OUTPUT_DIR / "github-command-dashboard.svg"
 
 
 QUERY = """
@@ -179,6 +180,20 @@ def points_for_line(values, left, top, width, height):
     return " ".join(points)
 
 
+def streaks(days):
+    longest = 0
+    current = 0
+    running = 0
+    for day in days:
+        if day["contributionCount"] > 0:
+            running += 1
+            longest = max(longest, running)
+        else:
+            running = 0
+    current = running
+    return current, longest
+
+
 def metric_card(x, y, label, value, color):
     return f"""
     <g transform="translate({x},{y})">
@@ -194,6 +209,131 @@ def chip(x, y, text, color):
       <rect width="158" height="28" rx="14" fill="{color}" fill-opacity="0.18" stroke="{color}" stroke-opacity="0.75"/>
       <text x="79" y="19" fill="#F8FAFC" text-anchor="middle" font-size="12" font-weight="900" letter-spacing="1.1">{escape(text.upper())}</text>
     </g>"""
+
+
+def dashboard_card(x, y, label, value, color):
+    return f"""
+    <g transform="translate({x},{y})">
+      <rect width="300" height="94" rx="20" fill="#090E1B" stroke="{color}" stroke-opacity="0.7"/>
+      <text x="24" y="34" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.6">{escape(label.upper())}</text>
+      <text x="24" y="72" fill="#F8FAFC" font-size="34" font-weight="900">{escape(str(value))}</text>
+    </g>"""
+
+
+def render_dashboard_svg(user):
+    days = flatten_days(user)
+    collection = user["contributionsCollection"]
+    repos = user["repositories"]
+    repo_nodes = repos.get("nodes", [])
+    total_contributions = collection["contributionCalendar"]["totalContributions"]
+    commits = collection["totalCommitContributions"]
+    prs = collection["totalPullRequestContributions"]
+    issues = collection["totalIssueContributions"]
+    reviews = collection["totalPullRequestReviewContributions"]
+    current_streak, longest_streak = streaks(days)
+    active_days = sum(1 for day in days if day["contributionCount"] > 0)
+    repo_count = repos["totalCount"]
+    stars = sum(repo.get("stargazerCount", 0) for repo in repo_nodes)
+    forks = sum(repo.get("forkCount", 0) for repo in repo_nodes)
+    languages = Counter(
+        repo["primaryLanguage"]["name"]
+        for repo in repo_nodes
+        if repo.get("primaryLanguage") and repo["primaryLanguage"].get("name")
+    )
+    top_languages = languages.most_common(6)
+    max_language = max((count for _, count in top_languages), default=1)
+    bdt_now = datetime.now(timezone.utc) + timedelta(hours=UTC_OFFSET_HOURS)
+    updated = bdt_now.strftime("%Y-%m-%d %H:%M BDT")
+
+    language_rows = []
+    palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
+    for index, (name, count) in enumerate(top_languages):
+        y = 318 + index * 28
+        width = 310 * count / max(max_language, 1)
+        color = palette[index % len(palette)]
+        language_rows.append(
+            f'<text x="884" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(name)}</text>'
+            f'<rect x="1045" y="{y - 14}" width="310" height="15" rx="8" fill="#111827"/>'
+            f'<rect x="1045" y="{y - 14}" width="{width:.1f}" height="15" rx="8" fill="{color}"/>'
+            f'<text x="1368" y="{y}" fill="{color}" font-size="15" font-weight="900" text-anchor="end">{count}</text>'
+        )
+
+    flow_items = [
+        ("COMMITS", commits, "#38BDF8"),
+        ("PULL REQUESTS", prs, "#10B981"),
+        ("ISSUES", issues, "#F97316"),
+        ("REVIEWS", reviews, "#7C3AED"),
+    ]
+    max_flow = max((value for _, value, _ in flow_items), default=1)
+    flow_rows = []
+    for index, (label, value, color) in enumerate(flow_items):
+        y = 318 + index * 36
+        width = 460 * value / max(max_flow, 1)
+        flow_rows.append(
+            f'<text x="66" y="{y}" fill="#E2E8F0" font-size="18" font-weight="900">{escape(label)}</text>'
+            f'<rect x="255" y="{y - 17}" width="460" height="18" rx="9" fill="#111827"/>'
+            f'<rect x="255" y="{y - 17}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
+            f'<text x="742" y="{y}" fill="{color}" font-size="17" font-weight="900" text-anchor="end">{value:,}</text>'
+        )
+
+    return f"""<svg width="1400" height="500" viewBox="0 0 1400 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Command Dashboard</title>
+  <desc id="desc">Workflow generated GitHub command dashboard for {escape(user.get("login", PROFILE_USER))}.</desc>
+  <defs>
+    <linearGradient id="dash-border" x1="0" y1="0" x2="1400" y2="500">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.36" stop-color="#7C3AED"/>
+      <stop offset="0.7" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#F97316"/>
+      <animate attributeName="x2" values="1100;1400;1100" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="dash-surface" x1="0" y1="0" x2="1400" y2="500">
+      <stop offset="0" stop-color="#071827"/>
+      <stop offset="0.55" stop-color="#080B1D"/>
+      <stop offset="1" stop-color="#071D16"/>
+    </linearGradient>
+    <filter id="dash-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="1380" height="480" rx="28" fill="url(#dash-surface)" stroke="url(#dash-border)" stroke-width="3"/>
+  <path d="M55 105 C240 38 410 152 600 86 S945 42 1328 125" stroke="#38BDF8" stroke-width="3" opacity="0.28"/>
+  <path d="M72 430 C290 335 466 462 690 370 S1005 318 1320 420" stroke="#10B981" stroke-width="3" opacity="0.25"/>
+  <circle cx="160" cy="86" r="96" fill="#38BDF8" opacity="0.07"/>
+  <circle cx="760" cy="70" r="120" fill="#7C3AED" opacity="0.09"/>
+  <circle cx="1190" cy="380" r="115" fill="#10B981" opacity="0.08"/>
+
+  <text x="58" y="60" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">WORKFLOW GENERATED</text>
+  <text x="58" y="107" fill="#F8FAFC" font-size="46" font-weight="900">GitHub Command Dashboard</text>
+  <text x="60" y="139" fill="#CBD5E1" font-size="19" font-weight="700">Stats, languages, streaks, and contribution mix from GitHub Actions | Updated {escape(updated)}</text>
+
+  {dashboard_card(58, 156, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
+  {dashboard_card(380, 156, "current streak", f"{current_streak} days", "#10B981")}
+  {dashboard_card(702, 156, "longest streak", f"{longest_streak} days", "#F97316")}
+  {dashboard_card(1024, 156, "public repos", f"{repo_count:,}", "#7C3AED")}
+
+  <rect x="42" y="282" width="746" height="176" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="66" y="268" fill="#F8FAFC" font-size="22" font-weight="900">Contribution Mix</text>
+  {''.join(flow_rows)}
+
+  <rect x="820" y="282" width="540" height="176" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="884" y="268" fill="#F8FAFC" font-size="22" font-weight="900">Language Radar</text>
+  {''.join(language_rows)}
+
+  <text x="60" y="480" fill="#7DD3FC" font-size="16" font-weight="900">Active days: {active_days}/365 | Stars: {stars:,} | Forks: {forks:,} | Projects 2050+ | Technology Domains 50+ | AI Agents | LLMOps | DevSecOps</text>
+
+  <g filter="url(#dash-glow)">
+    <circle cx="778" cy="104" r="7" fill="#38BDF8"/>
+    <circle cx="1120" cy="72" r="6" fill="#10B981"/>
+    <circle cx="1308" cy="132" r="6" fill="#F97316"/>
+  </g>
+</svg>
+"""
 
 
 def render_svg(user):
@@ -354,7 +494,9 @@ def render_svg(user):
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     user = load_user()
+    OUTPUT_DASHBOARD_FILE.write_text(render_dashboard_svg(user), encoding="utf-8")
     OUTPUT_FILE.write_text(render_svg(user), encoding="utf-8")
+    print(f"Wrote {OUTPUT_DASHBOARD_FILE}")
     print(f"Wrote {OUTPUT_FILE}")
 
 
