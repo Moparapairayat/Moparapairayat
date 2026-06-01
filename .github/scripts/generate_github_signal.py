@@ -481,14 +481,37 @@ def render_engineering_cards_svg(user):
 """
 
 
-def achievement_badge(x, y, title, value, caption, color):
+def rank_for(value, excellent, strong, mid):
+    if value >= excellent:
+        return "S"
+    if value >= strong:
+        return "A"
+    if value >= mid:
+        return "B"
+    return "C"
+
+
+def trophy_card(x, title, rank, subtitle, points, color, progress):
+    progress_width = max(12, min(148, int(148 * progress)))
     return f"""
-    <g transform="translate({x},{y})">
-      <rect width="300" height="132" rx="22" fill="#070B16" stroke="{color}" stroke-opacity="0.7"/>
-      <circle cx="42" cy="42" r="18" fill="{color}" fill-opacity="0.24" stroke="{color}" stroke-opacity="0.9"/>
-      <text x="78" y="40" fill="#F8FAFC" font-size="22" font-weight="900">{escape(title)}</text>
-      <text x="78" y="72" fill="{color}" font-size="28" font-weight="900">{escape(str(value))}</text>
-      <text x="24" y="106" fill="#CBD5E1" font-size="15" font-weight="800">{escape(caption)}</text>
+    <g transform="translate({x},28)">
+      <rect width="210" height="254" rx="8" fill="#11101D" stroke="#D1D5DB" stroke-opacity="0.55" stroke-width="2"/>
+      <text x="105" y="32" fill="#FF4D8D" text-anchor="middle" font-size="25" font-weight="900">{escape(title)}</text>
+
+      <g transform="translate(105,94)">
+        <ellipse cx="-50" cy="2" rx="23" ry="30" fill="none" stroke="{color}" stroke-width="8"/>
+        <ellipse cx="50" cy="2" rx="23" ry="30" fill="none" stroke="{color}" stroke-width="8"/>
+        <path d="M-48 -34 H48 V8 C48 40 26 58 0 58 C-26 58 -48 40 -48 8 Z" fill="{color}"/>
+        <rect x="-20" y="52" width="40" height="30" rx="8" fill="{color}"/>
+        <path d="M-48 92 H48 C43 75 27 68 0 68 C-27 68 -43 75 -48 92Z" fill="{color}"/>
+        <circle cx="0" cy="0" r="33" fill="#ECFDF5" stroke="#F8FAFC" stroke-width="2"/>
+        <text x="0" y="12" fill="#4B5563" text-anchor="middle" font-size="42" font-weight="900">{escape(rank)}</text>
+      </g>
+
+      <text x="105" y="194" fill="#CFFFEA" text-anchor="middle" font-size="18" font-weight="900">{escape(subtitle)}</text>
+      <text x="105" y="218" fill="#CFFFEA" text-anchor="middle" font-size="18" font-weight="900">{escape(points)}</text>
+      <rect x="31" y="235" width="148" height="6" rx="3" fill="#7A3159" opacity="0.65"/>
+      <rect x="31" y="235" width="{progress_width}" height="6" rx="3" fill="#FF4D8D"/>
     </g>"""
 
 
@@ -497,52 +520,29 @@ def render_achievement_layer_svg(user):
     collection = user["contributionsCollection"]
     repos = user["repositories"]
     repo_nodes = repos.get("nodes", [])
-    total_contributions = collection["contributionCalendar"]["totalContributions"]
     commits = collection["totalCommitContributions"]
     prs = collection["totalPullRequestContributions"]
     issues = collection["totalIssueContributions"]
-    reviews = collection["totalPullRequestReviewContributions"]
-    current_streak, longest_streak = streaks(days)
-    active_days = sum(1 for day in days if day["contributionCount"] > 0)
     repo_count = repos["totalCount"]
     stars = sum(repo.get("stargazerCount", 0) for repo in repo_nodes)
-    forks = sum(repo.get("forkCount", 0) for repo in repo_nodes)
-    languages = Counter(
-        repo["primaryLanguage"]["name"]
-        for repo in repo_nodes
-        if repo.get("primaryLanguage") and repo["primaryLanguage"].get("name")
-    )
-    language_count = len(languages)
+    followers = user.get("followers", {}).get("totalCount", 0)
 
-    badges = [
-        achievement_badge(58, 148, "Builder", f"{repo_count:,}", "public repository systems", "#38BDF8"),
-        achievement_badge(382, 148, "Signal", f"{total_contributions:,}", "contribution telemetry", "#10B981"),
-        achievement_badge(706, 148, "Streak", f"{longest_streak}d", "longest delivery loop", "#F97316"),
-        achievement_badge(1030, 148, "Languages", f"{language_count}", "active stack radar", "#7C3AED"),
-        achievement_badge(58, 304, "Commits", f"{commits:,}", "implementation momentum", "#38BDF8"),
-        achievement_badge(382, 304, "Reviews", f"{reviews:,}", "quality feedback loop", "#A3E635"),
-        achievement_badge(706, 304, "PRs", f"{prs:,}", "shipping collaboration", "#10B981"),
-        achievement_badge(1030, 304, "Issues", f"{issues:,}", "problem tracking", "#EF4444"),
+    cards = [
+        trophy_card(25, "Stars", rank_for(stars, 1000, 100, 10), "High Stargazer", f"{stars:,}pt", "#FACC15", min(stars / 1000, 1)),
+        trophy_card(250, "Commit", rank_for(commits, 1000, 500, 100), "Ultra Committer", f"{commits:,}pt", "#A7F3D0", min(commits / 1000, 1)),
+        trophy_card(475, "Followers", rank_for(followers, 500, 100, 25), "Famous User", f"{followers:,}pt", "#BBF7D0", min(followers / 500, 1)),
+        trophy_card(700, "Issues", rank_for(issues, 250, 100, 20), "High Issuer", f"{issues:,}pt", "#BBF7D0", min(issues / 250, 1)),
+        trophy_card(925, "PullRequest", rank_for(prs, 500, 200, 50), "Middle PR User", f"{prs:,}pt", "#F97316", min(prs / 500, 1)),
+        trophy_card(1150, "Repositories", rank_for(repo_count, 100, 50, 10), "Repository Builder", f"{repo_count:,}pt", "#3B82F6", min(repo_count / 100, 1)),
     ]
 
-    return f"""<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    return f"""<svg width="1400" height="310" viewBox="0 0 1400 310" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Achievement Layer</title>
   <desc id="desc">GitHub achievement layer for {escape(user.get("login", PROFILE_USER))}.</desc>
   <defs>
     <style>
       text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
     </style>
-    <linearGradient id="ach-border" x1="0" y1="0" x2="1400" y2="520">
-      <stop offset="0" stop-color="#F97316"/>
-      <stop offset="0.34" stop-color="#38BDF8"/>
-      <stop offset="0.68" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#10B981"/>
-    </linearGradient>
-    <linearGradient id="ach-surface" x1="0" y1="0" x2="1400" y2="520">
-      <stop offset="0" stop-color="#0B101D"/>
-      <stop offset="0.52" stop-color="#060B18"/>
-      <stop offset="1" stop-color="#071A14"/>
-    </linearGradient>
     <filter id="ach-glow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
@@ -552,22 +552,13 @@ def render_achievement_layer_svg(user):
     </filter>
   </defs>
 
-  <rect x="10" y="10" width="1380" height="500" rx="28" fill="url(#ach-surface)" stroke="url(#ach-border)" stroke-width="3"/>
-  <path d="M60 120 C300 38 450 150 645 92 S950 42 1325 130" stroke="#38BDF8" stroke-width="3" opacity="0.24"/>
-  <path d="M78 430 C260 355 470 475 690 396 S1000 342 1320 420" stroke="#10B981" stroke-width="3" opacity="0.22"/>
-  <circle cx="155" cy="92" r="92" fill="#F97316" opacity="0.07"/>
-  <circle cx="720" cy="74" r="114" fill="#7C3AED" opacity="0.09"/>
-  <circle cx="1170" cy="412" r="115" fill="#10B981" opacity="0.07"/>
-
-  <text x="58" y="86" fill="#F8FAFC" font-size="52" font-weight="900">Achievement Layer</text>
-  <text x="58" y="120" fill="#CBD5E1" font-size="20" font-weight="800">Active days {active_days}/365 | Stars {stars:,} | Forks {forks:,} | Current streak {current_streak}d</text>
-
-  {''.join(badges)}
+  <rect width="1400" height="310" fill="#0D1117"/>
+  {''.join(cards)}
 
   <g filter="url(#ach-glow)">
-    <circle cx="1095" cy="88" r="7" fill="#38BDF8"/>
-    <circle cx="1195" cy="104" r="6" fill="#10B981"/>
-    <circle cx="1290" cy="92" r="6" fill="#F97316"/>
+    <circle cx="103" cy="155" r="4" fill="#FBBF24"/>
+    <circle cx="553" cy="155" r="4" fill="#A7F3D0"/>
+    <circle cx="1003" cy="155" r="4" fill="#F97316"/>
   </g>
 </svg>
 """
