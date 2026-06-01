@@ -16,6 +16,7 @@ UTC_OFFSET_HOURS = int(os.getenv("UTC_OFFSET_HOURS", "6"))
 OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "dist"))
 OUTPUT_FILE = OUTPUT_DIR / "github-nextzen-activity.svg"
 OUTPUT_DASHBOARD_FILE = OUTPUT_DIR / "github-command-dashboard.svg"
+OUTPUT_ENGINEERING_FILE = OUTPUT_DIR / "github-engineering-signal-cards.svg"
 
 
 QUERY = """
@@ -352,6 +353,143 @@ def render_dashboard_svg(user):
 """
 
 
+def render_engineering_cards_svg(user):
+    days = flatten_days(user)
+    collection = user["contributionsCollection"]
+    repos = user["repositories"]
+    repo_nodes = repos.get("nodes", [])
+    total_contributions = collection["contributionCalendar"]["totalContributions"]
+    commits = collection["totalCommitContributions"]
+    prs = collection["totalPullRequestContributions"]
+    issues = collection["totalIssueContributions"]
+    reviews = collection["totalPullRequestReviewContributions"]
+    current_streak, longest_streak = streaks(days)
+    active_days = sum(1 for day in days if day["contributionCount"] > 0)
+    repo_count = repos["totalCount"]
+    stars = sum(repo.get("stargazerCount", 0) for repo in repo_nodes)
+    forks = sum(repo.get("forkCount", 0) for repo in repo_nodes)
+    languages = Counter(
+        repo["primaryLanguage"]["name"]
+        for repo in repo_nodes
+        if repo.get("primaryLanguage") and repo["primaryLanguage"].get("name")
+    )
+    top_languages = languages.most_common(6)
+    max_language = max((count for _, count in top_languages), default=1)
+    bdt_now = datetime.now(timezone.utc) + timedelta(hours=UTC_OFFSET_HOURS)
+    updated = bdt_now.strftime("%Y-%m-%d %H:%M BDT")
+
+    language_rows = []
+    palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
+    for index, (name, count) in enumerate(top_languages):
+        y = 424 + index * 38
+        width = 290 * count / max(max_language, 1)
+        color = palette[index % len(palette)]
+        language_rows.append(
+            f'<text x="92" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(name)}</text>'
+            f'<rect x="260" y="{y - 17}" width="290" height="18" rx="9" fill="#111827"/>'
+            f'<rect x="260" y="{y - 17}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
+            f'<text x="580" y="{y}" fill="{color}" text-anchor="end" font-size="16" font-weight="900">{count}</text>'
+        )
+
+    contribution_rows = [
+        ("Commits", commits, "#38BDF8"),
+        ("Pull Requests", prs, "#10B981"),
+        ("Issues", issues, "#F97316"),
+        ("Reviews", reviews, "#7C3AED"),
+    ]
+    max_contribution = max((value for _, value, _ in contribution_rows), default=1)
+    contribution_bars = []
+    for index, (label, value, color) in enumerate(contribution_rows):
+        y = 424 + index * 44
+        width = 300 * value / max(max_contribution, 1)
+        contribution_bars.append(
+            f'<text x="764" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(label)}</text>'
+            f'<rect x="954" y="{y - 17}" width="300" height="18" rx="9" fill="#111827"/>'
+            f'<rect x="954" y="{y - 17}" width="{max(width, 5):.1f}" height="18" rx="9" fill="{color}"/>'
+            f'<text x="1280" y="{y}" fill="{color}" text-anchor="end" font-size="16" font-weight="900">{value:,}</text>'
+        )
+
+    last_30 = [day["contributionCount"] for day in days[-30:]]
+    max_30 = max(last_30) if last_30 else 1
+    spark_bars = []
+    for index, value in enumerate(last_30):
+        height = 64 * value / max(max_30, 1)
+        x = 778 + index * 15
+        y = 245 - height
+        spark_bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="9" height="{height:.1f}" rx="4" fill="#38BDF8" opacity="0.82"/>')
+
+    return f"""<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering Signal Cards</title>
+  <desc id="desc">Workflow generated engineering signal cards for {escape(user.get("login", PROFILE_USER))}.</desc>
+  <defs>
+    <style>
+      text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
+    </style>
+    <linearGradient id="eng-border" x1="0" y1="0" x2="1400" y2="700">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.33" stop-color="#7C3AED"/>
+      <stop offset="0.66" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="eng-surface" x1="0" y1="0" x2="1400" y2="700">
+      <stop offset="0" stop-color="#061625"/>
+      <stop offset="0.55" stop-color="#070B1D"/>
+      <stop offset="1" stop-color="#071A14"/>
+    </linearGradient>
+    <filter id="eng-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="1380" height="680" rx="28" fill="url(#eng-surface)" stroke="url(#eng-border)" stroke-width="3"/>
+  <path d="M62 118 C242 48 432 160 620 92 S930 55 1325 130" stroke="#38BDF8" stroke-width="3" opacity="0.25"/>
+  <path d="M75 600 C270 528 470 628 675 552 S1010 490 1318 590" stroke="#10B981" stroke-width="3" opacity="0.22"/>
+  <circle cx="158" cy="98" r="98" fill="#38BDF8" opacity="0.07"/>
+  <circle cx="720" cy="82" r="118" fill="#7C3AED" opacity="0.08"/>
+  <circle cx="1175" cy="580" r="120" fill="#10B981" opacity="0.07"/>
+
+  <text x="58" y="66" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">ENGINEERING SIGNAL</text>
+  <text x="58" y="116" fill="#F8FAFC" font-size="44" font-weight="900">{escape(user.get("name") or "Mopara Pair Ayat")}</text>
+  <text x="60" y="154" fill="#CBD5E1" font-size="19" font-weight="700">@{escape(user.get("login", PROFILE_USER))} | Updated {escape(updated)}</text>
+
+  <rect x="58" y="190" width="600" height="118" rx="20" fill="#090E1B" stroke="#38BDF8" stroke-opacity="0.62"/>
+  <text x="88" y="226" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.4">PROFILE TELEMETRY</text>
+  <text x="88" y="260" fill="#F8FAFC" font-size="24" font-weight="900">{total_contributions:,} contributions</text>
+  <text x="320" y="260" fill="#7DD3FC" font-size="24" font-weight="900">{repo_count:,} public repos</text>
+  <text x="88" y="290" fill="#CBD5E1" font-size="19" font-weight="800">{active_days}/365 active days | Projects 2050+ | Tech domains 50+</text>
+
+  <rect x="720" y="190" width="620" height="118" rx="20" fill="#090E1B" stroke="#10B981" stroke-opacity="0.62"/>
+  <text x="750" y="226" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.4">30-DAY DELIVERY PULSE</text>
+  {''.join(spark_bars)}
+
+  <rect x="58" y="350" width="600" height="236" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="88" y="386" fill="#F8FAFC" font-size="24" font-weight="900">Language Radar</text>
+  {''.join(language_rows)}
+
+  <rect x="720" y="350" width="620" height="236" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="750" y="386" fill="#F8FAFC" font-size="24" font-weight="900">Contribution Matrix</text>
+  {''.join(contribution_bars)}
+
+  <g transform="translate(58,622)">
+    <rect width="170" height="30" rx="15" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
+    <text x="85" y="20" fill="#E0F2FE" text-anchor="middle" font-size="13" font-weight="900">STARS {stars:,}</text>
+    <rect x="190" width="170" height="30" rx="15" fill="#10B981" fill-opacity="0.18" stroke="#10B981"/>
+    <text x="275" y="20" fill="#D1FAE5" text-anchor="middle" font-size="13" font-weight="900">FORKS {forks:,}</text>
+    <rect x="380" width="190" height="30" rx="15" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
+    <text x="475" y="20" fill="#EDE9FE" text-anchor="middle" font-size="13" font-weight="900">CURRENT {current_streak} DAYS</text>
+    <rect x="590" width="185" height="30" rx="15" fill="#F97316" fill-opacity="0.18" stroke="#F97316"/>
+    <text x="682" y="20" fill="#FFEDD5" text-anchor="middle" font-size="13" font-weight="900">LONGEST {longest_streak} DAYS</text>
+    <rect x="795" width="180" height="30" rx="15" fill="#EF4444" fill-opacity="0.18" stroke="#EF4444"/>
+    <text x="885" y="20" fill="#FEE2E2" text-anchor="middle" font-size="13" font-weight="900">DEVSECOPS READY</text>
+  </g>
+</svg>
+"""
+
+
 def render_svg(user):
     days = flatten_days(user)
     collection = user["contributionsCollection"]
@@ -521,8 +659,10 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     user = load_user()
     OUTPUT_DASHBOARD_FILE.write_text(render_dashboard_svg(user), encoding="utf-8")
+    OUTPUT_ENGINEERING_FILE.write_text(render_engineering_cards_svg(user), encoding="utf-8")
     OUTPUT_FILE.write_text(render_svg(user), encoding="utf-8")
     print(f"Wrote {OUTPUT_DASHBOARD_FILE}")
+    print(f"Wrote {OUTPUT_ENGINEERING_FILE}")
     print(f"Wrote {OUTPUT_FILE}")
 
 
