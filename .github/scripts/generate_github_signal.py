@@ -198,26 +198,26 @@ def streaks(days):
 def metric_card(x, y, label, value, color):
     return f"""
     <g transform="translate({x},{y})">
-      <rect width="245" height="58" rx="16" fill="#0B1220" stroke="{color}" stroke-opacity="0.55"/>
-      <text x="18" y="24" fill="#94A3B8" font-size="13" font-weight="700" letter-spacing="1.3">{escape(label.upper())}</text>
-      <text x="18" y="49" fill="#F8FAFC" font-size="25" font-weight="900">{escape(str(value))}</text>
+      <rect width="245" height="68" rx="17" fill="#0B1220" stroke="{color}" stroke-opacity="0.55"/>
+      <text x="18" y="27" fill="#94A3B8" font-size="14" font-weight="800" letter-spacing="1.3">{escape(label.upper())}</text>
+      <text x="18" y="58" fill="#F8FAFC" font-size="30" font-weight="900">{escape(str(value))}</text>
     </g>"""
 
 
 def chip(x, y, text, color):
     return f"""
     <g transform="translate({x},{y})">
-      <rect width="158" height="28" rx="14" fill="{color}" fill-opacity="0.18" stroke="{color}" stroke-opacity="0.75"/>
-      <text x="79" y="19" fill="#F8FAFC" text-anchor="middle" font-size="12" font-weight="900" letter-spacing="1.1">{escape(text.upper())}</text>
+      <rect width="164" height="32" rx="16" fill="{color}" fill-opacity="0.18" stroke="{color}" stroke-opacity="0.75"/>
+      <text x="82" y="21" fill="#F8FAFC" text-anchor="middle" font-size="13" font-weight="900" letter-spacing="1.05">{escape(text.upper())}</text>
     </g>"""
 
 
 def dashboard_card(x, y, label, value, color):
     return f"""
     <g transform="translate({x},{y})">
-      <rect width="294" height="94" rx="20" fill="#090E1B" stroke="{color}" stroke-opacity="0.7"/>
-      <text x="24" y="33" fill="#94A3B8" font-size="14" font-weight="800" letter-spacing="1.2">{escape(label.upper())}</text>
-      <text x="24" y="73" fill="#F8FAFC" font-size="34" font-weight="900">{escape(str(value))}</text>
+      <rect width="294" height="104" rx="20" fill="#090E1B" stroke="{color}" stroke-opacity="0.7"/>
+      <text x="24" y="36" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.2">{escape(label.upper())}</text>
+      <text x="24" y="80" fill="#F8FAFC" font-size="38" font-weight="900">{escape(str(value))}</text>
     </g>"""
 
 
