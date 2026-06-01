@@ -214,9 +214,9 @@ def chip(x, y, text, color):
 def dashboard_card(x, y, label, value, color):
     return f"""
     <g transform="translate({x},{y})">
-      <rect width="300" height="94" rx="20" fill="#090E1B" stroke="{color}" stroke-opacity="0.7"/>
-      <text x="24" y="34" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.6">{escape(label.upper())}</text>
-      <text x="24" y="72" fill="#F8FAFC" font-size="34" font-weight="900">{escape(str(value))}</text>
+      <rect width="294" height="94" rx="20" fill="#090E1B" stroke="{color}" stroke-opacity="0.7"/>
+      <text x="24" y="33" fill="#94A3B8" font-size="14" font-weight="800" letter-spacing="1.2">{escape(label.upper())}</text>
+      <text x="24" y="73" fill="#F8FAFC" font-size="34" font-weight="900">{escape(str(value))}</text>
     </g>"""
 
 
@@ -248,14 +248,14 @@ def render_dashboard_svg(user):
     language_rows = []
     palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
     for index, (name, count) in enumerate(top_languages):
-        y = 318 + index * 28
-        width = 310 * count / max(max_language, 1)
+        y = 402 + index * 25
+        width = 300 * count / max(max_language, 1)
         color = palette[index % len(palette)]
         language_rows.append(
-            f'<text x="884" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(name)}</text>'
-            f'<rect x="1045" y="{y - 14}" width="310" height="15" rx="8" fill="#111827"/>'
-            f'<rect x="1045" y="{y - 14}" width="{width:.1f}" height="15" rx="8" fill="{color}"/>'
-            f'<text x="1368" y="{y}" fill="{color}" font-size="15" font-weight="900" text-anchor="end">{count}</text>'
+            f'<text x="884" y="{y}" fill="#E2E8F0" font-size="15" font-weight="900">{escape(name)}</text>'
+            f'<rect x="1048" y="{y - 14}" width="300" height="15" rx="8" fill="#111827"/>'
+            f'<rect x="1048" y="{y - 14}" width="{width:.1f}" height="15" rx="8" fill="{color}"/>'
+            f'<text x="1368" y="{y}" fill="{color}" font-size="14" font-weight="900" text-anchor="end">{count}</text>'
         )
 
     flow_items = [
@@ -267,27 +267,30 @@ def render_dashboard_svg(user):
     max_flow = max((value for _, value, _ in flow_items), default=1)
     flow_rows = []
     for index, (label, value, color) in enumerate(flow_items):
-        y = 318 + index * 36
-        width = 460 * value / max(max_flow, 1)
+        y = 405 + index * 38
+        width = 438 * value / max(max_flow, 1)
         flow_rows.append(
             f'<text x="66" y="{y}" fill="#E2E8F0" font-size="18" font-weight="900">{escape(label)}</text>'
-            f'<rect x="255" y="{y - 17}" width="460" height="18" rx="9" fill="#111827"/>'
-            f'<rect x="255" y="{y - 17}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
+            f'<rect x="275" y="{y - 17}" width="438" height="18" rx="9" fill="#111827"/>'
+            f'<rect x="275" y="{y - 17}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
             f'<text x="742" y="{y}" fill="{color}" font-size="17" font-weight="900" text-anchor="end">{value:,}</text>'
         )
 
-    return f"""<svg width="1400" height="500" viewBox="0 0 1400 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    return f"""<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">GitHub Command Dashboard</title>
   <desc id="desc">Workflow generated GitHub command dashboard for {escape(user.get("login", PROFILE_USER))}.</desc>
   <defs>
-    <linearGradient id="dash-border" x1="0" y1="0" x2="1400" y2="500">
+    <style>
+      text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
+    </style>
+    <linearGradient id="dash-border" x1="0" y1="0" x2="1400" y2="620">
       <stop offset="0" stop-color="#38BDF8"/>
       <stop offset="0.36" stop-color="#7C3AED"/>
       <stop offset="0.7" stop-color="#10B981"/>
       <stop offset="1" stop-color="#F97316"/>
       <animate attributeName="x2" values="1100;1400;1100" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="dash-surface" x1="0" y1="0" x2="1400" y2="500">
+    <linearGradient id="dash-surface" x1="0" y1="0" x2="1400" y2="620">
       <stop offset="0" stop-color="#071827"/>
       <stop offset="0.55" stop-color="#080B1D"/>
       <stop offset="1" stop-color="#071D16"/>
@@ -301,31 +304,44 @@ def render_dashboard_svg(user):
     </filter>
   </defs>
 
-  <rect x="10" y="10" width="1380" height="480" rx="28" fill="url(#dash-surface)" stroke="url(#dash-border)" stroke-width="3"/>
+  <rect x="10" y="10" width="1380" height="600" rx="28" fill="url(#dash-surface)" stroke="url(#dash-border)" stroke-width="3"/>
   <path d="M55 105 C240 38 410 152 600 86 S945 42 1328 125" stroke="#38BDF8" stroke-width="3" opacity="0.28"/>
-  <path d="M72 430 C290 335 466 462 690 370 S1005 318 1320 420" stroke="#10B981" stroke-width="3" opacity="0.25"/>
+  <path d="M72 525 C290 430 466 557 690 465 S1005 413 1320 515" stroke="#10B981" stroke-width="3" opacity="0.25"/>
   <circle cx="160" cy="86" r="96" fill="#38BDF8" opacity="0.07"/>
   <circle cx="760" cy="70" r="120" fill="#7C3AED" opacity="0.09"/>
-  <circle cx="1190" cy="380" r="115" fill="#10B981" opacity="0.08"/>
+  <circle cx="1190" cy="475" r="115" fill="#10B981" opacity="0.08"/>
 
-  <text x="58" y="60" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">WORKFLOW GENERATED</text>
-  <text x="58" y="107" fill="#F8FAFC" font-size="46" font-weight="900">GitHub Command Dashboard</text>
-  <text x="60" y="139" fill="#CBD5E1" font-size="19" font-weight="700">Stats, languages, streaks, and contribution mix from GitHub Actions | Updated {escape(updated)}</text>
+  <text x="58" y="66" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">WORKFLOW GENERATED</text>
+  <text x="58" y="118" fill="#F8FAFC" font-size="46" font-weight="900">GitHub Command Dashboard</text>
+  <text x="60" y="158" fill="#CBD5E1" font-size="19" font-weight="700">Stats, languages, streaks, and contribution mix from GitHub Actions | Updated {escape(updated)}</text>
 
-  {dashboard_card(58, 156, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
-  {dashboard_card(380, 156, "current streak", f"{current_streak} days", "#10B981")}
-  {dashboard_card(702, 156, "longest streak", f"{longest_streak} days", "#F97316")}
-  {dashboard_card(1024, 156, "public repos", f"{repo_count:,}", "#7C3AED")}
+  {dashboard_card(58, 190, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
+  {dashboard_card(382, 190, "current streak", f"{current_streak} days", "#10B981")}
+  {dashboard_card(706, 190, "longest streak", f"{longest_streak} days", "#F97316")}
+  {dashboard_card(1030, 190, "public repos", f"{repo_count:,}", "#7C3AED")}
 
-  <rect x="42" y="282" width="746" height="176" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="66" y="268" fill="#F8FAFC" font-size="22" font-weight="900">Contribution Mix</text>
+  <rect x="42" y="330" width="746" height="215" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="66" y="372" fill="#F8FAFC" font-size="24" font-weight="900">Contribution Mix</text>
   {''.join(flow_rows)}
 
-  <rect x="820" y="282" width="540" height="176" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="884" y="268" fill="#F8FAFC" font-size="22" font-weight="900">Language Radar</text>
+  <rect x="820" y="330" width="540" height="215" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="884" y="372" fill="#F8FAFC" font-size="24" font-weight="900">Language Radar</text>
   {''.join(language_rows)}
 
-  <text x="60" y="480" fill="#7DD3FC" font-size="16" font-weight="900">Active days: {active_days}/365 | Stars: {stars:,} | Forks: {forks:,} | Projects 2050+ | Technology Domains 50+ | AI Agents | LLMOps | DevSecOps</text>
+  <g transform="translate(60,570)">
+    <rect width="170" height="28" rx="14" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
+    <text x="85" y="19" fill="#E0F2FE" text-anchor="middle" font-size="13" font-weight="900">ACTIVE {active_days}/365</text>
+    <rect x="188" width="150" height="28" rx="14" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
+    <text x="263" y="19" fill="#EDE9FE" text-anchor="middle" font-size="13" font-weight="900">STARS {stars:,}</text>
+    <rect x="356" width="150" height="28" rx="14" fill="#10B981" fill-opacity="0.18" stroke="#10B981"/>
+    <text x="431" y="19" fill="#D1FAE5" text-anchor="middle" font-size="13" font-weight="900">FORKS {forks:,}</text>
+    <rect x="524" width="175" height="28" rx="14" fill="#F97316" fill-opacity="0.18" stroke="#F97316"/>
+    <text x="611" y="19" fill="#FFEDD5" text-anchor="middle" font-size="13" font-weight="900">PROJECTS 2050+</text>
+    <rect x="717" width="205" height="28" rx="14" fill="#22C55E" fill-opacity="0.18" stroke="#22C55E"/>
+    <text x="819" y="19" fill="#DCFCE7" text-anchor="middle" font-size="13" font-weight="900">TECH DOMAINS 50+</text>
+    <rect x="940" width="150" height="28" rx="14" fill="#EF4444" fill-opacity="0.18" stroke="#EF4444"/>
+    <text x="1015" y="19" fill="#FEE2E2" text-anchor="middle" font-size="13" font-weight="900">DEVSECOPS</text>
+  </g>
 
   <g filter="url(#dash-glow)">
     <circle cx="778" cy="104" r="7" fill="#38BDF8"/>
