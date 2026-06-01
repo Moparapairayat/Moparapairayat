@@ -246,14 +246,14 @@ def render_dashboard_svg(user):
     language_rows = []
     palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
     for index, (name, count) in enumerate(top_languages):
-        y = 402 + index * 25
+        y = 366 + index * 30
         width = 300 * count / max(max_language, 1)
         color = palette[index % len(palette)]
         language_rows.append(
-            f'<text x="884" y="{y}" fill="#E2E8F0" font-size="15" font-weight="900">{escape(name)}</text>'
-            f'<rect x="1048" y="{y - 14}" width="300" height="15" rx="8" fill="#111827"/>'
-            f'<rect x="1048" y="{y - 14}" width="{width:.1f}" height="15" rx="8" fill="{color}"/>'
-            f'<text x="1368" y="{y}" fill="{color}" font-size="14" font-weight="900" text-anchor="end">{count}</text>'
+            f'<text x="884" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(name)}</text>'
+            f'<rect x="1048" y="{y - 16}" width="300" height="18" rx="9" fill="#111827"/>'
+            f'<rect x="1048" y="{y - 16}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
+            f'<text x="1368" y="{y}" fill="{color}" font-size="16" font-weight="900" text-anchor="end">{count}</text>'
         )
 
     flow_items = [
@@ -265,13 +265,13 @@ def render_dashboard_svg(user):
     max_flow = max((value for _, value, _ in flow_items), default=1)
     flow_rows = []
     for index, (label, value, color) in enumerate(flow_items):
-        y = 405 + index * 38
-        width = 438 * value / max(max_flow, 1)
+        y = 370 + index * 44
+        width = 428 * value / max(max_flow, 1)
         flow_rows.append(
-            f'<text x="66" y="{y}" fill="#E2E8F0" font-size="18" font-weight="900">{escape(label)}</text>'
-            f'<rect x="275" y="{y - 17}" width="438" height="18" rx="9" fill="#111827"/>'
-            f'<rect x="275" y="{y - 17}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
-            f'<text x="742" y="{y}" fill="{color}" font-size="17" font-weight="900" text-anchor="end">{value:,}</text>'
+            f'<text x="66" y="{y}" fill="#E2E8F0" font-size="20" font-weight="900">{escape(label)}</text>'
+            f'<rect x="285" y="{y - 18}" width="428" height="20" rx="10" fill="#111827"/>'
+            f'<rect x="285" y="{y - 18}" width="{width:.1f}" height="20" rx="10" fill="{color}"/>'
+            f'<text x="742" y="{y}" fill="{color}" font-size="19" font-weight="900" text-anchor="end">{value:,}</text>'
         )
 
     return f"""<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
@@ -309,22 +309,22 @@ def render_dashboard_svg(user):
   <circle cx="760" cy="70" r="120" fill="#7C3AED" opacity="0.09"/>
   <circle cx="1190" cy="475" r="115" fill="#10B981" opacity="0.08"/>
 
-  <text x="58" y="102" fill="#F8FAFC" font-size="46" font-weight="900">GitHub Command Dashboard</text>
+  <text x="58" y="86" fill="#F8FAFC" font-size="52" font-weight="900">GitHub Command Dashboard</text>
 
-  {dashboard_card(58, 190, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
-  {dashboard_card(382, 190, "current streak", f"{current_streak} days", "#10B981")}
-  {dashboard_card(706, 190, "longest streak", f"{longest_streak} days", "#F97316")}
-  {dashboard_card(1030, 190, "public repos", f"{repo_count:,}", "#7C3AED")}
+  {dashboard_card(58, 138, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
+  {dashboard_card(382, 138, "current streak", f"{current_streak} days", "#10B981")}
+  {dashboard_card(706, 138, "longest streak", f"{longest_streak} days", "#F97316")}
+  {dashboard_card(1030, 138, "public repos", f"{repo_count:,}", "#7C3AED")}
 
-  <rect x="42" y="330" width="746" height="215" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="66" y="372" fill="#F8FAFC" font-size="24" font-weight="900">Contribution Mix</text>
+  <rect x="42" y="286" width="746" height="252" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="66" y="330" fill="#F8FAFC" font-size="28" font-weight="900">Contribution Mix</text>
   {''.join(flow_rows)}
 
-  <rect x="820" y="330" width="540" height="215" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="884" y="372" fill="#F8FAFC" font-size="24" font-weight="900">Language Radar</text>
+  <rect x="820" y="286" width="540" height="252" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="884" y="330" fill="#F8FAFC" font-size="28" font-weight="900">Language Radar</text>
   {''.join(language_rows)}
 
-  <g transform="translate(60,570)">
+  <g transform="translate(60,562)">
     <rect width="170" height="28" rx="14" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
     <text x="85" y="19" fill="#E0F2FE" text-anchor="middle" font-size="13" font-weight="900">ACTIVE {active_days}/365</text>
     <rect x="188" width="150" height="28" rx="14" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
@@ -373,14 +373,14 @@ def render_engineering_cards_svg(user):
     language_rows = []
     palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
     for index, (name, count) in enumerate(top_languages):
-        y = 424 + index * 38
+        y = 410 + index * 34
         width = 290 * count / max(max_language, 1)
         color = palette[index % len(palette)]
         language_rows.append(
-            f'<text x="92" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(name)}</text>'
-            f'<rect x="260" y="{y - 17}" width="290" height="18" rx="9" fill="#111827"/>'
-            f'<rect x="260" y="{y - 17}" width="{width:.1f}" height="18" rx="9" fill="{color}"/>'
-            f'<text x="580" y="{y}" fill="{color}" text-anchor="end" font-size="16" font-weight="900">{count}</text>'
+            f'<text x="92" y="{y}" fill="#E2E8F0" font-size="18" font-weight="900">{escape(name)}</text>'
+            f'<rect x="260" y="{y - 19}" width="290" height="20" rx="10" fill="#111827"/>'
+            f'<rect x="260" y="{y - 19}" width="{width:.1f}" height="20" rx="10" fill="{color}"/>'
+            f'<text x="580" y="{y}" fill="{color}" text-anchor="end" font-size="17" font-weight="900">{count}</text>'
         )
 
     contribution_rows = [
@@ -392,23 +392,23 @@ def render_engineering_cards_svg(user):
     max_contribution = max((value for _, value, _ in contribution_rows), default=1)
     contribution_bars = []
     for index, (label, value, color) in enumerate(contribution_rows):
-        y = 424 + index * 44
+        y = 414 + index * 48
         width = 300 * value / max(max_contribution, 1)
         contribution_bars.append(
-            f'<text x="764" y="{y}" fill="#E2E8F0" font-size="17" font-weight="900">{escape(label)}</text>'
-            f'<rect x="954" y="{y - 17}" width="300" height="18" rx="9" fill="#111827"/>'
-            f'<rect x="954" y="{y - 17}" width="{max(width, 5):.1f}" height="18" rx="9" fill="{color}"/>'
-            f'<text x="1280" y="{y}" fill="{color}" text-anchor="end" font-size="16" font-weight="900">{value:,}</text>'
+            f'<text x="764" y="{y}" fill="#E2E8F0" font-size="19" font-weight="900">{escape(label)}</text>'
+            f'<rect x="954" y="{y - 20}" width="300" height="22" rx="11" fill="#111827"/>'
+            f'<rect x="954" y="{y - 20}" width="{max(width, 5):.1f}" height="22" rx="11" fill="{color}"/>'
+            f'<text x="1280" y="{y}" fill="{color}" text-anchor="end" font-size="18" font-weight="900">{value:,}</text>'
         )
 
     last_30 = [day["contributionCount"] for day in days[-30:]]
     max_30 = max(last_30) if last_30 else 1
     spark_bars = []
     for index, value in enumerate(last_30):
-        height = 64 * value / max(max_30, 1)
+        height = 72 * value / max(max_30, 1)
         x = 778 + index * 15
-        y = 245 - height
-        spark_bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="9" height="{height:.1f}" rx="4" fill="#38BDF8" opacity="0.82"/>')
+        y = 262 - height
+        spark_bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="10" height="{height:.1f}" rx="5" fill="#38BDF8" opacity="0.82"/>')
 
     return f"""<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Engineering Signal Cards</title>
@@ -444,27 +444,27 @@ def render_engineering_cards_svg(user):
   <circle cx="720" cy="82" r="118" fill="#7C3AED" opacity="0.08"/>
   <circle cx="1175" cy="580" r="120" fill="#10B981" opacity="0.07"/>
 
-  <text x="58" y="102" fill="#F8FAFC" font-size="44" font-weight="900">{escape(user.get("name") or "Mopara Pair Ayat")}</text>
+  <text x="58" y="86" fill="#F8FAFC" font-size="52" font-weight="900">{escape(user.get("name") or "Mopara Pair Ayat")}</text>
 
-  <rect x="58" y="190" width="600" height="118" rx="20" fill="#090E1B" stroke="#38BDF8" stroke-opacity="0.62"/>
-  <text x="88" y="226" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.4">PROFILE TELEMETRY</text>
-  <text x="88" y="260" fill="#F8FAFC" font-size="24" font-weight="900">{total_contributions:,} contributions</text>
-  <text x="320" y="260" fill="#7DD3FC" font-size="24" font-weight="900">{repo_count:,} public repos</text>
-  <text x="88" y="290" fill="#CBD5E1" font-size="19" font-weight="800">{active_days}/365 active days | Projects 2050+ | Tech domains 50+</text>
+  <rect x="58" y="140" width="600" height="142" rx="22" fill="#090E1B" stroke="#38BDF8" stroke-opacity="0.62"/>
+  <text x="88" y="179" fill="#94A3B8" font-size="17" font-weight="800" letter-spacing="1.4">PROFILE TELEMETRY</text>
+  <text x="88" y="219" fill="#F8FAFC" font-size="28" font-weight="900">{total_contributions:,} contributions</text>
+  <text x="88" y="255" fill="#7DD3FC" font-size="28" font-weight="900">{repo_count:,} public repos</text>
+  <text x="352" y="255" fill="#CBD5E1" font-size="21" font-weight="800">{active_days}/365 active days</text>
 
-  <rect x="720" y="190" width="620" height="118" rx="20" fill="#090E1B" stroke="#10B981" stroke-opacity="0.62"/>
-  <text x="750" y="226" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.4">30-DAY DELIVERY PULSE</text>
+  <rect x="720" y="140" width="620" height="142" rx="22" fill="#090E1B" stroke="#10B981" stroke-opacity="0.62"/>
+  <text x="750" y="179" fill="#94A3B8" font-size="17" font-weight="800" letter-spacing="1.4">30-DAY DELIVERY PULSE</text>
   {''.join(spark_bars)}
 
-  <rect x="58" y="350" width="600" height="236" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="88" y="386" fill="#F8FAFC" font-size="24" font-weight="900">Language Radar</text>
+  <rect x="58" y="320" width="600" height="282" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="88" y="365" fill="#F8FAFC" font-size="30" font-weight="900">Language Radar</text>
   {''.join(language_rows)}
 
-  <rect x="720" y="350" width="620" height="236" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="750" y="386" fill="#F8FAFC" font-size="24" font-weight="900">Contribution Matrix</text>
+  <rect x="720" y="320" width="620" height="282" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="750" y="365" fill="#F8FAFC" font-size="30" font-weight="900">Contribution Matrix</text>
   {''.join(contribution_bars)}
 
-  <g transform="translate(58,622)">
+  <g transform="translate(58,632)">
     <rect width="170" height="30" rx="15" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
     <text x="85" y="20" fill="#E0F2FE" text-anchor="middle" font-size="13" font-weight="900">STARS {stars:,}</text>
     <rect x="190" width="170" height="30" rx="15" fill="#10B981" fill-opacity="0.18" stroke="#10B981"/>
@@ -504,10 +504,10 @@ def render_svg(user):
     last_90 = [day["contributionCount"] for day in days[-90:]]
     last_30 = [day["contributionCount"] for day in days[-30:]]
     heatmap = []
-    cell = 12
-    gap = 4
+    cell = 13
+    gap = 3
     left = 58
-    top = 402
+    top = 366
     for index, day in enumerate(days[-364:]):
         week = index // 7
         weekday = index % 7
@@ -529,30 +529,30 @@ def render_svg(user):
     bar_x = 954
     stacked = []
     cursor = bar_x
-    stacked.append('<rect x="954" y="558" width="332" height="16" rx="8" fill="#111827"/>')
+    stacked.append('<rect x="954" y="532" width="332" height="18" rx="9" fill="#111827"/>')
     for index, (label, value, color) in enumerate(bar_items):
         width = (value / bar_total) * 332
         if value > 0:
-            stacked.append(f'<rect x="{cursor:.1f}" y="558" width="{max(width, 5):.1f}" height="16" rx="8" fill="{color}"/>')
+            stacked.append(f'<rect x="{cursor:.1f}" y="532" width="{max(width, 5):.1f}" height="18" rx="9" fill="{color}"/>')
         stacked.append(
-            f'<text x="{954 + index * 96}" y="588" fill="{color}" font-size="13" font-weight="900">{escape(label.replace("PULL REQUESTS", "PRS"))} {value}</text>'
+            f'<text x="{954 + index * 96}" y="566" fill="{color}" font-size="14" font-weight="900">{escape(label.replace("PULL REQUESTS", "PRS"))} {value}</text>'
         )
         cursor += width
 
-    line_points = points_for_line(last_90, 954, 386, 350, 78)
-    area_points = f"954,464 {line_points} 1304,464"
+    line_points = points_for_line(last_90, 954, 346, 350, 92)
+    area_points = f"954,438 {line_points} 1304,438"
     bars = []
     max_30 = max(last_30) if last_30 else 1
     for index, value in enumerate(last_30):
-        height = 36 * value / max(max_30, 1)
+        height = 42 * value / max(max_30, 1)
         x = 956 + index * 11
-        y = 704 - height
-        bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="6" height="{height:.1f}" rx="3" fill="#38BDF8" opacity="0.78"/>')
+        y = 692 - height
+        bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="7" height="{height:.1f}" rx="3" fill="#38BDF8" opacity="0.78"/>')
 
     language_chips = []
     language_colors = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444"]
     for index, (name, count) in enumerate(top_languages):
-        language_chips.append(chip(58 + index * 170, 288, f"{name} {count}", language_colors[index % len(language_colors)]))
+        language_chips.append(chip(58 + index * 176, 238, f"{name} {count}", language_colors[index % len(language_colors)]))
 
     svg = f"""<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Next Zen GitHub Activity Graph</title>
@@ -593,34 +593,34 @@ def render_svg(user):
   <circle cx="694" cy="82" r="108" fill="#7C3AED" opacity="0.10"/>
   <circle cx="1188" cy="590" r="118" fill="#10B981" opacity="0.08"/>
 
-  <text x="58" y="106" fill="#F8FAFC" font-size="46" font-weight="900">Next-Zen GitHub Signal Graph</text>
+  <text x="58" y="86" fill="#F8FAFC" font-size="52" font-weight="900">Next-Zen GitHub Signal Graph</text>
 
-  {metric_card(58, 190, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
-  {metric_card(384, 190, "public repos", f"{repo_count:,}", "#7C3AED")}
-  {metric_card(710, 190, "stars / forks", f"{stars:,} / {forks:,}", "#10B981")}
-  {metric_card(1036, 190, "private signal", f"{restricted:,}", "#F97316")}
+  {metric_card(58, 140, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
+  {metric_card(384, 140, "public repos", f"{repo_count:,}", "#7C3AED")}
+  {metric_card(710, 140, "stars / forks", f"{stars:,} / {forks:,}", "#10B981")}
+  {metric_card(1036, 140, "private signal", f"{restricted:,}", "#F97316")}
 
   {''.join(language_chips)}
 
-  <rect x="42" y="350" width="878" height="250" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="58" y="386" fill="#F8FAFC" font-size="24" font-weight="900">Contribution Heatmap</text>
+  <rect x="42" y="304" width="878" height="252" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="58" y="345" fill="#F8FAFC" font-size="30" font-weight="900">Contribution Heatmap</text>
   {''.join(heatmap)}
 
-  <rect x="930" y="350" width="400" height="136" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="952" y="383" fill="#F8FAFC" font-size="20" font-weight="900">90-Day Velocity Curve</text>
+  <rect x="930" y="304" width="400" height="150" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="952" y="340" fill="#F8FAFC" font-size="22" font-weight="900">90-Day Velocity Curve</text>
   <polygon points="{area_points}" fill="url(#area)"/>
   <polyline points="{line_points}" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-  <line x1="954" y1="464" x2="1304" y2="464" stroke="#334155" stroke-width="1"/>
+  <line x1="954" y1="438" x2="1304" y2="438" stroke="#334155" stroke-width="1"/>
 
-  <rect x="930" y="510" width="400" height="96" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="952" y="542" fill="#F8FAFC" font-size="20" font-weight="900">Contribution Mix</text>
+  <rect x="930" y="476" width="400" height="108" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="952" y="516" fill="#F8FAFC" font-size="22" font-weight="900">Contribution Mix</text>
   {''.join(stacked)}
 
-  <rect x="930" y="628" width="400" height="82" rx="22" fill="#060A16" stroke="#1E293B"/>
-  <text x="952" y="660" fill="#F8FAFC" font-size="20" font-weight="900">30-Day Spark Bars</text>
+  <rect x="930" y="606" width="400" height="104" rx="22" fill="#060A16" stroke="#1E293B"/>
+  <text x="952" y="646" fill="#F8FAFC" font-size="22" font-weight="900">30-Day Spark Bars</text>
   {''.join(bars)}
 
-  <g transform="translate(58,640)">
+  <g transform="translate(58,590)">
     <rect width="130" height="30" rx="15" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
     <text x="65" y="20" fill="#E0F2FE" text-anchor="middle" font-size="12" font-weight="900">PROJECTS 2050+</text>
     <rect x="145" width="168" height="30" rx="15" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
