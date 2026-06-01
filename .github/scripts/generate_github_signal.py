@@ -243,9 +243,6 @@ def render_dashboard_svg(user):
     )
     top_languages = languages.most_common(6)
     max_language = max((count for _, count in top_languages), default=1)
-    bdt_now = datetime.now(timezone.utc) + timedelta(hours=UTC_OFFSET_HOURS)
-    updated = bdt_now.strftime("%Y-%m-%d %H:%M BDT")
-
     language_rows = []
     palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
     for index, (name, count) in enumerate(top_languages):
@@ -279,7 +276,7 @@ def render_dashboard_svg(user):
 
     return f"""<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">GitHub Command Dashboard</title>
-  <desc id="desc">Workflow generated GitHub command dashboard for {escape(user.get("login", PROFILE_USER))}.</desc>
+  <desc id="desc">GitHub command dashboard for {escape(user.get("login", PROFILE_USER))}.</desc>
   <defs>
     <style>
       text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
@@ -312,9 +309,7 @@ def render_dashboard_svg(user):
   <circle cx="760" cy="70" r="120" fill="#7C3AED" opacity="0.09"/>
   <circle cx="1190" cy="475" r="115" fill="#10B981" opacity="0.08"/>
 
-  <text x="58" y="66" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">WORKFLOW GENERATED</text>
-  <text x="58" y="118" fill="#F8FAFC" font-size="46" font-weight="900">GitHub Command Dashboard</text>
-  <text x="60" y="158" fill="#CBD5E1" font-size="19" font-weight="700">Stats, languages, streaks, and contribution mix from GitHub Actions | Updated {escape(updated)}</text>
+  <text x="58" y="102" fill="#F8FAFC" font-size="46" font-weight="900">GitHub Command Dashboard</text>
 
   {dashboard_card(58, 190, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
   {dashboard_card(382, 190, "current streak", f"{current_streak} days", "#10B981")}
@@ -375,9 +370,6 @@ def render_engineering_cards_svg(user):
     )
     top_languages = languages.most_common(6)
     max_language = max((count for _, count in top_languages), default=1)
-    bdt_now = datetime.now(timezone.utc) + timedelta(hours=UTC_OFFSET_HOURS)
-    updated = bdt_now.strftime("%Y-%m-%d %H:%M BDT")
-
     language_rows = []
     palette = ["#38BDF8", "#7C3AED", "#10B981", "#F97316", "#EF4444", "#A3E635"]
     for index, (name, count) in enumerate(top_languages):
@@ -420,7 +412,7 @@ def render_engineering_cards_svg(user):
 
     return f"""<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Engineering Signal Cards</title>
-  <desc id="desc">Workflow generated engineering signal cards for {escape(user.get("login", PROFILE_USER))}.</desc>
+  <desc id="desc">Engineering signal cards for {escape(user.get("login", PROFILE_USER))}.</desc>
   <defs>
     <style>
       text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
@@ -452,9 +444,7 @@ def render_engineering_cards_svg(user):
   <circle cx="720" cy="82" r="118" fill="#7C3AED" opacity="0.08"/>
   <circle cx="1175" cy="580" r="120" fill="#10B981" opacity="0.07"/>
 
-  <text x="58" y="66" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">ENGINEERING SIGNAL</text>
-  <text x="58" y="116" fill="#F8FAFC" font-size="44" font-weight="900">{escape(user.get("name") or "Mopara Pair Ayat")}</text>
-  <text x="60" y="154" fill="#CBD5E1" font-size="19" font-weight="700">@{escape(user.get("login", PROFILE_USER))} | Updated {escape(updated)}</text>
+  <text x="58" y="102" fill="#F8FAFC" font-size="44" font-weight="900">{escape(user.get("name") or "Mopara Pair Ayat")}</text>
 
   <rect x="58" y="190" width="600" height="118" rx="20" fill="#090E1B" stroke="#38BDF8" stroke-opacity="0.62"/>
   <text x="88" y="226" fill="#94A3B8" font-size="15" font-weight="800" letter-spacing="1.4">PROFILE TELEMETRY</text>
@@ -513,9 +503,6 @@ def render_svg(user):
     max_day = max((day["contributionCount"] for day in days), default=1)
     last_90 = [day["contributionCount"] for day in days[-90:]]
     last_30 = [day["contributionCount"] for day in days[-30:]]
-    bdt_now = datetime.now(timezone.utc) + timedelta(hours=UTC_OFFSET_HOURS)
-    updated = bdt_now.strftime("%Y-%m-%d %H:%M BDT")
-
     heatmap = []
     cell = 12
     gap = 4
@@ -569,7 +556,7 @@ def render_svg(user):
 
     svg = f"""<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Next Zen GitHub Activity Graph</title>
-  <desc id="desc">Generated GitHub analytics graph for {escape(user.get("login", PROFILE_USER))}, updated by GitHub Actions.</desc>
+  <desc id="desc">GitHub analytics graph for {escape(user.get("login", PROFILE_USER))}.</desc>
   <defs>
     <style>
       text {{ font-family: Inter, Segoe UI, Arial, sans-serif; }}
@@ -606,12 +593,7 @@ def render_svg(user):
   <circle cx="694" cy="82" r="108" fill="#7C3AED" opacity="0.10"/>
   <circle cx="1188" cy="590" r="118" fill="#10B981" opacity="0.08"/>
 
-  <text x="58" y="68" fill="#7DD3FC" font-size="14" font-weight="900" letter-spacing="4">GITHUB ACTIONS LIVE OPS</text>
-  <text x="58" y="120" fill="#F8FAFC" font-size="46" font-weight="900">Next-Zen GitHub Signal Graph</text>
-  <text x="60" y="158" fill="#CBD5E1" font-size="19" font-weight="700">Near real-time contribution telemetry | Updated {escape(updated)}</text>
-  <text x="1338" y="68" fill="#94A3B8" font-size="14" font-weight="800" letter-spacing="2" text-anchor="end">PROFILE</text>
-  <text x="1338" y="106" fill="#F8FAFC" font-size="28" font-weight="900" text-anchor="end">{escape(user.get("name") or user.get("login") or PROFILE_USER)}</text>
-  <text x="1338" y="136" fill="#7DD3FC" font-size="16" font-weight="800" text-anchor="end">@{escape(user.get("login", PROFILE_USER))}</text>
+  <text x="58" y="106" fill="#F8FAFC" font-size="46" font-weight="900">Next-Zen GitHub Signal Graph</text>
 
   {metric_card(58, 190, "365d contributions", f"{total_contributions:,}", "#38BDF8")}
   {metric_card(384, 190, "public repos", f"{repo_count:,}", "#7C3AED")}
