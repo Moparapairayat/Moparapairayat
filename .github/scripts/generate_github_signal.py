@@ -492,26 +492,32 @@ def rank_for(value, excellent, strong, mid):
 
 
 def trophy_card(x, title, rank, subtitle, points, color, progress):
-    progress_width = max(12, min(148, int(148 * progress)))
+    progress_width = max(14, min(154, int(154 * progress)))
     return f"""
-    <g transform="translate({x},28)">
-      <rect width="210" height="254" rx="8" fill="#11101D" stroke="#D1D5DB" stroke-opacity="0.55" stroke-width="2"/>
-      <text x="105" y="32" fill="#FF4D8D" text-anchor="middle" font-size="25" font-weight="900">{escape(title)}</text>
+    <g transform="translate({x},22)">
+      <rect width="210" height="266" rx="18" fill="#11101D" stroke="#F8FAFC" stroke-opacity="0.36" stroke-width="2"/>
+      <rect x="1" y="1" width="208" height="264" rx="17" fill="none" stroke="{color}" stroke-opacity="0.18"/>
+      <path d="M18 18 H192" stroke="#FF4D8D" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
+      <text x="105" y="38" fill="#FF4D8D" text-anchor="middle" font-size="25" font-weight="900">{escape(title)}</text>
 
-      <g transform="translate(105,94)">
-        <ellipse cx="-50" cy="2" rx="23" ry="30" fill="none" stroke="{color}" stroke-width="8"/>
-        <ellipse cx="50" cy="2" rx="23" ry="30" fill="none" stroke="{color}" stroke-width="8"/>
-        <path d="M-48 -34 H48 V8 C48 40 26 58 0 58 C-26 58 -48 40 -48 8 Z" fill="{color}"/>
-        <rect x="-20" y="52" width="40" height="30" rx="8" fill="{color}"/>
-        <path d="M-48 92 H48 C43 75 27 68 0 68 C-27 68 -43 75 -48 92Z" fill="{color}"/>
-        <circle cx="0" cy="0" r="33" fill="#ECFDF5" stroke="#F8FAFC" stroke-width="2"/>
-        <text x="0" y="12" fill="#4B5563" text-anchor="middle" font-size="42" font-weight="900">{escape(rank)}</text>
+      <g transform="translate(105,92)" filter="url(#cup-soft)">
+        <ellipse cx="-55" cy="-2" rx="25" ry="33" fill="none" stroke="{color}" stroke-width="9" opacity="0.95"/>
+        <ellipse cx="55" cy="-2" rx="25" ry="33" fill="none" stroke="{color}" stroke-width="9" opacity="0.95"/>
+        <path d="M-54 -42 H54 V4 C54 40 30 64 0 64 C-30 64 -54 40 -54 4 Z" fill="{color}"/>
+        <path d="M-38 -34 H38 V-4 C38 24 22 44 0 44 C-22 44 -38 24 -38 -4 Z" fill="#FFFFFF" opacity="0.18"/>
+        <path d="M-10 -42 H54 V-6 C54 29 30 62 0 64 C24 48 34 24 34 -4 V-42Z" fill="#000000" opacity="0.12"/>
+        <rect x="-22" y="58" width="44" height="32" rx="8" fill="{color}"/>
+        <path d="M-54 102 H54 C48 82 30 74 0 74 C-30 74 -48 82 -54 102Z" fill="{color}"/>
+        <circle cx="0" cy="-2" r="36" fill="#F0FDF4" stroke="#FFFFFF" stroke-width="3"/>
+        <circle cx="0" cy="-2" r="30" fill="#FFFFFF" opacity="0.45"/>
+        <text x="0" y="11" fill="#475569" text-anchor="middle" font-size="43" font-weight="900">{escape(rank)}</text>
       </g>
 
-      <text x="105" y="194" fill="#CFFFEA" text-anchor="middle" font-size="18" font-weight="900">{escape(subtitle)}</text>
-      <text x="105" y="218" fill="#CFFFEA" text-anchor="middle" font-size="18" font-weight="900">{escape(points)}</text>
-      <rect x="31" y="235" width="148" height="6" rx="3" fill="#7A3159" opacity="0.65"/>
-      <rect x="31" y="235" width="{progress_width}" height="6" rx="3" fill="#FF4D8D"/>
+      <text x="105" y="218" fill="#D1FAE5" text-anchor="middle" font-size="18" font-weight="900">{escape(subtitle)}</text>
+      <text x="105" y="242" fill="#D1FAE5" text-anchor="middle" font-size="18" font-weight="900">{escape(points)}</text>
+      <rect x="28" y="256" width="154" height="7" rx="4" fill="#7A3159" opacity="0.65"/>
+      <rect x="28" y="256" width="{progress_width}" height="7" rx="4" fill="#FF4D8D"/>
+      <circle cx="28" cy="259.5" r="4" fill="#FF4D8D"/>
     </g>"""
 
 
@@ -549,6 +555,9 @@ def render_achievement_layer_svg(user):
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+    </filter>
+    <filter id="cup-soft" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#000000" flood-opacity="0.28"/>
     </filter>
   </defs>
 
