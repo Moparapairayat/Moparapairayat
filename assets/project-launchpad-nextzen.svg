@@ -1,0 +1,116 @@
+<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Featured Project Systems</title>
+  <desc id="desc">Next-zen featured project cards showing problem, architecture, stack, and impact.</desc>
+  <defs>
+    <style>
+      text { font-family: Inter, Segoe UI, Arial, sans-serif; }
+    </style>
+    <linearGradient id="border" x1="0" y1="0" x2="1400" y2="760">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.35" stop-color="#7C3AED"/>
+      <stop offset="0.68" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="surface" x1="0" y1="0" x2="1400" y2="760">
+      <stop offset="0" stop-color="#061625"/>
+      <stop offset="0.52" stop-color="#080B1F"/>
+      <stop offset="1" stop-color="#071A14"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="1380" height="740" rx="28" fill="url(#surface)" stroke="url(#border)" stroke-width="3"/>
+  <path d="M58 120 C265 42 410 158 620 92 S960 54 1330 126" stroke="#38BDF8" stroke-width="3" opacity="0.25"/>
+  <path d="M70 655 C290 560 475 690 700 590 S1010 515 1320 640" stroke="#10B981" stroke-width="3" opacity="0.22"/>
+  <circle cx="150" cy="98" r="96" fill="#38BDF8" opacity="0.07"/>
+  <circle cx="720" cy="78" r="118" fill="#7C3AED" opacity="0.09"/>
+  <circle cx="1182" cy="610" r="120" fill="#10B981" opacity="0.07"/>
+
+  <text x="58" y="82" fill="#F8FAFC" font-size="52" font-weight="900">Featured Project Systems</text>
+  <text x="60" y="120" fill="#CBD5E1" font-size="20" font-weight="800">Problem -> Architecture -> Stack -> Impact</text>
+
+  <g transform="translate(58,160)">
+    <rect width="620" height="225" rx="22" fill="#060A16" stroke="#38BDF8" stroke-opacity="0.72"/>
+    <rect x="22" y="22" width="112" height="28" rx="14" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
+    <text x="78" y="41" fill="#E0F2FE" text-anchor="middle" font-size="13" font-weight="900">SYSTEM 01</text>
+    <text x="152" y="44" fill="#F8FAFC" font-size="28" font-weight="900">Net-Watcher</text>
+    <text x="28" y="82" fill="#7DD3FC" font-size="16" font-weight="900">Problem</text>
+    <text x="118" y="82" fill="#E2E8F0" font-size="16" font-weight="800">Network visibility, uptime checks, operational monitoring</text>
+    <text x="28" y="116" fill="#7DD3FC" font-size="16" font-weight="900">Architecture</text>
+    <text x="150" y="116" fill="#E2E8F0" font-size="16" font-weight="800">Probe -> API -> event store -> dashboard -> alerts</text>
+    <text x="28" y="150" fill="#7DD3FC" font-size="16" font-weight="900">Stack</text>
+    <text x="118" y="150" fill="#E2E8F0" font-size="16" font-weight="800">Python | Networking | APIs | Observability | Automation</text>
+    <text x="28" y="184" fill="#7DD3FC" font-size="16" font-weight="900">Impact</text>
+    <text x="118" y="184" fill="#E2E8F0" font-size="16" font-weight="800">Raw network signals become readable operational intelligence</text>
+  </g>
+
+  <g transform="translate(722,160)">
+    <rect width="620" height="225" rx="22" fill="#060A16" stroke="#7C3AED" stroke-opacity="0.72"/>
+    <rect x="22" y="22" width="112" height="28" rx="14" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
+    <text x="78" y="41" fill="#EDE9FE" text-anchor="middle" font-size="13" font-weight="900">SYSTEM 02</text>
+    <text x="152" y="44" fill="#F8FAFC" font-size="28" font-weight="900">Interview Platform</text>
+    <text x="28" y="82" fill="#C4B5FD" font-size="16" font-weight="900">Problem</text>
+    <text x="118" y="82" fill="#E2E8F0" font-size="16" font-weight="800">Structured sessions, candidate flow, repeatable evaluation</text>
+    <text x="28" y="116" fill="#C4B5FD" font-size="16" font-weight="900">Architecture</text>
+    <text x="150" y="116" fill="#E2E8F0" font-size="16" font-weight="800">Auth -> sessions -> questions -> scoring -> admin review</text>
+    <text x="28" y="150" fill="#C4B5FD" font-size="16" font-weight="900">Stack</text>
+    <text x="118" y="150" fill="#E2E8F0" font-size="16" font-weight="800">Full-stack | Realtime UX | Database | Secure APIs</text>
+    <text x="28" y="184" fill="#C4B5FD" font-size="16" font-weight="900">Impact</text>
+    <text x="118" y="184" fill="#E2E8F0" font-size="16" font-weight="800">Cleaner path from interview setup to decision support</text>
+  </g>
+
+  <g transform="translate(58,415)">
+    <rect width="620" height="225" rx="22" fill="#060A16" stroke="#10B981" stroke-opacity="0.72"/>
+    <rect x="22" y="22" width="112" height="28" rx="14" fill="#10B981" fill-opacity="0.18" stroke="#10B981"/>
+    <text x="78" y="41" fill="#D1FAE5" text-anchor="middle" font-size="13" font-weight="900">SYSTEM 03</text>
+    <text x="152" y="44" fill="#F8FAFC" font-size="28" font-weight="900">AI Agent Platform</text>
+    <text x="28" y="82" fill="#86EFAC" font-size="16" font-weight="900">Problem</text>
+    <text x="118" y="82" fill="#E2E8F0" font-size="16" font-weight="800">Reliable tools, memory, retrieval, evals, safe automation</text>
+    <text x="28" y="116" fill="#86EFAC" font-size="16" font-weight="900">Architecture</text>
+    <text x="150" y="116" fill="#E2E8F0" font-size="16" font-weight="800">Agent runtime -> tools -> RAG -> queue -> eval -> monitor</text>
+    <text x="28" y="150" fill="#86EFAC" font-size="16" font-weight="900">Stack</text>
+    <text x="118" y="150" fill="#E2E8F0" font-size="16" font-weight="800">Python | LLMs | RAG | Vector DB | LLMOps | Queues</text>
+    <text x="28" y="184" fill="#86EFAC" font-size="16" font-weight="900">Impact</text>
+    <text x="118" y="184" fill="#E2E8F0" font-size="16" font-weight="800">Moves AI from demo behavior to production-grade workflows</text>
+  </g>
+
+  <g transform="translate(722,415)">
+    <rect width="620" height="225" rx="22" fill="#060A16" stroke="#F97316" stroke-opacity="0.72"/>
+    <rect x="22" y="22" width="112" height="28" rx="14" fill="#F97316" fill-opacity="0.18" stroke="#F97316"/>
+    <text x="78" y="41" fill="#FFEDD5" text-anchor="middle" font-size="13" font-weight="900">SYSTEM 04</text>
+    <text x="152" y="44" fill="#F8FAFC" font-size="28" font-weight="900">CSE x EEE Systems Lab</text>
+    <text x="28" y="82" fill="#FDBA74" font-size="16" font-weight="900">Problem</text>
+    <text x="118" y="82" fill="#E2E8F0" font-size="16" font-weight="800">Software, sensors, edge inference, cloud telemetry together</text>
+    <text x="28" y="116" fill="#FDBA74" font-size="16" font-weight="900">Architecture</text>
+    <text x="150" y="116" fill="#E2E8F0" font-size="16" font-weight="800">Device -> edge AI -> MQTT/API -> cloud -> dashboard</text>
+    <text x="28" y="150" fill="#FDBA74" font-size="16" font-weight="900">Stack</text>
+    <text x="118" y="150" fill="#E2E8F0" font-size="16" font-weight="800">Embedded C/C++ | Python | IoT | Edge AI | Cloud | Data</text>
+    <text x="28" y="184" fill="#FDBA74" font-size="16" font-weight="900">Impact</text>
+    <text x="118" y="184" fill="#E2E8F0" font-size="16" font-weight="800">Connects CSE, EEE, embedded systems, real-world automation</text>
+  </g>
+
+  <g transform="translate(58,680)">
+    <rect width="165" height="30" rx="15" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8"/>
+    <text x="82" y="20" fill="#E0F2FE" text-anchor="middle" font-size="12" font-weight="900">SECURE APIS</text>
+    <rect x="185" width="190" height="30" rx="15" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED"/>
+    <text x="280" y="20" fill="#EDE9FE" text-anchor="middle" font-size="12" font-weight="900">SCALABLE ARCHITECTURE</text>
+    <rect x="395" width="160" height="30" rx="15" fill="#10B981" fill-opacity="0.18" stroke="#10B981"/>
+    <text x="475" y="20" fill="#D1FAE5" text-anchor="middle" font-size="12" font-weight="900">AI READY</text>
+    <rect x="575" width="205" height="30" rx="15" fill="#F97316" fill-opacity="0.18" stroke="#F97316"/>
+    <text x="677" y="20" fill="#FFEDD5" text-anchor="middle" font-size="12" font-weight="900">CSE x EEE READY</text>
+    <rect x="800" width="170" height="30" rx="15" fill="#EF4444" fill-opacity="0.18" stroke="#EF4444"/>
+    <text x="885" y="20" fill="#FEE2E2" text-anchor="middle" font-size="12" font-weight="900">OBSERVABLE</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="676" cy="162" r="6" fill="#38BDF8"/>
+    <circle cx="720" cy="386" r="6" fill="#10B981"/>
+    <circle cx="1328" cy="642" r="6" fill="#F97316"/>
+  </g>
+</svg>

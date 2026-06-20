@@ -576,48 +576,19 @@ Idea → Requirements → Architecture → Prototype → Production Build
   <img src="https://img.shields.io/badge/Production_Mindset-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="Production Mindset" />
 </p>
 
-<table align="center" width="100%">
-<tr>
-<th align="center" width="210">Flagship System</th>
-<th align="center" width="270">Problem</th>
-<th align="center" width="300">Architecture</th>
-<th align="center" width="260">Stack</th>
-<th align="center" width="220">Impact</th>
-</tr>
-<tr>
-<td><b>🛰️ Net-Watcher</b></td>
-<td>Network visibility, uptime checks, and operational monitoring need to be simple and actionable</td>
-<td>Probe layer → API service → event store → dashboard → alert workflow</td>
-<td>Python • Networking • APIs • Observability • Automation</td>
-<td>Turns raw network signals into readable operational intelligence</td>
-</tr>
-<tr>
-<td><b>🎙️ Interview Platform</b></td>
-<td>Interview workflows need structured sessions, clear candidate flow, and repeatable evaluation</td>
-<td>Auth → session orchestration → question flow → scoring → admin review surface</td>
-<td>Full-Stack • Realtime UX • Database • Secure APIs</td>
-<td>Creates a cleaner path from interview setup to decision support</td>
-</tr>
-<tr>
-<td><b>🤖 AI Agent Platform</b></td>
-<td>AI products need reliable tool use, memory, retrieval, evals, and human-safe automation</td>
-<td>Agent runtime → tools → RAG → queue → eval loop → monitoring</td>
-<td>Python • LLMs • RAG • Vector DB • LLMOps • Queues</td>
-<td>Moves AI from demo behavior toward production-grade workflows</td>
-</tr>
-<tr>
-<td><b>⚡ CSE × EEE Systems Lab</b></td>
-<td>Cyber-physical systems need software, sensors, edge inference, and cloud telemetry working together</td>
-<td>Device/sensor → edge AI → MQTT/API → cloud pipeline → dashboard → automation</td>
-<td>Embedded C/C++ • Python • IoT • Edge AI • Cloud • Data</td>
-<td>Connects software engineering with EEE, embedded systems, and real-world automation</td>
-</tr>
-</table>
+<p align="center">
+  <img width="100%" src="./assets/project-launchpad-nextzen.svg" alt="Featured project systems with problem, architecture, stack, and impact" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Net-Watcher&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Net-Watcher repository card" />
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Interview-Platform&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Interview-Platform repository card" />
 </p>
+
+<details>
+<summary><b>Project quality signal details</b></summary>
+
+<br>
 
 <table align="center" width="100%">
 <tr><th align="center" width="300">Project Quality Signal</th><th align="center" width="580">How I Judge It</th></tr>
@@ -630,6 +601,8 @@ Idea → Requirements → Architecture → Prototype → Production Build
 <tr><td><b>⚡ CSE × EEE readiness</b></td><td>Software, embedded signals, edge inference, telemetry, and control paths can connect cleanly</td></tr>
 <tr><td><b>🛰️ Observability</b></td><td>Logs, metrics, traces, alerts, runbooks, incidents, and production signals are part of the system</td></tr>
 </table>
+
+</details>
 
 ---
 
