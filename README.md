@@ -274,6 +274,43 @@
   <img src="https://img.shields.io/badge/IAM_Boundaries-7C3AED?style=flat-square" alt="IAM Boundaries" />
 </p>
 
+### ⚡ EEE • Embedded AI • Cyber-Physical Systems
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp,rust,python,arduino,raspberrypi,linux,opencv" alt="EEE embedded systems icons" />
+  <br><br>
+  <img src="https://img.shields.io/badge/Embedded_Systems-111827?style=flat-square" alt="Embedded Systems" />
+  <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square" alt="STM32" />
+  <img src="https://img.shields.io/badge/ESP32-111827?style=flat-square" alt="ESP32" />
+  <img src="https://img.shields.io/badge/FreeRTOS-0F766E?style=flat-square" alt="FreeRTOS" />
+  <img src="https://img.shields.io/badge/Zephyr_RTOS-0284C7?style=flat-square" alt="Zephyr RTOS" />
+  <img src="https://img.shields.io/badge/UART-7C3AED?style=flat-square" alt="UART" />
+  <img src="https://img.shields.io/badge/I2C-2563EB?style=flat-square" alt="I2C" />
+  <img src="https://img.shields.io/badge/SPI-059669?style=flat-square" alt="SPI" />
+  <img src="https://img.shields.io/badge/CAN_Bus-F97316?style=flat-square" alt="CAN Bus" />
+  <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square" alt="MQTT" />
+  <img src="https://img.shields.io/badge/LoRaWAN-0EA5E9?style=flat-square" alt="LoRaWAN" />
+  <img src="https://img.shields.io/badge/BLE-2563EB?style=flat-square" alt="BLE" />
+  <img src="https://img.shields.io/badge/Zigbee-FACC15?style=flat-square" alt="Zigbee" />
+  <img src="https://img.shields.io/badge/TinyML-10B981?style=flat-square" alt="TinyML" />
+  <img src="https://img.shields.io/badge/TensorFlow_Lite_Micro-F97316?style=flat-square" alt="TensorFlow Lite Micro" />
+  <img src="https://img.shields.io/badge/Edge_Impulse-111827?style=flat-square" alt="Edge Impulse" />
+  <img src="https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=flat-square" alt="NVIDIA Jetson" />
+  <img src="https://img.shields.io/badge/ROS2-22314E?style=flat-square" alt="ROS2" />
+  <img src="https://img.shields.io/badge/SLAM-7C3AED?style=flat-square" alt="SLAM" />
+  <img src="https://img.shields.io/badge/Sensor_Fusion-0284C7?style=flat-square" alt="Sensor Fusion" />
+  <img src="https://img.shields.io/badge/Kalman_Filter-059669?style=flat-square" alt="Kalman Filter" />
+  <img src="https://img.shields.io/badge/PID_Control-DC2626?style=flat-square" alt="PID Control" />
+  <img src="https://img.shields.io/badge/MATLAB-B52E31?style=flat-square" alt="MATLAB" />
+  <img src="https://img.shields.io/badge/Simulink-F97316?style=flat-square" alt="Simulink" />
+  <img src="https://img.shields.io/badge/KiCad-314CB0?style=flat-square" alt="KiCad" />
+  <img src="https://img.shields.io/badge/Altium-A5915F?style=flat-square" alt="Altium" />
+  <img src="https://img.shields.io/badge/LTspice-900028?style=flat-square" alt="LTspice" />
+  <img src="https://img.shields.io/badge/Power_Electronics-DC2626?style=flat-square" alt="Power Electronics" />
+  <img src="https://img.shields.io/badge/Smart_Grid-10B981?style=flat-square" alt="Smart Grid" />
+  <img src="https://img.shields.io/badge/Battery_Management_System-65A30D?style=flat-square" alt="Battery Management System" />
+</p>
+
 ### 🌐 Web3 • Robotics • XR • Creative Engineering
 
 <table align="center" width="100%">
