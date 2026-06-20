@@ -571,19 +571,64 @@ Idea → Requirements → Architecture → Prototype → Production Build
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Flagship_Systems-0D1117?style=for-the-badge&labelColor=0D1117&color=38BDF8" alt="Flagship Systems" />
+  <img src="https://img.shields.io/badge/Architecture_First-0D1117?style=for-the-badge&labelColor=0D1117&color=7C3AED" alt="Architecture First" />
+  <img src="https://img.shields.io/badge/Production_Mindset-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="Production Mindset" />
+</p>
+
+<table align="center" width="100%">
+<tr>
+<th align="center" width="210">Flagship System</th>
+<th align="center" width="270">Problem</th>
+<th align="center" width="300">Architecture</th>
+<th align="center" width="260">Stack</th>
+<th align="center" width="220">Impact</th>
+</tr>
+<tr>
+<td><b>🛰️ Net-Watcher</b></td>
+<td>Network visibility, uptime checks, and operational monitoring need to be simple and actionable</td>
+<td>Probe layer → API service → event store → dashboard → alert workflow</td>
+<td>Python • Networking • APIs • Observability • Automation</td>
+<td>Turns raw network signals into readable operational intelligence</td>
+</tr>
+<tr>
+<td><b>🎙️ Interview Platform</b></td>
+<td>Interview workflows need structured sessions, clear candidate flow, and repeatable evaluation</td>
+<td>Auth → session orchestration → question flow → scoring → admin review surface</td>
+<td>Full-Stack • Realtime UX • Database • Secure APIs</td>
+<td>Creates a cleaner path from interview setup to decision support</td>
+</tr>
+<tr>
+<td><b>🤖 AI Agent Platform</b></td>
+<td>AI products need reliable tool use, memory, retrieval, evals, and human-safe automation</td>
+<td>Agent runtime → tools → RAG → queue → eval loop → monitoring</td>
+<td>Python • LLMs • RAG • Vector DB • LLMOps • Queues</td>
+<td>Moves AI from demo behavior toward production-grade workflows</td>
+</tr>
+<tr>
+<td><b>⚡ CSE × EEE Systems Lab</b></td>
+<td>Cyber-physical systems need software, sensors, edge inference, and cloud telemetry working together</td>
+<td>Device/sensor → edge AI → MQTT/API → cloud pipeline → dashboard → automation</td>
+<td>Embedded C/C++ • Python • IoT • Edge AI • Cloud • Data</td>
+<td>Connects software engineering with EEE, embedded systems, and real-world automation</td>
+</tr>
+</table>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Net-Watcher&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Net-Watcher repository card" />
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Moparapairayat&repo=Interview-Platform&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=E5E7EB&icon_color=7DD3FC" alt="Interview-Platform repository card" />
 </p>
 
 <table align="center" width="100%">
-<tr><th align="center" width="300">Project Quality Signal</th><th align="center" width="580">Meaning</th></tr>
-<tr><td><b>✅ Production-quality code</b></td><td>Designed to survive real usage</td></tr>
-<tr><td><b>🔒 Security practices</b></td><td>Auth, validation, privacy, and safe defaults</td></tr>
-<tr><td><b>📈 Scalable architecture</b></td><td>Clear boundaries and growth paths</td></tr>
-<tr><td><b>📚 Documentation</b></td><td>Systems that can be understood and improved</td></tr>
-<tr><td><b>🚀 Performance optimization</b></td><td>Fast enough, measurable, and cost-aware</td></tr>
-<tr><td><b>🤖 AI readiness</b></td><td>Agent workflows, RAG grounding, evals, monitoring, feedback loops</td></tr>
-<tr><td><b>🛰️ Observability</b></td><td>Logs, metrics, traces, incidents, and production signals</td></tr>
+<tr><th align="center" width="300">Project Quality Signal</th><th align="center" width="580">How I Judge It</th></tr>
+<tr><td><b>✅ Production-quality code</b></td><td>Clear modules, safe defaults, useful errors, and maintainable boundaries</td></tr>
+<tr><td><b>🔒 Security practices</b></td><td>Authentication, validation, privacy, rate limits, secrets hygiene, and audit-friendly flows</td></tr>
+<tr><td><b>📈 Scalable architecture</b></td><td>Growth paths for users, traffic, data volume, deployment, and team ownership</td></tr>
+<tr><td><b>📚 Documentation</b></td><td>Setup, architecture notes, decisions, edge cases, and improvement paths are understandable later</td></tr>
+<tr><td><b>🚀 Performance optimization</b></td><td>Latency, throughput, database load, caching, and cloud cost are measured before tuning</td></tr>
+<tr><td><b>🤖 AI readiness</b></td><td>Grounding, tool calls, evals, monitoring, fallback behavior, and feedback loops are designed in</td></tr>
+<tr><td><b>⚡ CSE × EEE readiness</b></td><td>Software, embedded signals, edge inference, telemetry, and control paths can connect cleanly</td></tr>
+<tr><td><b>🛰️ Observability</b></td><td>Logs, metrics, traces, alerts, runbooks, incidents, and production signals are part of the system</td></tr>
 </table>
 
 ---
