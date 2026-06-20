@@ -16,7 +16,7 @@
 
 **Assalamu'alaikum warahmatullahi wabarakatuh**
 
-**Full-Stack Developer • AI/ML Engineer • Systems Thinker**
+**AI • ML • LLMs • Software Engineering • Full-Stack • Data Science • Cloud • MLOps • DevOps • Systems Thinker**
 
 </div>
 
@@ -51,7 +51,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/🧭_Direction-Building_useful_scalable_secure_digital_products-0EA5E9?style=for-the-badge&labelColor=0D1117" alt="Direction: Building useful, scalable, secure digital products" />
   <br>
-  <img src="https://img.shields.io/badge/🧠_Core_Identity-Full--Stack_Developer_%E2%80%A2_AI%2FML_Engineer_%E2%80%A2_Systems_Thinker-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Core Identity: Full-Stack Developer, AI/ML Engineer, Systems Thinker" />
+  <img src="https://img.shields.io/badge/🧠_Core_Identity-AI_%E2%80%A2_ML_%E2%80%A2_LLMs_%E2%80%A2_Software_Engineering_%E2%80%A2_Full--Stack_%E2%80%A2_Data_Science_%E2%80%A2_Cloud_%E2%80%A2_MLOps_%E2%80%A2_DevOps_%E2%80%A2_Systems_Thinker-7C3AED?style=for-the-badge&labelColor=0D1117" alt="Core Identity: AI, ML, LLMs, Software Engineering, Full-Stack, Data Science, Cloud, MLOps, DevOps, Systems Thinker" />
   <br>
   <img src="https://img.shields.io/badge/⚙️_Main_Operating_Mode-Product_engineering_from_idea_to_production-F97316?style=for-the-badge&labelColor=0D1117" alt="Main Operating Mode: Product engineering from idea to production" />
   <br>
