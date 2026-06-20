@@ -1215,16 +1215,6 @@ EXCELLENCE    → Never settle for less
   <img width="100%" src="./assets/section-final-cta.svg" alt="Final Call to Action banner" />
 </p>
 
-```text
-┌─────────────────────────────────────────┐
-│  Star my repositories for support       │
-│  Drop a message on any platform         │
-│  Connect with me on GitHub              │
-│  Email for project inquiries            │
-│  Let's create something extraordinary   │
-└─────────────────────────────────────────┘
-```
-
 <h3 align="center">🎖️ Made with ❤️ by Mopara Pair Ayat</h3>
 
 <p align="center">
