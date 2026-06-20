@@ -377,6 +377,11 @@
   <img src="https://img.shields.io/badge/Production_War_Room-0D1117?style=for-the-badge&labelColor=0D1117&color=10B981" alt="Production War Room" />
 </p>
 
+<details>
+<summary><b>Open Future / Dangerous Command Center details</b></summary>
+
+<br>
+
 ### 🚀 Future Engineering Stack
 
 <p align="center">
@@ -519,6 +524,8 @@ NEXT      | multimodal products, edge AI, LLMOps, service mesh, stronger DevSecO
 FUTURE    | autonomous systems, digital twins, WebAssembly edges, AGI-era workflows
 MISSION   | useful, scalable, secure products that survive real production pressure
 ```
+
+</details>
 
 ---
 
