@@ -1202,10 +1202,6 @@ EXCELLENCE    → Never settle for less
 </table>
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Daily inspiration quote" />
-</p>
-
-<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f172a,35:0ea5e9,70:7c3aed,100:f97316&text=Thanks%20for%20Visiting&fontAlign=50&fontAlignY=48&desc=Let%27s%20build%20something%20amazing%20together&descAlign=50&descAlignY=68&fontColor=ffffff&animation=fadeIn&section=footer" width="100%" alt="Thanks for visiting footer" />
 </p>
 
